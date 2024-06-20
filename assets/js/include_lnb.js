@@ -32,7 +32,7 @@ var lnb_html =
 '    <li><a href="../component/GNB.html">GNB</a></li>'+
 '    <li><a href="../component/SNB.html">SNB</a></li>'+
 '    <li><a href="../component/FNB.html">FNB</a></li>'+
-'    <li><a href="../component/Tabs.html">Tabs</a></li>'+
+'    <li><a href="../component/tabs.html">Tabs</a></li>'+
 '  </ul>'+
 '</div>'+
 '<!--//menuBox end -->'+
