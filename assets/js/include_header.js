@@ -1,6 +1,6 @@
 var header_html = 
 '<h1 class="logo">'+
-'<a href="#">Contentree JoongAng Design System</a>'+
+'<a href="/index.html">Contentree JoongAng Design System</a>'+
 '</h1>'+
 '<div class="rightItem">'+
 '<div class="searchBox"><input type="text" placeholder="검색"></div>'+
