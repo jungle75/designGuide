@@ -1,0 +1,113 @@
+@charset "utf-8";
+@use '_mixin';
+
+html, body {width: 100%; height: 100%; font-size: 16px; font-weight: 400; font-family: var(--font-system); color: var(--text-color); background-color: var(--bg-color);}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { border: solid transparent; background-clip: padding-box; border-radius: 5px; background-color: var(--border-color);}
+::-webkit-scrollbar-track { background-color: transparent; }
+::-webkit-scrollbar-button{ display: none; }
+
+#wrap {width: 100%; height: 100%; padding-top: 88px;}
+
+#header {
+  position: fixed; top: 0;
+  width: 100%; height: 88px; 
+  border-bottom: 1px solid var(--border-color);
+  @include mixin.flex(space-between,center,0);
+  padding: 0 32px;
+
+  .logo {
+    a {display: block; width: 388px; height: 22px; background-image: url(../images/layout/logo.svg); background-repeat: no-repeat; background-size: 388px; font-size: 0;}
+  }
+  .rightItem {@include mixin.flex(left,center,24px);
+    .searchBox {@include mixin.flex(left,center,8px); width: 420px; height: 48px; background-color: var(--theme-color); border-radius: 24px; overflow: hidden; padding: 0 16px;
+      &::before {display: block; width: 16px; height: 16px; background-image: url(../images/layout/ic_search.svg); background-size: 100%; content: ""; border:red}
+      input {border: 0; background-color: transparent; flex: 1;}
+    }
+    .themeBtn {
+      @include mixin.flex(center,center,0); width: 48px; height: 48px; border-radius: 50%; border: 0; font-size: 0; background-color: var(--theme-color);
+      &::before {content: ""; display: block; width: 24px; height: 24px; background-image: url(../images/layout/ic_theme_dark.svg); background-size: 100%;}
+    }
+  }
+}
+
+#container {
+  width: 100%;
+  min-width: 1400px;
+  height: 100%;
+  padding: 24px 24px 24px 256px;
+
+  .contentWrap {
+    position: relative;
+    height: calc(100% - 34px);
+    background-color: var(--body-color);
+    border-radius: 32px 32px 0 0;
+    padding: 32px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+  }
+  .footer {
+    width: 100%;
+    height: 34px;
+    background-color: var(--body-color);
+    border-top: 1px solid var(--border-color);
+    border-radius: 0 0 32px 32px;
+    padding: 8px 0 10px 0;
+    @include mixin.font(12px,400,var(--text-footer),normal);
+    text-align: center;
+  }
+}
+
+/*leftMenu*/
+.leftMenu {position: fixed; left: 0; top: 112px; width: 256px; padding: 0 16px;
+  .menuBox {display: flex; flex-direction: column; align-items: center; width: 224px;
+    .title {width: 192px; @include mixin.flex(space-between,center,0); padding: 12px 0; cursor:pointer;
+      &::after {
+        display: block; width: 12px; height: 12px; background:url('../images/layout/ic_arrow.svg') no-repeat; background-size: 12px; content:"";
+      }
+      a {
+        @include mixin.flex(left,center,4px);
+        @include mixin.font(16px,400,var(--text-strong),normal);
+
+        &::before {display: block; width: 24px; height: 24px; background-size: 100%; content:"";}
+        &.overview::before {background-image: url(../images/layout/ic_Overview.svg);}
+        &.foundation::before {background-image: url(../images/layout/ic_Foundation.svg);}
+        &.component::before {background-image: url(../images/layout/ic_Component.svg);}
+        &.case::before {background-image: url(../images/layout/ic_Casestudy.svg);}
+      }
+    }
+    ul {display: none; flex-direction: column; gap: 2px; width: 100%; overflow:hidden;
+      a {display:block; @include mixin.font(14px,400,var(--logo-color),normal); border-radius: 8px; padding: 11px 44px;}
+      .act a {background-color:var(--theme-color);}
+    }
+    &.act {height:auto;
+      .title {
+        a {font-weight: 700;}
+        &::after{transform:rotate(-180deg);}
+      }
+      ul {display: flex;}
+    }
+    
+    &:nth-of-type(1) {
+      .title::after {display: none;}
+    }
+  }
+}
+
+.dark {
+  .logo {a {filter: invert(1);}}
+  .rightItem {
+    .searchBox {&::before {filter: invert(1);}}
+    .themeBtn {&::before {background-image: url(../images/layout/ic_theme_light.svg) !important; filter: invert(1); }}
+  }  
+  .menuBox{.title::after {filter: invert(1);}}
+  .menuBox{.title{a::before {filter: invert(1);}}}
+}
+
+// utility
+.rowCenter {justify-content: center !important;}
+.colCenter {align-items: center !important;}
+.strong {font-weight: 700 !important;}

@@ -1,0 +1,457 @@
+@charset "utf-8";
+@use '_mixin';
+
+//서브페이지 공통사항
+.contentArea {
+  width: 980px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-top: 80px;
+  margin-bottom: 96px;
+
+  .titleBox {
+    display: flex; flex-direction: column; gap: 16px; 
+    color: var(--text-strong); 
+    padding-bottom: 64px;
+    border-bottom: 1px solid var(--border-color);
+
+    &.caseStudies {border-bottom: 1px solid var(--border-color); padding-bottom: 24px;}
+
+    h2 {@include mixin.font(50px,700,inherit,1);}
+    p {@include mixin.font(18px,500,inherit,28px);}
+  }
+
+  h3 {@include mixin.font(24px,700,var(--text-strong),34px);}
+  h4 {@include mixin.font(18px,700,var(--text-strong),28px);}
+
+  .grayBox {background-color: var(--bg-color); border-radius: 8px;}  
+  .grayContBox {position: relative; background-color: var(--gray-100); border-radius: 8px; overflow: hidden;
+    .group {display: flex; flex-direction: column; gap: 8px;}
+  }
+  .borderBox {position: relative; background-color: var(--white); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden;}
+  .detailArea {display: flex; flex-direction: column; gap: 16px;
+    .detailTitle {position: relative;
+      h3 {margin-bottom: 4px;}
+      .btn {position: absolute; right: 0; top: 24px;}
+      .point {color: var(--text-strong);}
+    }    
+    .inputBox {width: 260px;}    
+    .itemBox {display: flex; flex-direction: column; gap: 16px;
+      >p,  >div {color: var(--logo-color); line-height: 26px;
+        .title {display: block; @include mixin.font(18px,700,var(--text-strong),28px); margin-bottom: 4px;}
+        .txtScript {color: var(--gray-600);}
+      }
+      + .itemBox {margin-top: 40px;}
+    }
+  }
+  .typeTileArea {
+    @include mixin.flex(left,flex-start,15px); flex-wrap: wrap; @include mixin.font(14px,400,var(--text-color),21px);
+    .item {display: flex; flex-direction: column; gap: 16px; width: calc(33.33% - 10px);
+      dt {@include mixin.flex(center,center,0); border-radius: 16px;
+       &.gray {background-color: var(--bg-color);}
+       &.peach {background-color: var(--peach);}
+       &.purple {background-color: var(--purple);}
+       &.sky {background-color: var(--sky);}
+      }
+      
+      .title {@include mixin.font(20px,700,var(--text-strong),1); margin-bottom: 14px;
+        span {font-weight: 400;}
+      }
+    }
+  }
+  .paletteGroup {flex:1; display: flex; flex-direction: column; gap: 8px;
+    .palette {flex:1; display: flex; height: 40px; border-radius: 8px; overflow: hidden;
+      span {flex: 1; display: block; height: 40px;}
+      .Jblack {background-color: var(--Jblack);}
+      .Jorange {background-color: var(--Jorange);}
+      .blue-500 {background-color: var(--blue-500);}
+      .red-500 {background-color: var(--red-500);}
+      .gray-900 {background-color: var(--gray-900);}
+      .gray-800 {background-color: var(--gray-800);}
+      .gray-700 {background-color: var(--gray-700);}
+      .gray-600 {background-color: var(--gray-600);}
+      .gray-500 {background-color: var(--gray-500);}
+      .gray-400 {background-color: var(--gray-400);}
+      .gray-300 {background-color: var(--gray-300);}
+      .gray-200 {background-color: var(--gray-200);}
+      .gray-100 {background-color: var(--gray-100);}
+      .black {background-color: var(--black);}
+      .white {background-color: var(--white);}
+
+      &.white {border: 1px solid var(--border-color)}
+    }
+    .infoGroup {@include mixin.flex(left,center,0);
+      .info {flex: 1; flex-direction: column; align-items: flex-start; gap: 0;}
+    }
+  }
+  .tableBox {display: table; table-layout: fixed; width: 100%; background-color: white; border: 1px solid var(--gray-300); border-radius: 8px; overflow: hidden;
+    .row {display: table-row;
+      .column {display: table-cell; border: solid var(--gray-300); border-width: 0 1px 1px 0; padding: 0 24px; vertical-align: middle;
+        &:last-child {border-right: 0;}
+        &.th {width: 167px; font-weight: 700; color: var(--Jblack); text-align: center;}
+      }
+      &:last-child {
+        .column {border-bottom: 0;}
+      }
+    }
+  }
+
+  .tableList {display: table; table-layout: fixed;
+    .thead {display: table-header-group;}
+    .tbody {display: table-row-group;}
+    .th {display: table-cell; border-bottom: 2px solid var(--text-strong); vertical-align: middle;}
+    .td {display: table-cell; border-bottom: 1px solid var(--border-color); vertical-align: middle;}
+  }
+
+  .guidePoint {position: absolute !important; z-index: 999; background-repeat: no-repeat;
+    .num {display: block; width: 22px; height: 22px; line-height: 22px; background-color: var(--Jorange); border-radius: 50%; text-align: center; font-size: 12px; font-weight: 500; color: var(--white);}
+  }
+  .guideTextRow {position: absolute; z-index: 1; @include mixin.flex(left,center,40px);
+    span {display: block; @include mixin.font(12px,400,var(--gray-900),18px);}
+  }
+  .guideTextCol {position: absolute; z-index: 1; display: flex; flex-direction: column;
+    span {display: block; @include mixin.font(12px,400,var(--gray-700),18px);}
+  }
+  .commentTxt{
+    p {position: relative; @include mixin.font(16px,400,var(--logo-color),26px); padding-left: 12px;
+      &::before {content: ""; display: block; width: 4px; height: 4px; background: var(--logo-color); border-radius: 50%; position: absolute; top: .7em; left: 2px;}
+    }
+  }
+  .btnArea {@include mixin.flex(left,center,16px);}
+}
+.subMain {gap: 96px;
+  .titleBox {border-bottom: 0; padding-bottom: 0; margin-bottom: 0;}
+  .detailArea {
+   h3 {font-size: 32px;}
+  }
+}
+
+//Foundation
+.foundation {
+  // Color
+  .colorPalette {
+    .row {@include mixin.flex(center,center,24px);
+      .col {flex: 1; display: flex; flex-direction: column; gap: 8px;}
+      +.row {margin-top: 8px;}
+    }
+    .colorType {@include mixin.flex(left,center,8px);}
+  }  
+        
+  .info {@include mixin.flex(left,center,8px);
+    .name {@include mixin.font(12px,600,var(--text-strong),18px);}
+    .hex {font-size: 12px; color: var(--text-gray);}
+  }
+
+  .usageColor {
+    .rowGroup {@include mixin.flex(left,flex-end,24px);
+      .col {flex: 1;
+        h4 {margin-bottom: 4px;}
+        .tableBox { height: 239px;
+          .column {
+            p {@include mixin.font(14px,400,var(--gray-800),21px);}
+            .strong {@include mixin.font(16px,700,var(--Jblack),26px); margin-bottom: 10px;}
+          }
+        }
+        .line {background-color: var(--gray-100); border-radius: 8px; padding: 48px;          
+        }
+        .text {display: flex; flex-direction: column; gap: 12px;
+          .title {@include mixin.font(20px,700,var(--Jblack),24px)}
+          .sentence {@include mixin.font(16px,400,var(--gray-800),26px)}
+          .caption {@include mixin.font(14px,400,var(--gray-500),21px)}
+        }
+      }
+      +.rowGroup {margin-top: 16px;}
+    }
+  }
+  
+  // Typography
+  .anatomy {
+    .grayContBox {position: relative; @include mixin.flex(center,center,0); width: 100%; height: 440px;
+      .tableBox {width: 458px; height: 260px;
+        .heading {@include mixin.font(32px,700,var(--Jblack),42px)}
+        .body {@include mixin.font(24px,700,var(--Jblack),34px);
+          span {display: block; margin-top: 8px; @include mixin.font(16px,500,var(--gray-800),26px)}
+        }
+        .detail {@include mixin.font(14px,400,var(--gray-500),21px)}
+
+        p+p {margin-top: 24px;}
+      }      
+    }
+    .comment li {@include mixin.font(18px,700,var(--text-strong),28px)}
+    .iconImg {width: 100%; height: 263px; @include mixin.flex(center,center,150px);}
+  }
+
+  // Font
+  .itemBox {
+    p {@include mixin.font(16px,400,var(--logo-color),26px)}
+
+    .tableList {width: 100%; color: var(--logo-color);
+      .thead {height: 30px;}
+      .tbody {height: 58px;}
+    }
+  }
+
+  // Icon
+  .icon {position: relative;
+    .borderBox {padding: 48px 60px; @include mixin.flex(left,flex-start,40px); flex-wrap: wrap;
+      i {display: block; width: 24px; height: 24px;}
+    }
+
+    .iconColor {width: 100%; height: 210px; @include mixin.flex(left,stretch,0);
+      li {flex: 1; @include mixin.flex(center,center,0); flex-direction: column;
+        span {@include mixin.font(14px,400,var(--gray-900),28px)}
+      }
+      li+li {border-left: 1px solid var(--gray-300);}
+    }
+    .space {
+      .iconColor li {flex-direction: row; gap: 16px;
+        i {border: 1px solid var(--Jorange); width: 24px; height: 24px;}
+      }      
+    }
+  }
+}
+
+// Component
+.component {gap: 64px;
+  .typeTileArea {
+    .item {dt {height: 190px;}}
+  }
+  .objectBox {
+    @include mixin.flex(center,center,40px); width: 100%; height: 320px; border-radius: 8px;
+
+    &.peach {background-color: var(--peach);}
+    &.purple {background-color: var(--purple);}
+    &.sky {background-color: var(--sky);}
+    &.alignTop {align-items: flex-start !important;}
+    &.alignBottom {align-items: flex-end !important;}
+    &.right {justify-content: right !important;}
+  }  
+  .btnArea {@include mixin.flex(left,center,16px);}
+  .tabMenu {
+    @include mixin.flex(left,stretch,0); width: 100%; height: 58px; padding: 8px; 
+    background-color: var(--bg-color); border-radius: 8px; margin-top: -48px;
+
+    button {flex: 1; @include mixin.flex(center,center,8px); border-radius: 8px; color: var(--text-strong); cursor: pointer;
+      span {display: block;}
+      .label {width: 32px; height: 18px; 
+        background-color: var(--text-footer); 
+        background-image: url(../images/layout/ic_code.svg); 
+        background-size: 16px; 
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 9px; font-size: 0;
+      }
+     &.act {background-color: var(--theme-color);
+      span {font-weight: 700;}
+      .label {background-color: var(--blue-500);}
+      }
+    }
+  }
+  .tabContainer {
+    .itemBox {p {span {display: block;}}}
+    .designGuide, .examples {display: flex; flex-direction: column; gap: 64px;}
+    .grayContBox {@include mixin.flex(center,center,40px);}    
+    .borderBox {@include mixin.flex(center,center,0);}
+    .buttonSpec {flex-direction: column; gap: 35px;
+      .guideTextCol {gap: 35px; padding-top: 16px;
+        span {
+          &:nth-child(1) {line-height: 48px;}
+          &:nth-child(2) {line-height: 40px;}
+          &:nth-child(3) {line-height: 34px;}
+        }
+      }
+    }
+    .buttonType {height: 200px;
+      .guideTextRow {
+        span {width: 86px;}
+      }
+    }
+    .states {height: 370px; gap: 32px;
+      .guideTextRow {gap: 32px;
+        span {width: 86px;}
+      }
+      .guideTextCol {gap: 8px;
+        span {height: 48px;}
+      }
+      .primaryA-hover {background-color: var(--Jblack-hover); color: var(--white);}
+      .primaryA-active {background-color: var(--Jblack-active); color: var(--white);}
+      .primaryB-hover {background-color: var(--Jorange-hover); color: var(--white);}
+      .primaryB-active {background-color: var(--Jorange-active); color: var(--white);}
+      .success-hover {background-color: var(--blue-hover); color: var(--white);}
+      .success-active {background-color: var(--blue-active); color: var(--white);}
+      .cancel-hover {background-color: var(--red-hover); color: var(--white);}
+      .cancel-active {background-color: var(--red-active); color: var(--white);}
+      .secondary-hover {background-color: var(--gray-hover); color: var(--white);}
+      .secondary-active {background-color: var(--gray-active); color: var(--white);}
+      
+      .outline-primaryA:hover, .outline-primaryB:hover {background-color: var(--white) !important;}
+      .outline-primaryA.hover {background-color: var(--gray-100) !important;}
+      .outline-primaryA.active {background-color: var(--gray-100) !important; border-color: var(--Jblack) !important;}
+      .outline-primaryB.hover {background-color: var(--gray-100) !important;}
+      .outline-primaryB.active {background-color: var(--gray-100) !important; border-color: var(--Jorange) !important;}
+    }
+    .textbtn {height: 290px;
+      .group {gap: 16px; width: 104px;
+        .hover {color: var(--gray-800);}
+        .blue-hover {color: var(--blue-active);}
+        .red-hover {color: var(--red-active);}
+        .gray-hover {color: var(--gray-active);}
+      }
+      .guideTextCol {gap: 16px;
+        span {height: 17px;}
+      }
+      .guideTextRow {
+        span {width: 104px;}
+      }
+    }
+    .form {@include mixin.flex(center,center,8px);
+      label {@include mixin.font(14px,500,var(--Jblack),24px)}
+    }
+    .inputSpec {height: 268px;
+      .group {gap: 30px;}
+      .guideTextCol {gap: 48px;}
+      .inputBox {
+        .hover {border-color: var(--gray-500);}
+        .active {border-color: var(--Jblack);}
+        .Error {border-color: var(--red-500);}
+        .disabled {border-color: var(--gray-400); background-color: var(--gray-100);}
+    }
+    }
+    .inputStates {height: 378px;
+      .group {gap: 16px;}
+      .guideTextCol {gap: 16px;
+        span {height: 34px;}
+      }      
+      .hover {border-color: var(--gray-500);}
+      .active {border-color: var(--Jblack);}
+      .error {border-color: var(--red-500);}
+      .disabled {border-color: var(--gray-400); background-color: var(--gray-100);}
+    }
+    .colBox {@include mixin.flex(left,flex-start,20px); flex-direction: row !important;
+      >div {flex: 1;}
+    }
+
+    .spliterWrap {display: flex; align-items: stretch; gap: 0; padding: 0;
+      >div {position: relative; flex: 1; padding: 60px;
+        h5 {font-size: 12px; color: var(--gray-900); margin-bottom: 10px;}
+      }      
+      >div+div {border-left: 1px solid var(--gray-300);}
+      .alignCenter {@include mixin.flex(center,center,16px);}
+      .guidePoint {border: 0;}
+    }
+
+    .dropSpec {gap: 24px; flex-direction: column;
+      .guideTextCol {gap: 44px; left: 121px; top: 82px;}
+    }
+    
+    // 드롭다운 정의
+    .selectBox {position:relative;
+      .selected {position: relative; width: auto; height: 34px; padding: 0 36px 0 16px; @include mixin.font(14px,400,var(--gray-800),34px); background-color: var(--white); border: 1px solid var(--gray-300); border-radius: 5px; overflow: hidden; white-space: nowrap; text-overflow:ellipsis; cursor:pointer;
+      &.action {border-color:var(--Jblack); color: var(--Jblack);}
+      &::after {content:""; position:absolute; top:50%; right:16px; width:12px; height:12px; transform: translateY(-6px); background-repeat: no-repeat; background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuNSA0Ljc1TDYgOS4yNUwxMC41IDQuNzUiIHN0cm9rZT0iIzExMTExMSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");}
+      &.arrowActive {border-color: var(--Jblack); color: var(--Jblack);}
+      &.disabled {border-color: var(--gray-300); color: var(--gray-300); pointer-events:none;}
+      &.disabled::after {filter: opacity(.2);}
+      }
+      .Items {position:absolute; top:42px; left:0; background-color:#FFFFFF; border-radius:5px; z-index:99;
+        .ItemsList {max-height:304px; overflow-y:auto; padding: 8px; box-shadow: 0px 0px 7px 0px #00000040;
+          li {padding:3px 8px; border-radius:3px; font-size:14px; line-height:20px; color:var(--Jblack); white-space:nowrap; cursor:pointer;
+            &:hover, &.sameAsSelected{background-color: var(--gray-100);}
+          }
+        }    
+        &.selectHide{display:none;}
+      }
+      &.large {
+        .selected {height: 40px; line-height: 40px;}
+        .selectItems {top:50px;}
+      }
+    }
+  }
+
+  //  Examples 관련
+  .examples {
+    .detailArea {
+      .obj {color: var(--blue-500);}
+      .atb {color: var(--red-500);}
+      .cls {color: var(--Jorange);}
+    }
+
+    .codeBox {border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden;
+      .example {background-color: var(--white); padding: 32px; border-bottom: 1px solid var(--border-color);
+        &.align-row {@include mixin.flex(left,center,16px);}
+        &.align-col {@include mixin.flex(left,flex-start,16px); flex-direction: column;}
+        &.gap32 {gap: 32px;}
+        &.gap64 {gap: 64px;}
+        &.gray-100 {background-color: var(--gray-100);}
+        &.center {justify-content: center !important;}
+      }
+
+      .codeTab {position: relative; display: flex; gap: 40px; width: 100%; height: 40px; border-bottom: 1px solid var(--border-color); background-color: var(--bg-color); padding: 0 24px;
+        a, span {display: block; @include mixin.font(14px,400,var(--text-gray),40px)}
+        .act {color: var(--logo-color); border-bottom: 2px solid var(--tab-border);}
+      }
+
+      .codeCont {position: relative;
+        .ic-copy {position: absolute; z-index: 1; right: 24px; top: -32px; width: 24px; height: 24px; font-size: 0; background-image: url(../images/layout/ic_copy.svg);}
+        .ic-copy:hover::after {content: "Copy Code"; display: block; position: absolute; top: 26px; left: 50%; transform: translateX(-50%);
+          border-radius: 4px; background-color: var(--gray-500); @include mixin.font(11px,400,white,12px); padding: 4px; white-space: nowrap;
+        }
+      }
+
+      .markup {height: 185px; background-color: var(--bg-color); padding: 32px 24px; overflow: auto;  @include mixin.font(14px,400,var(--logo-color),18px);
+        .markup-html {word-break: normal; white-space: pre;}
+      }
+      .script {height: 240px; background-color: var(--bg-color); padding: 32px 24px; overflow: auto; @include mixin.font(14px,400,var(--logo-color),18px);
+        .javascript {word-break: normal; white-space: pre;}
+      }      
+    }
+
+    .cssDown {padding: 32px; @include mixin.flex(space-between,center,0);
+      a {display: block; @include mixin.font(16px,500,var(--logo-color),26px)}
+      .ic-down {width: 24px; height: 24px; font-size: 0; background-image: url(../images/layout/ic_download.svg); filter: opacity(.5);}
+    }
+  }
+  .movie {position: relative; width: 640px; height: 360px; background-color: var(--white);
+    .navBtn {position: absolute; z-index: 1; top: 50%; margin-top: -12px;}
+    &.Dark {background-color: black;
+      .navBtn {filter: invert(1);}
+    }
+  }
+}
+
+// guide line
+.typo .guidePoint {width: 86px; height: 170px; background-image: url(../images/guide/typhAnatomy.png); background-size: 100%;}
+.icon .guidePoint {width: 312px; height: 33px; background-image: url(../images/guide/iconAnatomy.png); background-size: 100%;}
+.space .guidePoint {width: 96px; height: 50px; background-image: url(../images/guide/iconSpace.png); background-size: 100%;}
+.button .guidePoint {width: 275px; height: 70px; background-image: url(../images/guide/boxButton.png); background-size: 100%;}
+.buttonSpec .guidePoint {width: 158px; height: 210px; background-image: url(../images/guide/buttonSpec.png); background-size: 158px; background-position: right top;}
+.inputAnatomy .guidePoint {width: 177px; height: 68px; background-image: url(../images/guide/inputAnatomy.png); background-size: 100%;}
+.inputSpec .guidePoint {width: 297px; height: 127px; background-image: url(../images/guide/inputSpec.png); background-size: 100%;}
+.emptyAnatomy .guidePoint {width: 423px; height: 247px; background-image: url(../images/guide/emptyAnatomy.png); background-size: 100%;}
+.popupAnatomy .guidePoint {width: 414px; height: 218px; background-image: url(../images/guide/popupAnatomy.png); background-size: 100%;}
+.popupSpec .guidePoint {width: 431px; height: 219px; background-image: url(../images/guide/popupSpec.png); background-size: 100%;}
+.tableAnatomy .guidePoint {width: 22px; height: 356px; background-image: url(../images/guide/tableAnatomy.png); background-size: 100%;}
+.tableSpec .guidePoint {width: 912px; height: 306px; background-image: url(../images/guide/tableSpec.png); background-size: 100%;}
+.dropAnatomy .guidePoint {width: 223px; height: 172px; background-image: url(../images/guide/dropAnatomy.png); background-size: 100%;}
+.dropSpec .guidePoint {width: 196px; height: 116px; background-image: url(../images/guide/dropSpec.png); background-size: 100%;}
+.indicatorAnatomy .guidePoint {width: 664px; height: 62px; background-image: url(../images/guide/indicatorAnatomy.png); background-size: 100%;}
+.dotSpec .guidePoint {width: 98px; height: 28px; background-image: url(../images/guide/dotSpec.png); background-size: 100%;}
+.numberSpec .guidePoint {width: 71px; height: 41px; background-image: url(../images/guide/numberSpec.png); background-size: 100%;}
+.pagingAnatomy .guidePoint {width: 276px; height: 64px; background-image: url(../images/guide/pagingAnatomy.png); background-size: 100%;}
+.pagingSpec .guidePoint {width: 327px; height: 78px; background-image: url(../images/guide/pagingSpec.png); background-size: 100%;}
+.tabsAnatomy .guidePoint {width: 542px; height: 89px; background-image: url(../images/guide/tabsAnatomy.png); background-size: 100%;}
+.tabsTextSpec .guidePoint {width: 257px; height: 39px; background-image: url(../images/guide/tabsTextSpec.png); background-size: 100%;}
+.tabsBoxSpec .guidePoint {width: 284px; height: 53px; background-image: url(../images/guide/tabsBoxSpec.png); background-size: 100%;}
+.GNBAnatomy .guidePoint {width: 765px; height: 52px; background-image: url(../images/guide/GNBAnatomy.png); background-size: 100%;}
+.GNBSpec .guidePoint {width: 917px; height: 105px; background-image: url(../images/guide/GNBSpec.png); background-size: 100%;}
+.SNBAnatomy .guidePoint {width: 419px; height: 226px; background-image: url(../images/guide/SNBAnatomy.png); background-size: 100%;}
+.SNBSpec .guidePoint {width: 257px; height: 135px; background-image: url(../images/guide/SNBSpec.png); background-size: 100%;}
+
+// Dark Mode
+.dark {
+  .cssDown {
+    .ic-down {filter: invert(1) !important;}
+  }
+}

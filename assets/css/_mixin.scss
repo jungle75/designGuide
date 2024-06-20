@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@mixin font($size, $weight, $color, $line) {
+    font-size: $size; font-weight: $weight; color: $color; line-height: $line;
+}
+@mixin flex($justify, $align, $gap) {
+    display: flex; justify-content: $justify; align-items: $align; gap: $gap;
+}
+@mixin border($width, $style, $color) {
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+}
