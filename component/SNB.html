@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contentree JoongAng Design System</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <div id="header">
+      </div>
+      <!--// header -->
+
+      <div id="container">
+        <!-- leftMenu -->
+        <div id="lnb" class="leftMenu"></div>
+        <!--// leftMenu -->        
+
+        <!-- contents -->
+        <div class="contentWrap">
+          <div class="contentArea component">
+            <!-- 타이틀영역 -->
+            <div class="titleBox">
+              <h2>SNB</h2>
+              <p>내비게이션은 모든 웹사이트에서 중요한 부분입니다.<br />
+                내비게이션은 3가지로 GNB, SNB, FNB이며 화면 위치에 따라 분류됩니다.</p>
+            </div>
+            <!--// 타이틀영역 -->
+
+            <!-- 오브젝트 박스 -->
+            <div class="objectBox sky alignBottom right">
+              <img src="../assets/images/guide/tabs.png" alt="">
+            </div>
+            <!--// 오브젝트 박스 -->
+
+            <!-- 탭메뉴 -->
+            <div class="tabMenu">
+              <button class="act"><span>Design guide</span></button>
+              <button><span>Examples</span><span class="label">code</span></button>
+            </div>
+            <!--// 탭메뉴 -->
+
+            <div class="tabContainer">
+              <!-- Disign Guide -->
+              <div class="designGuide">
+                <!-- Anatomy -->
+                <div class="detailArea">
+                  <h3>Anatomy</h3>
+  
+                  <div class="grayContBox SNBAnatomy" style="height: 388px;">
+                    <ul class="SNB icon">
+                      <li>
+                        <a href="#"><span>side nav 1</span></a>
+                      </li>
+                      <li class="act">
+                        <a href="#"><span>side nav 2</span></a>
+                        <div class="subMenu">
+                          <a href="#">option 1</a>
+                          <a href="#" class="on">option 2</a>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><span>side nav 3</span></a>
+                      </li>
+                    </ul>
+
+                    <div class="guidePoint" style="left: 293px; top: 32px;"></div>
+                  </div>
+                  <div class="itemBox">
+                    <div>
+                      <p class="title">1. Top menu</p>
+                      <p>사이트 내 첫번째 레벨의  메뉴입니다.</p>
+                    </div>
+                    <div>
+                      <p class="title">2. Top menu icon (Optional)</p>
+                      <p>필요에 따라 Top menu에 만 아이콘을 사용할 수 있습니다.</p>
+                    </div>
+                    <div>
+                      <p class="title">3. Folding arrow</p>
+                      <p>Top menu에 해당하는 하위 레벨의 메뉴가 있을 경우 화살표를 클릭하면 하위 항목이 열립니다.</p>
+                    </div>
+                    <div>
+                      <p class="title">4. Sub menu</p>
+                      <p>Top menu에 포함되는 하위 레벨의 Sub menu입니다.</p>
+                    </div>
+                  </div>
+                </div>
+                <!--// Anatomy -->
+
+                <!-- Spec -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Spec</h3>
+                    <p>SNB (Side Navigation bar) / LNB (Left Navigation bar)</p>
+                  </div>
+                  
+                  <div class="grayContBox SNBSpec" style="height: 417px;">
+                    <ul class="SNB icon">
+                      <li>
+                        <a href="#"><span>side nav 1</span></a>
+                      </li>
+                      <li class="act">
+                        <a href="#"><span>side nav 2</span></a>
+                        <div class="subMenu">
+                          <a href="#">option 1</a>
+                          <a href="#" class="on">option 2</a>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#"><span>side nav 3</span></a>
+                      </li>
+                    </ul>
+
+                    <div class="guidePoint" style="left: 362px; top: 49px;"></div>
+                  </div>
+                  <div class="commentTxt">
+                    <p>아이콘과 텍스트간 간격은 8px을 고정으로합니다.</p>
+                    <p>하위 레벨의 메뉴가 있을 경우 시각적으로 하이어라키를 표시해 줍니다.</p>
+                  </div>
+                </div>
+                <!--// Spec -->
+
+                <!-- States -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>States</h3>
+                    <p>Default, Active 2가지의 상태를 갖습니다.</p>
+                  </div>
+
+                  <div class="itemBox colBox">
+                    <div class="grayContBox" style="height: 254px;">
+                      <ul class="SNB icon">
+                        <li>
+                          <a href="#"><span>side nav 1</span></a>
+                        </li>
+                        <li class="act">
+                          <a href="#"><span>side nav 2</span></a>
+                        </li>
+                      </ul>
+                      <div class="guideTextCol" style="left: 41px; top: 90px; gap: 30px;">
+                        <span>Default</span>
+                        <span>Action</span>
+                      </div>
+                    </div>
+
+                    <div class="borderBox" style="height: 254px; background-color: white;">
+                      <ul class="SNB icon">
+                        <li class="act">
+                          <div class="subMenu">
+                            <a href="#">option 1</a>
+                            <a href="#" class="on">option 2</a>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="guideTextCol" style="left: 41px; top: 90px; gap: 30px;">
+                        <span>Default</span>
+                        <span>Action</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="commentTxt">
+                    <p>Active 상태의 아이콘 컬러는 상황에 따라 변경할 수 있습니다.</p>
+                  </div>
+                </div>
+                <!--// States -->
+
+                <!-- Usage -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Usage</h3>
+                  </div>
+                  
+                  <div class="grayContBox" style="height: 428px;">
+                    <div class="group" style="height: 251px;">
+                      <div class="guideTextRow" style="top: 55px;">
+                        <span>Default</span>
+                      </div>
+                      <ul class="SNB">
+                        <li>
+                          <a href="#"><span>side nav 1</span></a>
+                        </li>
+                        <li class="act">
+                          <a href="#"><span>side nav 2</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>side nav 3</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>side nav 4</span></a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="group" style="height: 251px;">
+                      <div class="guideTextRow" style="top: 55px;">
+                        <span>Icon</span>
+                      </div>
+                      <ul class="SNB icon">
+                        <li>
+                          <a href="#"><span>side nav 1</span></a>
+                        </li>
+                        <li class="act">
+                          <a href="#"><span>side nav 2</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>side nav 3</span></a>
+                        </li>
+                        <li>
+                          <a href="#"><span>side nav 4</span></a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="group">
+                      <div class="guideTextRow" style="top: 55px;">
+                        <span>Icon + Option</span>
+                      </div>
+                      <ul class="SNB icon">
+                        <li>
+                          <a href="#"><span>side nav 1</span></a>
+                        </li>
+                        <li class="act">
+                          <a href="#"><span>side nav 2</span></a>
+                          <div class="subMenu">
+                            <a href="#">option 1</a>
+                            <a href="#" class="on">option 2</a>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#"><span>side nav 3</span></a> 
+                        </li>
+                      </ul>
+                    </div>                    
+                  </div>
+                  
+                  <div class="commentTxt">
+                    <p>SNB는 기본적으로 아이콘이 없는 스타일을 사용하며, 필요에 따라 아이콘을 추가하여 사용할 수 있습니다.</p>
+                  </div>
+                </div>
+                <!--// Usage --> 
+
+              </div>
+              <!--// Disign Guide -->
+
+              <!-- Code -->
+              <div class="examples" style="display: none;">
+<!-- Basic -->
+              <div class="detailArea">
+                <div class="detailTitle">
+                  <h3>Basic</h3>
+                </div>
+                
+                <div class="codeBox">
+                  <div class="example align-row gray-100">
+                    <ul class="SNB" id="snb1">
+                      <li>
+                        <a href="#"><span>side nav 1</span></a>
+                      </li>
+                      <li class="act">
+                        <a href="#"><span>side nav 2</span></a>
+                      </li>
+                      <li>
+                        <a href="#"><span>side nav 3</span></a>
+                      </li>
+                      <li>
+                        <a href="#"><span>side nav 4</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="codeTab" id="codeTab1">
+                    <a href="#" class="act" id="html1">HTML</a>
+                    <a href="#" id="script1">JavaScript</a>                
+                  </div>
+                  <div class="codeCont" id="codeHTML1">
+                    <button type="button" class="ic-copy">클립보드에 복사</button>
+                    <pre class="markup"><code class="markup-html">&lt;<span class="obj">ul</span> class=<span class="cls">"SNB"</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 1&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 2&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;    
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 3&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 4&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
+  &lt;/<span class="obj">li</span>&gt;
+&lt;/<span class="obj">ul</span>&gt;</code></pre>
+                  </div>
+                  
+                  <div class="codeCont" id="codeJS1" style="display: none;">
+                    <button type="button" class="ic-copy">클립보드에 복사</button>
+                    <pre class="script"><code class="javascript">// JavaScript 코드는 여기에 작성합니다.
+  document.addEventListener("DOMContentLoaded", function() {
+    // 모든 a 태그에 클릭 이벤트 리스너 추가
+    var links = document.querySelectorAll('.SNB a');
+    links.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // 기본 동작(링크 이동) 방지
+
+        // act 클래스를 가진 li 요소들에서 act 클래스 제거
+        var activeItems = document.querySelectorAll('.SNB .act');
+        activeItems.forEach(function(item) {
+          item.classList.remove('act');
+        });
+
+        // 클릭된 a 태그의 부모인 li 요소에 act 클래스 추가
+        var parentLI = this.closest('li');
+        parentLI.classList.add('act');
+      });
+    });
+
+    // 모든 .subMenu a 태그에 클릭 이벤트 리스너 추가
+    var subMenuLinks = document.querySelectorAll('.subMenu a');
+    subMenuLinks.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // 기본 동작(링크 이동) 방지
+
+        // 현재 subMenu 안의 모든 a 태그에서 on 클래스 제거
+        var subMenuItems = this.closest('.subMenu').querySelectorAll('a');
+        subMenuItems.forEach(function(item) {
+          item.classList.remove('on');
+        });
+
+        // 클릭된 a 태그에 on 클래스 추가
+        this.classList.add('on');
+      });
+    });
+  });</code></pre>
+                  </div>
+
+                </div>
+              </div>
+
+<!-- With icon -->
+              <div class="detailArea">
+                <div class="detailTitle">
+                  <h3>With icon</h3>
+                </div>
+                
+                <div class="codeBox">
+                  <div class="example align-row gray-100">
+                    <ul class="SNB icon" id="snb2">
+                      <li>
+                        <a href="#"><span>side nav 1</span></a>
+                      </li>
+                      <li class="act">
+                        <a href="#"><span>side nav 2</span></a>
+                      </li>
+                      <li>
+                        <a href="#"><span>side nav 3</span></a>
+                      </li>
+                      <li>
+                        <a href="#"><span>side nav 4</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="codeTab">
+                    <a href="#" class="act">HTML</a>                      
+                  </div>
+                  <div class="codeCont">
+                    <button type="button" class="ic-copy">클립보드에 복사</button>
+                    <pre class="markup"><code class="markup-html">&lt;<span class="obj">ul</span> class=<span class="cls">"SNB icon"</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 1&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 2&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;    
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 3&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 4&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
+  &lt;/<span class="obj">li</span>&gt;
+&lt;/<span class="obj">ul</span>&gt;</code></pre>
+                  </div>                    
+                </div>
+              </div>
+<!-- Multi-leve -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Multi-leve</h3>
+                  </div>
+                  
+                  <div class="codeBox">
+                    <div class="example align-row gray-100" style="align-items: flex-start;">
+                      <ul class="SNB" id="snb3">
+                        <li>
+                          <a href="#"><span>side nav 1</span></a>
+                        </li>
+                        <li class="act">
+                          <a href="#"><span>side nav 2</span></a>
+                          <div class="subMenu">
+                            <a href="#">option 1</a>
+                            <a href="#" class="on">option 2</a>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#"><span>side nav 3</span></a> 
+                        </li>
+                      </ul>
+
+                      <ul class="SNB icon" id="snb4">
+                        <li>
+                          <a href="#"><span>side nav 1</span></a>
+                        </li>
+                        <li class="act">
+                          <a href="#"><span>side nav 2</span></a>
+                          <div class="subMenu">
+                            <a href="#">option 1</a>
+                            <a href="#" class="on">option 2</a>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#"><span>side nav 3</span></a> 
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="codeTab">
+                      <a href="#" class="act">HTML</a>       
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="script"><code class="javascript">&lt;<span class="obj">ul</span> class=<span class="cls">"SNB"</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 1&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 2&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"subMenu"</span>&gt;
+      &lt;<span class="obj">a</span> href="#"&gt;option 1&lt;/<span class="obj">a</span>&gt;
+      &lt;<span class="obj">a</span> href="#" class=<span class="cls">"on"</span>&gt;option 2&lt;/<span class="obj">a</span>&gt;
+    &lt;/<span class="obj">div</span>&gt;
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 3&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
+  &lt;/<span class="obj">li</span>&gt;
+&lt;/<span class="obj">ul</span>&gt;
+
+&lt;<span class="obj">ul</span> class=<span class="cls">"SNB icon"</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 1&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 2&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"subMenu"</span>&gt;
+      &lt;<span class="obj">a</span> href="#"&gt;option 1&lt;/<span class="obj">a</span>&gt;
+      &lt;<span class="obj">a</span> href="#" class=<span class="cls">"on"</span>&gt;option 2&lt;/<span class="obj">a</span>&gt;
+    &lt;/<span class="obj">div</span>&gt;
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 3&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
+  &lt;/<span class="obj">li</span>&gt;
+&lt;/<span class="obj">ul</span>&gt;</code></pre>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CSS download-->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>CSS</h3>
+                    <p>해당 컴포넌트만 적용 가능한 CSS 파일입니다.</p>
+                    <p class="point">resest.css 가 없을 경우 깨질 수 있습니다. 컴포넌트 메인페이지에서 reset.css 파일을 다운로드 받아서 사용하세요.</p>
+                  </div>
+
+                  <div class="grayBox cssDown">
+                    <a href="#" onclick="downloadCssZip()">SNB.css</a>
+                    <button type="button" class="ic-down" onclick="downloadCssZip()">파일 다운로드</button>
+                  </div>
+                </div>
+                <!--// CSS download -->
+
+              </div>
+              <!--// Code -->
+            </div>
+
+          </div>
+        </div>
+        <!--// contents -->
+
+        <!-- footer -->
+        <div class="footer">Copyright © Contentree JoongAng</div>
+        <!--// footer -->
+      </div>
+    </div>
+    
+    <script src="../assets/js/jquery-3.7.0.min.js"></script>
+    <script src="../assets/js/include_header.js"></script>
+    <script src="../assets/js/include_lnb.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        // Load initial content
+        $("#header").html(header_html);
+        $("#lnb").html(lnb_html);
+        lnbnav(2,11);
+
+        function lnbnav(main, sub) {
+          const menuBox = $('#lnb').find('.menuBox').eq(main);
+          menuBox.addClass('act');
+          menuBox.find('ul li').eq(sub).addClass('act');
+        }
+        
+        // Toggle theme
+        const setTheme = (theme) => {
+          const htmlElement = document.documentElement;
+          htmlElement.className = theme;
+          const button = $('button[title="Toggle theme"]');
+          button.text(theme === 'dark' ? '라이트 모드' : '다크 모드');
+          localStorage.setItem('theme', theme);  // Save theme to local storage
+        };
+
+        // Bind click event to toggle button
+        $('button[title="Toggle theme"]').click(function () {
+          const currentTheme = document.documentElement.className;
+          setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+
+        // Load theme from local storage if exists
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          setTheme(savedTheme);
+        }
+      });
+
+      function downloadCssZip() {
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = '../assets/download/SNB.zip'; // Replace with the actual path to your icon.zip file
+        link.download = 'SNB.zip'; // Set the desired filename for download
+        link.click(); // Trigger the download
+      }
+    </script>
+  </body>
+</html>

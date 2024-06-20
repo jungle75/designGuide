@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contentree JoongAng Design System</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <div id="header">
+      </div>
+      <!--// header -->
+
+      <div id="container">
+        <!-- leftMenu -->
+        <div id="lnb" class="leftMenu"></div>
+        <!--// leftMenu -->        
+
+        <!-- contents -->
+        <div class="contentWrap">
+          <div class="contentArea component">
+            <!-- 타이틀영역 -->
+            <div class="titleBox">
+              <h2>Selection controls</h2>
+              <p>checkbox, radio, toggle 등 옵션을 선택하는 기능의 UI를 정의합니다.</p>
+            </div>
+            <!--// 타이틀영역 -->
+
+            <!-- 오브젝트 박스 -->
+            <div class="objectBox sky">
+              <label class="radio" for="a"><input type="radio" name="radio1" id="a" hidden><i></i><span>게시</span></label>
+              <label class="radio" for="b"><input type="radio" name="radio1" id="b" hidden checked><i></i><span>미게시</span></label>
+            </div>
+            <!--// 오브젝트 박스 -->
+
+            <!-- 탭메뉴 -->
+            <div class="tabMenu">
+              <button class="act"><span>Design guide</span></button>
+              <button><span>Examples</span><span class="label">code</span></button>
+            </div>
+            <!--// 탭메뉴 -->
+
+            <div class="tabContainer">
+              <!-- Disign Guide -->
+              <div class="designGuide">
+                <!-- Anatomy -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Anatomy</h3>
+                  </div>
+                  
+  
+                  <div class="grayContBox spliterWrap" style="height: 238px;">
+                    <div class="alignCenter">
+                      <label class="checkbox" for="check_a"><input type="checkbox" name="checkbox" id="check_a" hidden><i></i></label>
+                      <label class="checkbox" for="check_b"><input type="checkbox" name="checkbox" id="check_b" hidden checked><i></i></label>
+                      <div class="guidePoint" style="top: 16px; left: 16px;"><span class="num">1</span></div>
+                    </div>
+
+                    <div class="alignCenter">
+                      <label class="radio" for="c"><input type="radio" name="radio2" id="c" hidden><i></i></label>
+                      <label class="radio" for="d"><input type="radio" name="radio2" id="d" hidden checked><i></i></label>
+                      <div class="guidePoint" style="top: 16px; left: 16px;"><span class="num">2</span></div>
+                    </div> 
+
+                    <div class="alignCenter">
+                      <div class="toggleSwitch">
+                        <label for="toggle1"><input type="checkbox" id="toggle1" hidden><i></i></label>
+                      </div>
+
+                      <div class="toggleSwitch">
+                        <label for="toggle2"><input type="checkbox" id="toggle2" hidden checked><i></i></label>
+                      </div>
+                      <div class="guidePoint" style="top: 16px; left: 16px;"><span class="num">3</span></div>
+                    </div>
+                  </div>
+
+                  <div class="itemBox">                    
+                    <p><span class="title">1. Check box</span></p>
+                    <p><span class="title">2. Radio button</span></p>
+                    <p><span class="title">3. Toggle button</span></p>
+                  </div>
+                </div>
+                <!--// Anatomy -->
+
+                <!-- States -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>States</h3>
+                    <p>Icon과 Text 조합 타입으로 dafault/active 상태를 보여줍니  다.</p>
+                  </div>
+
+                  <div class="itemBox">
+                    <div class="detailArea">
+                      <h4>Check box + Text type</h4>
+                      <div class="grayContBox" style="height: 166px;">
+                        <label class="checkbox" for="check_c"><input type="checkbox" name="checkbox" id="check_c" hidden><i></i><span>텍스트 조합 타입 check off</span></label>
+                        <label class="checkbox" for="check_d"><input type="checkbox" name="checkbox" id="check_d" hidden checked><i></i><span>텍스트 조합 타입 check on</span></label>
+                      </div>
+                    </div>
+                    <div class="commentTxt">
+                      <p>선택 영역에서 하나 또는 여러가지를 동시에 선택할 때 사용합니다.</p>
+                    </div>
+                  </div>
+
+                  <div class="itemBox">
+                    <div class="detailArea">
+                      <h4>Radio button + Text type</h4>
+                      <div class="grayContBox" style="height: 166px;">
+                        <label class="radio" for="e"><input type="radio" name="radio3" id="e" hidden><i></i><span>텍스트 조합 타입 default</span></label>
+                      <label class="radio" for="f"><input type="radio" name="radio3" id="f" hidden checked><i></i><span>텍스트 조합 타입 select</span></label>
+                      </div>
+                    </div>
+                    <div class="commentTxt">
+                      <p>선택 영역에서 단일 상태를 선택하는 데 사용합니다. 선택 항목이 너무 많지 않아야 합니다.</p>
+                    </div>
+                  </div>
+
+                  <div class="itemBox">
+                    <div class="detailArea">
+                      <h4>Toggle button + Text type</h4>
+                      <div class="grayContBox" style="height: 166px;">
+                        <div class="toggleSwitch">
+                          <span>텍스트 조합 타입 off</span>
+                          <label for="toggle3"><input type="checkbox" id="toggle3" hidden><i></i></label>
+                        </div>
+
+                        <div class="toggleSwitch">
+                          <span>텍스트 조합 타입 on</span>
+                          <label for="toggle4"><input type="checkbox" id="toggle4" hidden checked><i></i></label>
+                        </div>                        
+                      </div>
+                    </div>
+                    <div class="commentTxt">
+                      <p>On/Off를 설정할 때 사용합니다.</p>
+                    </div>
+                  </div>
+                </div>
+                <!--// States -->
+
+              </div>
+              <!--// Disign Guide -->
+
+              <!-- Code -->
+              <div class="examples" style="display: none;">
+<!-- Check box -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Check box</h3>
+                  </div>
+                  
+                  <div class="codeBox">
+                    <div class="example align-row gap64">
+                      <label class="checkbox" for="check_e"><input type="checkbox" name="checkbox" id="check_e" hidden><i></i></label>
+                      <label class="checkbox" for="check_f"><input type="checkbox" name="checkbox" id="check_f" hidden checked><i></i><span>텍스트 조합</span></label>
+                    </div>
+                    <div class="codeTab">
+                      <a href="#" class="act">HTML</a>                      
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">label</span> class=<span class="cls">"checkbox"</span> for="check1"&gt;
+  &lt;<span class="obj">input</span> type="checkbox" name="check1" id="check1" <span class="cls">hidden</span>&gt;
+  &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+&lt;/<span class="obj">label</span>&gt;
+
+&lt;<span class="obj">label</span> class=<span class="obj">"checkbox"</span> for="check2"&gt;
+  &lt;input type="checkbox" name="check2" id="check2" <span class="cls">hidden</span> checked&gt;
+  &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+  &lt;<span class="obj">span</span>&gt;텍스트 조합&lt;/<span class="obj">span</span>&gt;
+&lt;/<span class="obj">label</span>&gt;</code></pre>
+                    </div>                    
+                  </div>
+                </div>
+
+<!-- Radio button -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Radio button</h3>
+                  </div>
+                  
+                  <div class="codeBox">
+                    <div class="example align-row gap64">
+                      <label class="radio" for="radiog"><input type="radio" name="radio4" id="radiog" hidden><i></i></label>
+                      <label class="radio" for="radioh"><input type="radio" name="radio4" id="radioh" hidden checked><i></i><span>텍스트 조합</span></label>
+                    </div>
+                    <div class="codeTab">
+                      <a href="#" class="act">HTML</a>                      
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">label</span> class=<span class="cls">"radio"</span> for="radio1"&gt;
+  &lt;<span class="obj">input</span> type="radio" name="radio" id="radio1" <span class="cls">hidden</span>&gt;
+  &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+&lt;/<span class="obj">label</span>&gt;
+
+&lt;<span class="obj">label</span> class=<span class="obj">"radio"</span> for="radio2"&gt;
+  &lt;input type="radio" name="radio" id="radio2" <span class="cls">hidden</span> checked&gt;
+  &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+  &lt;<span class="obj">span</span>&gt;텍스트 조합&lt;/<span class="obj">span</span>&gt;
+&lt;/<span class="obj">label</span>&gt;</code></pre>
+                    </div>                    
+                  </div>
+                </div>
+
+<!-- Toggle button -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Toggle button</h3>
+                  </div>
+                  
+                  <div class="codeBox">
+                    <div class="example align-row gap64">
+                      <div class="toggleSwitch">
+                        <label for="toggle5"><input type="checkbox" id="toggle5" hidden><i></i></label>
+                      </div>
+
+                      <div class="toggleSwitch">
+                        <span>텍스트 조합</span>
+                        <label for="toggle6"><input type="checkbox" id="toggle6" hidden checked><i></i></label>
+                      </div> 
+                    </div>
+                    <div class="codeTab">
+                      <a href="#" class="act">HTML</a>                      
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"toggleSwitch"</span>&gt;
+  &lt;<span class="obj">label</span> for="toggle1"&gt;
+    &lt;input type="checkbox" id="toggle1" <span class="cls">hidden</span>&gt;
+    &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+  &lt;/<span class="obj">label</span>&gt;
+&lt;/<span class="obj">div</span>&gt;
+
+&lt;<span class="obj">div</span> class=<span class="cls">"toggleSwitch"</span>&gt;
+  &lt;<span class="obj">span</span>&gt;텍스트 조합&lt;/<span class="obj">span</span>&gt;
+  &lt;<span class="obj">label</span> for="toggle2"&gt;
+    &lt;<span class="obj">input</span> type="checkbox" id="toggle2" <span class="cls">hidden</span> checked&gt;
+    &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+  &lt;/<span class="obj">label</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                    </div>                    
+                  </div>
+                </div>
+
+<!-- Combination -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Combination</h3>
+                  </div>
+
+                  <div class="itemBox">
+                    <h4>Default group</h4>
+                    <div class="codeBox">
+                      <div class="example align-row">
+                        <div class="row-selection">
+                          <label class="checkbox" for="check1"><input type="checkbox" name="" id="check1" hidden><i></i><span>Option A</span></label>
+                          <label class="checkbox" for="check2"><input type="checkbox" name="" id="check2" hidden><i></i><span>Option B</span></label>
+                          <label class="checkbox" for="check3"><input type="checkbox" name="" id="check3" hidden checked><i></i><span>Option C</span></label>
+                          <label class="checkbox" for="check4"><input type="checkbox" name="" id="check4" hidden checked><i></i><span>Option D</span></label>
+                        </div>
+                      </div>
+                      <div class="codeTab">
+                        <a href="#" class="act">HTML</a>                      
+                      </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"row-selection</span>"&gt;
+  &lt;<span class="obj">label</span> class=<span class="cls">"checkbox"</span> for=""&gt;
+    &lt;<span class="obj">input</span> type="checkbox" name="" id="" <span class="cls">hidden</span>&gt;
+    &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+    &lt;<span class="obj">span</span>&gt;Option A&lt;/<span class="obj">span</span>&gt;
+  &lt;/<span class="obj">label</span>&gt;
+  &lt;<span class="obj">label</span> class=<span class="cls">"checkbox"</span> for=""&gt;
+    &lt;<span class="obj">input</span> type="checkbox" name="" id="" <span class="cls">hidden</span>&gt;
+    &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+    &lt;<span class="obj">span</span>&gt;Option B&lt;/<span class="obj">span</span>&gt;
+  &lt;/<span class="obj">label</span>&gt;
+  &lt;<span class="obj">label</span> class=<span class="cls">"checkbox"</span> for=""&gt;
+    &lt;<span class="obj">input</span> type="checkbox" name="" id="" <span class="cls">hidden</span> checked&gt;
+    &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+    &lt;<span class="obj">span</span>&gt;Option C&lt;/<span class="obj">span</span>&gt;
+  &lt;/<span class="obj">label</span>&gt;
+  &lt;<span class="obj">label</span> class=<span class="cls">"checkbox"</span> for=""&gt;
+    &lt;<span class="obj">input</span> type="checkbox" name="" id="" <span class="cls">hidden</span> checked&gt;
+    &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+    &lt;<span class="obj">span</span>&gt;Option D&lt;/<span class="obj">span</span>&gt;
+  &lt;/<span class="obj">label</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                      </div>                    
+                    </div>
+                  </div>
+
+                  <div class="itemBox">
+                    <h4>Vertical  group</h4>
+                    <div class="codeBox">
+                      <div class="example align-row">
+                        <div class="col-selection">
+                          <label class="checkbox" for="check1"><input type="checkbox" name="" id="check1" hidden><i></i><span>Option A</span></label>
+                          <label class="checkbox" for="check2"><input type="checkbox" name="" id="check2" hidden><i></i><span>Option B</span></label>
+                          <label class="checkbox" for="check3"><input type="checkbox" name="" id="check3" hidden checked><i></i><span>Option C</span></label>
+                          <label class="checkbox" for="check4"><input type="checkbox" name="" id="check4" hidden checked><i></i><span>Option D</span></label>
+                        </div>
+                      </div>
+                      <div class="codeTab">
+                        <a href="#" class="act">HTML</a>                      
+                      </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"col-selection</span>"&gt;
+  &lt;<span class="obj">label</span> class=<span class="cls">"checkbox"</span> for=""&gt;
+    &lt;<span class="obj">input</span> type="checkbox" name="" id="" <span class="cls">hidden</span>&gt;
+    &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+    &lt;<span class="obj">span</span>&gt;Option A&lt;/<span class="obj">span</span>&gt;
+  &lt;/<span class="obj">label</span>&gt;
+  &lt;<span class="obj">label</span> class=<span class="cls">"checkbox"</span> for=""&gt;
+    &lt;<span class="obj">input</span> type="checkbox" name="" id="" <span class="cls">hidden</span>&gt;
+    &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+    &lt;<span class="obj">span</span>&gt;Option B&lt;/<span class="obj">span</span>&gt;
+  &lt;/<span class="obj">label</span>&gt;
+  &lt;<span class="obj">label</span> class=<span class="cls">"checkbox"</span> for=""&gt;
+    &lt;<span class="obj">input</span> type="checkbox" name="" id="" <span class="cls">hidden</span> checked&gt;
+    &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+    &lt;<span class="obj">span</span>&gt;Option C&lt;/<span class="obj">span</span>&gt;
+  &lt;/<span class="obj">label</span>&gt;
+  &lt;<span class="obj">label</span> class=<span class="cls">"checkbox"</span> for=""&gt;
+    &lt;<span class="obj">input</span> type="checkbox" name="" id="" <span class="cls">hidden</span> checked&gt;
+    &lt;<span class="obj">i</span>&gt;&lt;/<span class="obj">i</span>&gt;
+    &lt;<span class="obj">span</span>&gt;Option D&lt;/<span class="obj">span</span>&gt;
+  &lt;/<span class="obj">label</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                      </div>                    
+                    </div>
+                  </div>           
+                </div>
+
+                <!-- CSS download-->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>CSS</h3>
+                    <p>해당 컴포넌트만 적용 가능한 CSS 파일입니다.</p>
+                    <p class="point">resest.css 가 없을 경우 깨질 수 있습니다. 컴포넌트 메인페이지에서 reset.css 파일을 다운로드 받아서 사용하세요.</p>
+                  </div>
+
+                  <div class="grayBox cssDown">
+                    <a href="#" onclick="downloadCssZip()">selectionControls.css</a>
+                    <button type="button" class="ic-down" onclick="downloadCssZip()">파일 다운로드</button>
+                  </div>
+                </div>
+                <!--// CSS download -->
+
+              </div>
+              <!--// Code -->
+            </div>
+
+          </div>
+        </div>
+        <!--// contents -->
+
+        <!-- footer -->
+        <div class="footer">Copyright © Contentree JoongAng</div>
+        <!--// footer -->
+      </div>
+    </div>
+    
+    <script src="../assets/js/jquery-3.7.0.min.js"></script>
+    <script src="../assets/js/include_header.js"></script>
+    <script src="../assets/js/include_lnb.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        // Load initial content
+        $("#header").html(header_html);
+        $("#lnb").html(lnb_html);
+        lnbnav(2,9);
+
+        function lnbnav(main, sub) {
+          const menuBox = $('#lnb').find('.menuBox').eq(main);
+          menuBox.addClass('act');
+          menuBox.find('ul li').eq(sub).addClass('act');
+        }
+
+        // Toggle theme
+        const setTheme = (theme) => {
+          const htmlElement = document.documentElement;
+          htmlElement.className = theme;
+          const button = $('button[title="Toggle theme"]');
+          button.text(theme === 'dark' ? '라이트 모드' : '다크 모드');
+          localStorage.setItem('theme', theme);  // Save theme to local storage
+        };
+
+        // Bind click event to toggle button
+        $('button[title="Toggle theme"]').click(function () {
+          const currentTheme = document.documentElement.className;
+          setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+
+        // Load theme from local storage if exists
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          setTheme(savedTheme);
+        }
+      });
+        
+      function downloadCssZip() {
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = '../assets/download/selectionControls.zip'; // Replace with the actual path to your icon.zip file
+        link.download = 'selectionControls.zip'; // Set the desired filename for download
+        link.click(); // Trigger the download
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contentree JoongAng Design System</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <div id="header">
+      </div>
+      <!--// header -->
+
+      <div id="container">
+        <!-- leftMenu -->
+        <div id="lnb" class="leftMenu">          
+        </div>
+        <!--// leftMenu -->        
+
+        <!-- contents -->
+        <div class="contentWrap">
+          <div class="contentArea subMain foundation">
+            <!-- 타이틀영역 -->
+            <div class="titleBox">
+              <h2>Foundation</h2>
+              <p>파운데이션은 일관된 인터페이스와 사용자 경험을 위해 통일된 디자인 언어로 맞추는 데 필수적인 시각적 요소입니다.</p>
+            </div>
+            <!--// 타이틀영역 -->
+
+            <div class="typeTileArea">
+              <dl class="item">
+                <dt class="gray" style="height: 238px;">
+                  <img src="../assets/images/guide/img_foundation01.png" alt="Color를 상징하는 이미지">
+                </dt>
+                <dd>
+                  <p class="title">Color</p>
+                  <p>표준화된 색상 및 사용 가이드를 제공하여<br />
+                    일관된 인터페이스를 창출하는 데 도움이 되는<br />
+                    가이드라인입니다.</p>
+                </dd>
+              </dl>
+
+              <dl class="item">
+                <dt class="gray" style="height: 238px;">
+                  <img src="../assets/images/guide/img_foundation02.png" alt="Typography 상징하는 이미지">
+                </dt>
+                <dd>
+                  <p class="title">Typography</p>
+                  <p>활자 규모와 색상을 기준으로 정해진 규칙은<br />
+                    정보를 명확하게 구분하고 효율적으로 표현하는 데<br />
+                    도움이 됩니다.</p>
+                </dd>
+              </dl>
+              
+              <dl class="item">
+                <dt class="gray" style="height: 238px;">
+                  <img src="../assets/images/guide/img_foundation03.png" alt="Iconography 상징하는 이미지">
+                </dt>
+                <dd>
+                  <p class="title">Iconography</p>
+                  <p>명확한 메타포를 바탕으로 만들어진 아이콘은<br />
+                    사용자에게 정보를 전달하여 효율적으로<br />
+                    커뮤니케이션 하는 데 도움이 됩니다.</p>
+                </dd>
+              </dl>
+            </div>
+
+          </div>
+        </div>
+        <!--// contents -->
+
+        <!-- footer -->
+        <div class="footer">Copyright © Contentree JoongAng</div>
+        <!--// footer -->
+      </div>
+    </div>
+    
+    <script src="../assets/js/jquery-3.7.0.min.js"></script>
+    <script src="../assets/js/include_header.js"></script>
+    <script src="../assets/js/include_lnb.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        // Load initial content
+        $("#header").html(header_html);
+        $("#lnb").html(lnb_html);
+        lnbnav(1,);
+
+        function lnbnav(main, sub) {
+          const menuBox = $('#lnb').find('.menuBox').eq(main);
+          menuBox.addClass('act');
+          menuBox.find('ul li').eq(sub).addClass('act');
+        }       
+
+        // Toggle theme
+        const setTheme = (theme) => {
+          const htmlElement = document.documentElement;
+          htmlElement.className = theme;
+          const button = $('.themeBtn"]');
+          button.text(theme === 'dark' ? '라이트 모드' : '다크 모드');
+          localStorage.setItem('theme', theme);  // Save theme to local storage
+        };
+
+        // Bind click event to toggle button
+        $('.themeBtn').click(function () {
+          const currentTheme = document.documentElement.className;
+          setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+
+        // Load theme from local storage if exists
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          setTheme(savedTheme);
+        }
+      });    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contentree JoongAng Design System</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <div id="header">
+      </div>
+      <!--// header -->
+
+      <div id="container">
+        <!-- leftMenu -->
+        <div id="lnb" class="leftMenu"></div>
+        <!--// leftMenu -->        
+
+        <!-- contents -->
+        <div class="contentWrap">
+          <div class="contentArea component">
+            <!-- 타이틀영역 -->
+            <div class="titleBox">
+              <h2>Pagination</h2>
+              <p>Pagination을 사용하여 긴 목록을 여러 페이지로 나눌 수 있으며, 한 번에 한 페이지만 로드됩니다.</p>
+            </div>
+            <!--// 타이틀영역 -->
+
+            <!-- 오브젝트 박스 -->
+            <div class="objectBox purple alignTop">
+              <img src="../assets/images/guide/pagination.png" alt="">
+            </div>
+            <!--// 오브젝트 박스 -->
+
+            <!-- 탭메뉴 -->
+            <div class="tabMenu">
+              <button class="act"><span>Design guide</span></button>
+              <button><span>Examples</span><span class="label">code</span></button>
+            </div>
+            <!--// 탭메뉴 -->
+
+            <div class="tabContainer">
+              <!-- Disign Guide -->
+              <div class="designGuide">
+                <!-- Anatomy -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Anatomy</h3>
+                  </div>
+                  
+  
+                  <div class="grayContBox pagingAnatomy" style="height: 238px;">
+                    <div class="pagination">
+                      <div class="arrowBtn disabled">
+                        <button type="text" class="back" disabled>뒤로</button>
+                        <button type="text" class="backEnd" disabled>맨 뒤로</button>
+                      </div>
+                      <div class="pageGroup">
+                        <a href="#" class="act">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                      </div>
+                      <div class="arrowBtn">
+                        <button type="text" class="next">앞으로</button>
+                          <button type="text" class="nextEnd">맨 앞으로</button>
+                      </div>
+                    </div>
+                    <div class="guidePoint" style="left: 403px; top: 65px;"></div>
+                  </div>
+                  <div class="itemBox">
+                    <p><span class="title">1. Current page</span>사용자가 현재 보고 있는 페이지 입니다.</p>
+                    <p><span class="title">2. Total page</span>해당 번호의 페이지로 바로 이동하기 위해 노출됩니다. </p>
+                  </div>
+                </div>
+                <!--// Anatomy -->
+
+                <!-- Spec -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Spec</h3>
+                    <p>Pagination UI는 한 사이즈로 사용합니다. </p>
+                  </div>
+
+                  <div class="grayContBox pagingSpec" style="height: 190px;">
+                    <div class="pagination" style="border: 1px dashed var(--gray-300);">
+                      <div class="arrowBtn disabled">
+                        <button type="text" class="back" disabled>뒤로</button>
+                        <button type="text" class="backEnd" disabled>맨 뒤로</button>
+                      </div>
+                      <div class="pageGroup">
+                        <a href="#" class="act">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                      </div>
+                      <div class="arrowBtn">
+                        <button type="text" class="next">앞으로</button>
+                          <button type="text" class="nextEnd">맨 앞으로</button>
+                      </div>
+                    </div>
+                    <div class="guidePoint" style="left: 296px; top: 63px;"></div>
+                  </div>
+                  <div class="commentTxt">
+                    <p>텍스트 사이즈는 14pt를 기본으로 합니다.</p>
+                    <p>Prev, Next 아이콘과 숫자 사이 간격은 다르게 적용됩니다.</p>
+                    <p>Prev, Next 아이콘은 마우스 오버 효과가 없으며, 커서 변경으로 구분됩니다.</p>
+                  </div>
+                </div>
+                <!--// Spec -->
+                
+                <!-- Usage -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Usage</h3>
+                    <p>긴 목록의 페이지를 탐색하는 경우 사용합니다.</p>
+                  </div>
+
+                  <div class="borderBox" style="height: 497px;">
+                    <div class="group">
+                      <div class="tableArea" style="width: 883px;">
+                        <table>
+                          <colgroup>
+                            <col style="width: 75px;">
+                            <col style="width: 75px;">
+                            <col style="width: auto;">
+                            <col style="width: 200px;"> 
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th><label class="checkbox" for="check_e"><input type="checkbox" name="checkbox" id="check_e" hidden><i></i></label></th>
+                              <th>번호</th>
+                              <th>프로그램</th>
+                              <th>기간</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><label class="checkbox" for="check_e"><input type="checkbox" name="checkbox" id="check_e" hidden checked><i></i></label></td>
+                              <td>1</td>
+                              <td><div class="block">1호가 될 순 없어</div></td>
+                              <td>2021.01.01 ~ 2021.12.31</td>
+                            </tr>
+                            <tr>
+                              <td><label class="checkbox" for="check_e"><input type="checkbox" name="checkbox" id="check_e" hidden checked><i></i></label></td>
+                              <td>2</td>
+                              <td><div class="block">1호가 될 순 없어</div></td>
+                              <td>2021.01.01 ~ 2021.12.31</td>
+                            </tr>
+                            <tr>
+                              <td><label class="checkbox" for="check_e"><input type="checkbox" name="checkbox" id="check_e" hidden checked><i></i></label></td>
+                              <td>3</td>
+                              <td><div class="block">1호가 될 순 없어</div></td>
+                              <td>2021.01.01 ~ 2021.12.31</td>
+                            </tr>
+                            <tr>
+                              <td><label class="checkbox" for="check_e"><input type="checkbox" name="checkbox" id="check_e" hidden checked><i></i></label></td>
+                              <td>4</td>
+                              <td><div class="block">1호가 될 순 없어</div></td>
+                              <td>2021.01.01 ~ 2021.12.31</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+  
+                      <div class="pagination center" style="margin-top: 40px;">
+                        <div class="arrowBtn disabled">
+                          <button type="text" class="back" disabled>뒤로</button>
+                          <button type="text" class="backEnd" disabled>맨 뒤로</button>
+                        </div>
+                        <div class="pageGroup">
+                          <a href="#" class="act">1</a>
+                          <a href="#">2</a>
+                          <a href="#">3</a>
+                          <a href="#">4</a>
+                          <a href="#">5</a>
+                        </div>
+                        <div class="arrowBtn">
+                          <button type="text" class="next">앞으로</button>
+                            <button type="text" class="nextEnd">맨 앞으로</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="commentTxt">
+                    <p>일반적으로 5페이지 씩 노출되나, 상황에 따라 10페이지 노출도 가능합니다.</p>
+                    <p>기본적으로 리스트 기준 센터 정렬을 적용하지만, 예외적으로 우측정렬도 적용 가능합니다.</p>
+                  </div>
+                </div>
+                <!--// Usage -->
+
+              </div>
+              <!--// Disign Guide -->
+
+              <!-- Code -->
+              <div class="examples" style="display: none;">
+<!-- Basic -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Basic</h3>
+                    <p>Pagination UI 기본 예시입니다. </p>
+                  </div>
+                  
+                  <div class="codeBox">
+                    <div class="example align-row">
+                      <div class="pagination">
+                        <div class="arrowBtn disabled">
+                          <button type="text" class="back" disabled>뒤로</button>
+                          <button type="text" class="backEnd" disabled>맨 뒤로</button>
+                        </div>
+                        <div class="pageGroup">
+                          <a href="#" class="act">1</a>
+                          <a href="#">2</a>
+                          <a href="#">3</a>
+                          <a href="#">4</a>
+                          <a href="#">5</a>
+                        </div>
+                        <div class="arrowBtn">
+                          <button type="text" class="next">앞으로</button>
+                            <button type="text" class="nextEnd">맨 앞으로</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="codeTab">
+                      <a href="#" class="act">HTML</a>                      
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"pagination"</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"arrowBtn disabled"</span>&gt;
+    &lt;<span class="obj">button</span> type="text" class=<span class="cls">"back"</span> disabled&gt;뒤로&lt;/<span class="obj">button</span>&gt;
+    &lt;<span class="obj">button</span> type="text" class=<span class="cls">"backEnd"</span> disabled&gt;맨 뒤로&lt;/<span class="obj">button</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"pageGroup"</span>&gt;
+    &lt;<span class="obj">a</span> href="#" class=<span class="cls">"act"</span>&gt;1&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;2&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;3&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;4&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;5&lt;/<span class="obj">a</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"arrowBtn"</span>&gt;
+    &lt;<span class="obj">button</span> type="text" class=<span class="cls">"next"</span>&gt;앞으로&lt;/<span class="obj">button</span>&gt;
+    &lt;<span class="obj">button</span> type="text" class=<span class="cls">"nextEnd"</span>&gt;맨 앞으로&lt;/<span class="obj">button</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                    </div>                    
+                  </div>
+                </div>
+
+<!-- Align -->
+              <div class="detailArea">
+                <div class="detailTitle">
+                  <h3>Align</h3>
+                  <p>기본적으로 리스트 기준 센터 정렬을 적용하지만, 예외적으로 우측정렬도 적용 가능합니다.</p>
+                </div>
+                
+                <div class="codeBox">
+                  <div class="example align-row">
+                    <div class="pagination center" style="width: 100%;">
+                      <div class="arrowBtn disabled">
+                        <button type="text" class="back" disabled>뒤로</button>
+                        <button type="text" class="backEnd" disabled>맨 뒤로</button>
+                      </div>
+                      <div class="pageGroup">
+                        <a href="#" class="act">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                      </div>
+                      <div class="arrowBtn">
+                        <button type="text" class="next">앞으로</button>
+                          <button type="text" class="nextEnd">맨 앞으로</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="codeTab">
+                    <a href="#" class="act">HTML</a>                      
+                  </div>
+                  <div class="codeCont">
+                    <button type="button" class="ic-copy">클립보드에 복사</button>
+                    <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"pagination center"</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"arrowBtn disabled"</span>&gt;
+    &lt;<span class="obj">button</span> type="text" class=<span class="cls">"back"</span> disabled&gt;뒤로&lt;/<span class="obj">button</span>&gt;
+    &lt;<span class="obj">button</span> type="text" class=<span class="cls">"backEnd"</span> disabled&gt;맨 뒤로&lt;/<span class="obj">button</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"pageGroup"</span>&gt;
+    &lt;<span class="obj">a</span> href="#" class=<span class="cls">"act"</span>&gt;1&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;2&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;3&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;4&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;5&lt;/<span class="obj">a</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"arrowBtn"</span>&gt;
+    &lt;<span class="obj">button</span> type="text" class=<span class="cls">"next"</span>&gt;앞으로&lt;/<span class="obj">button</span>&gt;
+    &lt;<span class="obj">button</span> type="text" class=<span class="cls">"nextEnd"</span>&gt;맨 앞으로&lt;/<span class="obj">button</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                  </div>                    
+                </div>
+
+                <div class="codeBox">
+                  <div class="example align-row">
+                    <div class="pagination right" style="width: 100%;">
+                      <div class="arrowBtn disabled">
+                        <button type="text" class="back" disabled>뒤로</button>
+                        <button type="text" class="backEnd" disabled>맨 뒤로</button>
+                      </div>
+                      <div class="pageGroup">
+                        <a href="#" class="act">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                      </div>
+                      <div class="arrowBtn">
+                        <button type="text" class="next">앞으로</button>
+                          <button type="text" class="nextEnd">맨 앞으로</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="codeTab">
+                    <a href="#" class="act">HTML</a>                      
+                  </div>
+                  <div class="codeCont">
+                    <button type="button" class="ic-copy">클립보드에 복사</button>
+                    <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"pagination right"</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"arrowBtn disabled"</span>&gt;
+    &lt;<span class="obj">button</span> type="text" class=<span class="cls">"back"</span> disabled&gt;뒤로&lt;/<span class="obj">button</span>&gt;
+    &lt;<span class="obj">button</span> type="text" class=<span class="cls">"backEnd"</span> disabled&gt;맨 뒤로&lt;/<span class="obj">button</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"pageGroup"</span>&gt;
+    &lt;<span class="obj">a</span> href="#" class=<span class="cls">"act"</span>&gt;1&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;2&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;3&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;4&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;5&lt;/<span class="obj">a</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"arrowBtn"</span>&gt;
+    &lt;<span class="obj">button</span> type="text" class=<span class="cls">"next"</span>&gt;앞으로&lt;/<span class="obj">button</span>&gt;
+    &lt;<span class="obj">button</span> type="text" class=<span class="cls">"nextEnd"</span>&gt;맨 앞으로&lt;/<span class="obj">button</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                  </div>                    
+                </div>
+              </div>
+
+                <!-- CSS download-->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>CSS</h3>
+                    <p>해당 컴포넌트만 적용 가능한 CSS 파일입니다.</p>
+                    <p class="point">resest.css 가 없을 경우 깨질 수 있습니다. 컴포넌트 메인페이지에서 reset.css 파일을 다운로드 받아서 사용하세요.</p>
+                  </div>
+
+                  <div class="grayBox cssDown">
+                    <a href="#" onclick="downloadCssZip()">pagination.css</a>
+                    <button type="button" class="ic-down" onclick="downloadCssZip()">파일 다운로드</button>
+                  </div>
+                </div>
+                <!--// CSS download -->
+
+              </div>
+              <!--// Code -->
+            </div>
+
+          </div>
+        </div>
+        <!--// contents -->
+
+        <!-- footer -->
+        <div class="footer">Copyright © Contentree JoongAng</div>
+        <!--// footer -->
+      </div>
+    </div>
+    
+    <script src="../assets/js/jquery-3.7.0.min.js"></script>
+    <script src="../assets/js/include_header.js"></script>
+    <script src="../assets/js/include_lnb.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        // Load initial content
+        $("#header").html(header_html);
+        $("#lnb").html(lnb_html);
+        lnbnav(2,6);
+
+        function lnbnav(main, sub) {
+          const menuBox = $('#lnb').find('.menuBox').eq(main);
+          menuBox.addClass('act');
+          menuBox.find('ul li').eq(sub).addClass('act');
+        }
+
+        // Toggle theme
+        const setTheme = (theme) => {
+          const htmlElement = document.documentElement;
+          htmlElement.className = theme;
+          const button = $('button[title="Toggle theme"]');
+          button.text(theme === 'dark' ? '라이트 모드' : '다크 모드');
+          localStorage.setItem('theme', theme);  // Save theme to local storage
+        };
+
+        // Bind click event to toggle button
+        $('button[title="Toggle theme"]').click(function () {
+          const currentTheme = document.documentElement.className;
+          setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+
+        // Load theme from local storage if exists
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          setTheme(savedTheme);
+        }
+      });      
+
+      function downloadCssZip() {
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = '../assets/download/pagination.zip'; // Replace with the actual path to your icon.zip file
+        link.download = 'pagination.zip'; // Set the desired filename for download
+        link.click(); // Trigger the download
+      }
+    </script>
+  </body>
+</html>

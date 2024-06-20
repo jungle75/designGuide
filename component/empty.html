@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contentree JoongAng Design System</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <div id="header">
+      </div>
+      <!--// header -->
+
+      <div id="container">
+        <!-- leftMenu -->
+        <div id="lnb" class="leftMenu"></div>
+        <!--// leftMenu -->        
+
+        <!-- contents -->
+        <div class="contentWrap">
+          <div class="contentArea component">
+            <!-- 타이틀영역 -->
+            <div class="titleBox">
+              <h2>Empty</h2>
+              <p>제공된 데이터가 없을 때 표시됩니다.</p>
+            </div>
+            <!--// 타이틀영역 -->
+
+            <!-- 오브젝트 박스 -->
+            <div class="objectBox peach">
+              <div class="empty">
+                <div class="messageGroup onlyTxt">                  
+                  <p><img src="../assets/images/layout/ic_caution.svg" alt=""></p>
+                  <p class="title">Data Not Found</p>
+                  <p>No Data 텍스트는 데이터가 존재하지 않을 때<br />"No data to display" 같은 텍스트를 보여주는 옵션입니다.</p>
+                </div>
+                <div class="btnArea">
+                  <button type="button" class="btn close">닫기</button>
+                  <button type="button" class="btn confirm">확인</button>
+                </div>
+              </div>
+            </div>
+            <!--// 오브젝트 박스 -->
+
+            <!-- 탭메뉴 -->
+            <div class="tabMenu">
+              <button class="act"><span>Design guide</span></button>
+              <button><span>Examples</span><span class="label">code</span></button>
+            </div>
+            <!--// 탭메뉴 -->
+
+            <div class="tabContainer">
+              <!-- Disign Guide -->
+              <div class="designGuide">
+                <!-- Anatomy -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Anatomy</h3>
+                  </div>
+                  
+  
+                  <div class="grayContBox emptyAnatomy" style="height: 360px;">
+                    <div class="popupWrap" style="width: 366px;">
+                      <button type="button" class="ic-close">닫기</button>
+                      <div class="empty popup">
+                        <div class="messageGroup">
+                          <p class="title">Data Not Found</p>
+                          <p>No Data 텍스트는 데이터가 존재하지 않을 때 "No data to display" 같은 텍스트를 보여주는 옵션입니다.</p>
+                        </div>
+                        <div class="btnArea">
+                          <button type="button" class="btn close">닫기</button>
+                          <button type="button" class="btn confirm">확인</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="guidePoint" style="left: 234px; top: 39px;"></div>
+                  </div>
+                  <div class="itemBox">                    
+                    <p><span class="title">1. Image area(Optional)</span>사용자의 상황을 이해하는 데 도움이 되는 용도로만 사용합니다.</p>                    
+                    <p><span class="title">2. Contents area</span>현재 상황에 따른 사용자의 예상 동작을 간략히 설명합니다.</p>
+                    <p><span class="title">3. Button area(Optional)</span>사용자의 예상 동작을 수행할 수 있도록 작업을 프롬프트하는 버튼을 제공합니다.</p>
+                  </div>
+                </div>
+                <!--// Anatomy -->
+
+                <!-- Usage -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Usage</h3>
+                    <p>노출되는 위치에 따라 Emty 컴포넌트의 구성이 달라집니다.</p>
+                  </div>
+
+                  <div class="itemBox">
+                    <h4>Full Page</h4>
+                    <div class="borderBox" style="height: 320px; background-color: white;">
+                      <div class="empty fullPage">
+                        <div class="messageGroup">
+                          <p class="title">Data Not Found</p>
+                          <p>No Data 텍스트는 데이터가 존재하지 않을 때<br />"No data to display" 같은 텍스트를 보여주는 옵션입니다.</p>
+                        </div>
+                        <div class="btnArea">
+                          <button type="button" class="btn close">닫기</button>
+                          <button type="button" class="btn confirm">확인</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="commentTxt">
+                      <p>전체 화면에서 사용하기 위해 GNB/Footer 영역을 제외한 영역 중앙에 컴포넌트를 배치합니다.</p>
+                    </div>
+                  </div>
+
+                  <div class="itemBox">
+                    <h4>Popup</h4>
+                    <div class="grayContBox spliterWrap">
+                      <div class="left">
+                        <h5>Popup</h5>
+
+                        <div class="popupWrap">
+                          <div class="empty popup">
+                            <button type="button" class="ic-close">닫기</button>
+                            <div class="messageGroup">
+                              <p class="title">Data Not Found</p>
+                              <p>No Data 텍스트는 데이터가 존재하지 않을 때 "No data to display" 같은 텍스트를 보여주는 옵션입니다.</p>
+                            </div>
+                            <div class="btnArea">
+                              <button type="button" class="btn close">닫기</button>
+                              <button type="button" class="btn confirm">확인</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="right">
+                        <h5>Popup:Text Only</h5>
+
+                        <div class="popupWrap">
+                          <div class="empty popup">
+                            <button type="button" class="ic-close">닫기</button>
+                            <div class="messageGroup onlyTxt">
+                              <p class="title">Data Not Found</p>
+                              <p>No Data 텍스트는 데이터가 존재하지 않을 때 "No data to display" 같은 텍스트를 보여주는 옵션입니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                     
+                    </div>
+                    <div class="commentTxt">
+                      <p>Empty Popup은 전체화면의 중앙에 배치하며, 필요한 경우 버튼 및 이미지 사용이 가능합니다.</p>
+                    </div>
+                  </div>
+
+                  <div class="itemBox">
+                    <h4>Table</h4>
+                    <div class="borderBox" style="height: 256px; background-color: white;">
+                      <div class="tableArea" style="width: 883px; height: 113px;">
+                        <table>
+                          <colgroup>
+                            <col style="width: 70px;">
+                            <col style="width: 75px;">
+                            <col style="width: auto;">
+                            <col style="width: 200px;">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>번호</th>
+                              <th>프로그램</th>
+                              <th>기간</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><label class="checkbox" for="check_e"><input type="checkbox" name="checkbox" id="check_e" hidden checked><i></i></label></td>
+                              <td>16</td>
+                              <td><span class="textEmpty">Data Not Found</span></td>
+                              <td>2021.01.01 ~ 2021.12.31</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="commentTxt">
+                      <p>Table 내 데이터가 없을 경우 별도의 아이콘 및 버튼 없이  Empty 텍스트만 노출합니다.</p>
+                    </div>
+                  </div>
+                </div>
+                <!--// Usage -->
+
+              </div>
+              <!--// Disign Guide -->
+
+              <!-- Code -->
+              <div class="examples" style="display: none;">
+<!-- Full Page -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Full Page</h3>
+                  </div>
+                  
+                  <div class="codeBox">
+                    <div class="example align-row">
+                      <div class="empty fullPage">
+                        <div class="messageGroup">
+                          <p class="title">Data Not Found</p>
+                          <p>No Data 텍스트는 데이터가 존재하지 않을 때<br />"No data to display" 같은 텍스트를 보여주는 옵션입니다.</p>
+                        </div>
+                        <div class="btnArea">
+                          <button type="button" class="btn close">닫기</button>
+                          <button type="button" class="btn confirm">확인</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="codeTab">
+                      <a href="#" class="act">HTML</a>
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"empty fullPage"</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"messageGroup"</span>&gt;
+    &lt;<span class="obj">p</span> class=<span class="cls">"title"</span>&gt;Data Not Found&lt;/<span class="obj">p</span>&gt;
+    &lt;<span class="obj">p</span>&gt;No Data 텍스트는 데이터가 존재하지 않을 때 "No data to display" 같은 텍스트를 보여주는 옵션입니다.&lt;/<span class="obj">p</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"btnArea"</span>&gt;
+    &lt;<span class="obj">button</span> type="button" class=<span class="cls">"btn close"</span>&gt;닫기&lt;/<span class="obj">button</span>&gt;
+    &lt;<span class="obj">button</span> type="button" class=<span class="cls">"btn confirm"</span>&gt;확인&lt;/<span class="obj">button</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                    </div>
+                  </div>
+                </div>
+
+<!-- Popup -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Popup</h3>
+                  </div>
+
+                  <div class="codeBox">
+                    <div class="example align-row gray-100 center">
+                      <div class="popupWrap" style="width: 366px;">
+                        <div class="empty popup">
+                          <button type="button" class="ic-close">닫기</button>
+                          <div class="messageGroup">
+                            <p class="title">Data Not Found</p>
+                            <p>No Data 텍스트는 데이터가 존재하지 않을 때 "No data to display" 같은 텍스트를 보여주는 옵션입니다.</p>
+                          </div>
+                          <div class="btnArea">
+                            <button type="button" class="btn close">닫기</button>
+                            <button type="button" class="btn confirm">확인</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                    <div class="codeTab">
+                      <a href="#" class="act">HTML</a>
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"empty popup"</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"messageGroup"</span>&gt;
+    &lt;<span class="obj">p</span> class=<span class="cls">"title"</span>&gt;Data Not Found&lt;/<span class="obj">p</span>&gt;
+    &lt;<span class="obj">p</span>&gt;No Data 텍스트는 데이터가 존재하지 않을 때 "No data to display" 같은 텍스트를 보여주는 옵션입니다.&lt;/<span class="obj">p</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"btnArea"</span>&gt;
+    &lt;<span class="obj">button</span> type="button" class=<span class="cls">"btn close"</span>&gt;닫기&lt;/<span class="obj">button</span>&gt;
+    &lt;<span class="obj">button</span> type="button" class=<span class="cls">"btn confirm"</span>&gt;확인&lt;/<span class="obj">button</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                    </div>
+                  </div>
+                </div>
+
+<!-- Text only popup -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Text only popup</h3>
+                  </div>
+
+                  <div class="codeBox">
+                    <div class="example align-row gray-100 center">
+                      <div class="popupWrap" style="width: 366px;">
+                        <div class="empty popup">
+                          <button type="button" class="ic-close">닫기</button>
+                          <div class="messageGroup onlyTxt">
+                            <p class="title">Data Not Found</p>
+                            <p>No Data 텍스트는 데이터가 존재하지 않을 때 "No data to display" 같은 텍스트를 보여주는 옵션입니다.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                    <div class="codeTab">
+                      <a href="#" class="act">HTML</a>
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"empty popup"</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"messageGroup onlyTxt"</span>&gt;
+    &lt;<span class="obj">p</span> class=<span class="cls">"title"</span>&gt;Data Not Found&lt;/<span class="obj">p</span>&gt;
+    &lt;<span class="obj">p</span>&gt;No Data 텍스트는 데이터가 존재하지 않을 때 "No data to display" 같은 텍스트를 보여주는 옵션입니다.&lt;/<span class="obj">p</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;  
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                    </div>
+                  </div>
+                </div>
+
+<!-- Table -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Table</h3>
+                  </div>
+
+                  <div class="codeBox">
+                    <div class="example align-row center">
+                      <div class="tableArea" style="width: 883px; height: 113px;">
+                        <table>
+                          <colgroup>
+                            <col style="width: 70px;">
+                            <col style="width: 75px;">
+                            <col style="width: auto;">
+                            <col style="width: 200px;">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>번호</th>
+                              <th>프로그램</th>
+                              <th>기간</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><label class="checkbox" for="check_e"><input type="checkbox" name="checkbox" id="check_e" hidden checked><i></i></label></td>
+                              <td>16</td>
+                              <td><span class="textEmpty">Data Not Found</span></td>
+                              <td>2021.01.01 ~ 2021.12.31</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="codeTab">
+                      <a href="#" class="act">HTML</a>
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">span</span> class=<span class="cls">"textEmpty"</span>&gt;Data Not Found&lt;/<span class="obj">span</span>&gt;</code></pre>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CSS download-->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>CSS</h3>
+                    <p>해당 컴포넌트만 적용 가능한 CSS 파일입니다.</p>
+                    <p class="point">resest.css 가 없을 경우 깨질 수 있습니다. 컴포넌트 메인페이지에서 reset.css 파일을 다운로드 받아서 사용하세요.</p>
+                  </div>
+
+                  <div class="grayBox cssDown">
+                    <a href="#" onclick="downloadCssZip()">empty.css</a>
+                    <button type="button" class="ic-down" onclick="downloadCssZip()">파일 다운로드</button>
+                  </div>
+                </div>
+                <!--// CSS download -->
+
+              </div>
+              <!--// Code -->
+            </div>
+
+          </div>
+        </div>
+        <!--// contents -->
+
+        <!-- footer -->
+        <div class="footer">Copyright © Contentree JoongAng</div>
+        <!--// footer -->
+      </div>
+    </div>
+    
+    <script src="../assets/js/jquery-3.7.0.min.js"></script>
+    <script src="../assets/js/include_header.js"></script>
+    <script src="../assets/js/include_lnb.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        // Load initial content
+        $("#header").html(header_html);
+        $("#lnb").html(lnb_html);
+        lnbnav(2,3);
+
+        function lnbnav(main, sub) {
+          const menuBox = $('#lnb').find('.menuBox').eq(main);
+          menuBox.addClass('act');
+          menuBox.find('ul li').eq(sub).addClass('act');
+        }
+
+        // Toggle theme
+        const setTheme = (theme) => {
+          const htmlElement = document.documentElement;
+          htmlElement.className = theme;
+          const button = $('button[title="Toggle theme"]');
+          button.text(theme === 'dark' ? '라이트 모드' : '다크 모드');
+          localStorage.setItem('theme', theme);  // Save theme to local storage
+        };
+
+        // Bind click event to toggle button
+        $('button[title="Toggle theme"]').click(function () {
+          const currentTheme = document.documentElement.className;
+          setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+
+        // Load theme from local storage if exists
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          setTheme(savedTheme);
+        }
+      });
+
+      function downloadCssZip() {
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = '../assets/download/empty.zip'; // Replace with the actual path to your icon.zip file
+        link.download = 'empty.zip'; // Set the desired filename for download
+        link.click(); // Trigger the download
+      }
+    </script>
+  </body>
+</html>

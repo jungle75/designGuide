@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contentree JoongAng Design System</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <div id="header">
+      </div>
+      <!--// header -->
+
+      <div id="container">
+        <!-- leftMenu -->
+        <div id="lnb" class="leftMenu"></div>
+        <!--// leftMenu -->        
+
+        <!-- contents -->
+        <div class="contentWrap">
+          <div class="contentArea component">
+            <!-- 타이틀영역 -->
+            <div class="titleBox">
+              <h2>GNB</h2>
+              <p>내비게이션은 모든 웹사이트에서 중요한 부분입니다.<br />
+                내비게이션은 3가지로 GNB, SNB, FNB이며 화면 위치에 따라 분류됩니다.</p>
+            </div>
+            <!--// 타이틀영역 -->
+
+            <!-- 오브젝트 박스 -->
+            <div class="objectBox sky alignBottom right">
+              <img src="../assets/images/guide/GNB.png" alt="">
+            </div>
+            <!--// 오브젝트 박스 -->
+
+            <!-- 탭메뉴 -->
+            <div class="tabMenu">
+              <button class="act"><span>Design guide</span></button>
+              <button><span>Examples</span><span class="label">code</span></button>
+            </div>
+            <!--// 탭메뉴 -->
+
+            <div class="tabContainer">
+              <!-- Disign Guide -->
+              <div class="designGuide">
+                <!-- Anatomy -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Anatomy</h3>
+                  </div>
+                  
+  
+                  <div class="grayContBox GNBAnatomy" style="height: 238px;">
+                    <div class="GNBArea dark" style="width: 916px;">
+                      <div class="logo">LOGO</div>
+                      <ul class="GNB">
+                        <li><a href="#">nav1</a></li>
+                        <li class="act"><a href="#">nav2</a></li>
+                        <li><a href="#">nav3</a></li>
+                      </ul>
+                      <div class="iconGNB">
+                        <a href="#"><img src="../assets/images/icon/black/ic_user.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="guidePoint" style="left: 142px; top: 42px;"></div>
+                  </div>
+                  <div class="itemBox">
+                    <div>
+                      <p class="title">1. LOGO</p>
+                      <p>LOGO는 Home link 기능을 하며, 내비게이션 바 좌측에 위치합니다.</p>
+                      <p class="txtScript">포함되는 콘텐츠 : 로고, 메인메뉴, 프로필</p>
+                    </div>
+                    <div>
+                      <p class="title">2. Tabs</p>
+                      <p>내비게이션 바의 내비게이션 링크는 수평방향으로 펼쳐지며, 해당 페이지로 연결됩니다.</p>
+                    </div>
+                    <div>
+                      <p class="title">3. Icon area (optional)</p>
+                      <p>내비게이션 바 우측에 위치하며 상황에 따라 아이콘, 인풋, 버튼 등의 UI와 조합될 수 있습니다. </p>
+                    </div>
+                  </div>
+                </div>
+                <!--// Anatomy -->
+
+                <!-- Spec -->
+                <div class="detailArea"> 
+                  <div class="detailTitle">
+                    <h3>Spec</h3>
+                  </div>
+
+                  <div class="grayContBox GNBSpec" style="height: 233px;">
+                    <div class="GNBArea dark" style="width: 916px;">
+                      <div class="logo">LOGO</div>
+                      <ul class="GNB">
+                        <li><a href="#">nav1</a></li>
+                        <li class="act"><a href="#">nav2</a></li>
+                        <li><a href="#">nav3</a></li>
+                      </ul>
+                      <div class="iconGNB">
+                        <a href="#"><img src="../assets/images/icon/black/ic_user.svg" alt=""></a>
+                      </div>
+                    </div>
+
+                    <div class="guidePoint" style="left: 32px; top: 47px;"></div>
+                  </div>
+                  <div class="commentTxt">
+                    <p>일반적으로 가로값은 1920px을 원칙으로 합니다. </p>
+                    <p>LOGO와 menu 사이의 간격은 64px을 고정으로 합니다.</p>
+                    <p>Top menu 는 상황에 따라 텍스트 간 간격이 변경될 수 있습니다.</p>
+                  </div>
+                </div>
+                <!--// Spec -->
+                
+                <!-- States -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>States</h3>
+                    <p>Default, Active 2가지의 상태를 갖습니다.</p>
+                  </div>
+
+                  <div class="itemBox">
+                    <h4>GNB</h4>
+                    <div class="borderBox">
+                      <div class="spliterWrap" style="width: 100%; height: 194px;">
+                        <div class="alignCenter" style="background-color: var(--Jblack);">
+                          <div class="GNBArea dark" style="width: auto; padding: 0;">
+                            <ul class="GNB" style="margin: 0;">
+                              <li><a href="#">nav1</a></li>
+                              <li class="act"><a href="#">nav2</a></li>
+                              <li><a href="#">nav3</a></li>
+                              <li><a href="#">nav4</a></li>
+                              <li><a href="#">nav5</a></li>
+                            </ul>
+                          </div>
+                          <div class="guideTextCol" style="top: 16px; left: 16px;"><span style="color: var(--gray-400);">bg : J black</span></div>
+                        </div>
+  
+                        <div class="alignCenter" style="background-color: white;">
+                          <div class="GNBArea" style="width: 100%; height: 194px;">
+                            <ul class="GNB" style="margin: 0;">
+                              <li><a href="#">nav1</a></li>
+                              <li class="act"><a href="#">nav2</a></li>
+                              <li><a href="#">nav3</a></li>
+                              <li><a href="#">nav4</a></li>
+                              <li><a href="#">nav5</a></li>
+                            </ul>
+                          </div>
+                          <div class="guideTextCol" style="top: 16px; left: 16px;"><span style="color: var(--gray-400);">bg : White</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="commentTxt">
+                      <p>GNB는 BG 컬러에 따라 각각 다른 상태값으로 표현됩니다.</p>
+                    </div>
+                  </div>
+
+                  <div class="itemBox">
+                    <h4>Menu</h4>
+                    <div class="grayContBox" style="height: 300px;">
+                      <div class="GNBArea dark" style="width: 916px; margin-bottom: 88px;">
+                        <div class="logo">LOGO</div>
+                        <ul class="GNB">
+                          <li><a href="#">nav1</a></li>
+                          <li class="act">
+                            <a href="#">nav2</a>
+                            <ul class="subMenu">
+                              <li><a href="#">1st menu item</a></li>
+                              <li><a href="#" class="on">2nd menu item</a></li>
+                              <li><a href="#">3rd menu item</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">nav3</a></li>
+                        </ul>
+                        <div class="iconGNB">
+                          <a href="#"><img src="../assets/images/icon/black/ic_user.svg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="commentTxt">
+                      <p>GNB의 Sub menu가 있을 경우 해당 Top menu 호버시 드롭다운 메뉴가 펼쳐집니다.</p>
+                    </div>
+                  </div>
+                </div>
+                <!--// States -->
+
+              </div>
+              <!--// Disign Guide -->
+
+              <!-- Code -->
+              <div class="examples" style="display: none;">
+<!-- Basic -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Basic</h3>
+                    <p>GNB UI 기본 예시입니다.</p>
+                  </div>
+                  
+                  <div class="codeBox">
+                    <div class="example align-row">
+                      <div class="GNBArea dark">
+                        <div class="logo">LOGO</div>
+                        <ul class="GNB">
+                          <li><a href="#">nav1</a></li>
+                          <li class="act">
+                            <a href="#">nav2</a>
+                            <ul class="subMenu">
+                              <li><a href="#">1st menu item</a></li>
+                              <li><a href="#" class="on">2nd menu item</a></li>
+                              <li><a href="#">3rd menu item</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">nav3</a></li>
+                          <li><a href="#">nav4</a></li>
+                          <li><a href="#">nav5</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="codeTab">
+                      <a href="#" class="act">HTML</a>                      
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"GNBArea dark"</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"logo"</span>&gt;LOGO&lt;/<span class="obj">div</span>&gt;
+  &lt;<span class="obj">ul</span> class=<span class="cls">"GNB"</span>&gt;
+    &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav1&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+    &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
+      &lt;<span class="obj">a</span> href="#"&gt;nav2&lt;/<span class="obj">a</span>&gt;
+      &lt;<span class="obj">ul</span> class=<span class="cls">"subMenu"</span>&gt;
+        &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;1st menu item&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+        &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#" class=<span class="cls">"on"</span>&gt;2nd menu item&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+        &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;3rd menu item&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;/<span class="obj">ul</span>&gt;
+    &lt;/<span class="obj">li</span>&gt;
+    &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav3&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+    &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav4&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+    &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav5&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+  &lt;/<span class="obj">ul</span>&gt;  
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                    </div>                    
+                  </div>
+                </div>
+
+<!-- Color -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Color</h3>
+                    <p>GNB는 BG 컬러에 따라 각각 다른 상태값으로 표현됩니다.</p>
+                  </div>
+                
+                  <div class="codeBox">
+                    <div class="example align-col gray-100">
+                      <div class="GNBArea dark">
+                        <div class="logo">LOGO</div>
+                        <ul class="GNB">
+                          <li><a href="#">nav1</a></li>
+                          <li class="act">
+                            <a href="#">nav2</a>
+                          </li>
+                          <li><a href="#">nav3</a></li>
+                          <li><a href="#">nav4</a></li>
+                          <li><a href="#">nav5</a></li>
+                        </ul>
+                      </div>
+                      <div class="GNBArea">
+                        <div class="logo">LOGO</div>
+                        <ul class="GNB">
+                          <li><a href="#">nav1</a></li>
+                          <li>
+                            <a href="#" class="act">nav2</a>
+                          </li>
+                          <li><a href="#">nav3</a></li>
+                          <li><a href="#">nav4</a></li>
+                          <li><a href="#">nav5</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="codeTab">
+                      <a href="#" class="act">HTML</a>                      
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"GNBArea dark"</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"logo"</span>&gt;LOGO&lt;/<span class="obj">div</span>&gt;
+    &lt;<span class="obj">ul</span> class=<span class="cls">"GNB"</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav1&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav2&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav3&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav4&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav5&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+    &lt;/<span class="obj">ul</span>&gt;  
+  &lt;/<span class="obj">div</span>&gt;
+
+  &lt;<span class="obj">div</span> class=<span class="cls">"GNBArea"</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"logo"</span>&gt;LOGO&lt;/<span class="obj">div</span>&gt;
+    &lt;<span class="obj">ul</span> class=<span class="cls">"GNB"</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav1&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav2&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav3&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav4&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav5&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+    &lt;/<span class="obj">ul</span>&gt;  
+  &lt;/<span class="obj">div</span>&gt;</code></pre>
+                    </div>                    
+                  </div>
+                </div>
+
+<!-- Combination -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Combination</h3>
+                  </div>
+                
+                  <div class="itemBox">
+                    <h4>GNB + Icon</h4>
+                    <div class="codeBox">
+                      <div class="example align-row">
+                        <div class="GNBArea dark">
+                          <div class="logo">LOGO</div>
+                          <ul class="GNB">
+                            <li><a href="#">nav1</a></li>
+                            <li class="act"><a href="#">nav2</a></li>
+                            <li><a href="#">nav3</a></li>
+                            <li><a href="#">nav4</a></li>
+                            <li><a href="#">nav5</a></li>
+                          </ul>
+                          <div class="iconGNB">
+                            <a href="#"><img src="../assets/images/icon/black/ic_bell.svg" alt="알림 아이콘"></a>
+                            <a href="#"><img src="../assets/images/icon/black/ic_user.svg" alt="사용자 아이콘"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="codeTab">
+                        <a href="#" class="act">HTML</a>                      
+                      </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"GNBArea dark"</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"logo"</span>&gt;LOGO&lt;/<span class="obj">div</span>&gt;
+    &lt;<span class="obj">ul</span> class=<span class="cls">"GNB"</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav1&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav2&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav3&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav4&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav5&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+    &lt;/<span class="obj">ul</span>&gt;  
+    &lt;<span class="obj">div</span> class=<span class="cls">"iconGNB"</span>&gt;
+      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">img</span> alt="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4wMDAzIDIuODEyNUMxMS4wNjE0IDIuODEyNSAxMC4zMDAzIDMuNTczNjIgMTAuMzAwMyA0LjUxMjVWNS4zMTkyN0M5Ljc0NTExIDUuNTI2OTIgOS4xNDY1NyA1Ljg1NTI2IDguNjA5NjcgNi4zNTkyOUM3LjA3ODQyIDcuNzk2NzkgNi44NDQwNSA5LjQ1MzA1IDYuODU5NjcgMTAuMzkwNUM2Ljg2Mjc0IDEwLjU3NSA2Ljg3NDg5IDEwLjc2MjQgNi44ODcxOCAxMC45NTIxQzYuOTM3MzcgMTEuNzI3IDYuOTkwMDYgMTIuNTQwNCA2LjQzNzc5IDEzLjM0MzdDNi4xOTQ4NSAxMy42OTcgNS45NzcyNyAxMy45Mjk0IDUuNzk2NzggMTQuMTIyMkM1LjQ2NjUgMTQuNDc1IDUuMjYwNCAxNC42OTUyIDUuMjUwMjkgMTUuMjgxMkM1LjIzNDY3IDE2LjE4NzQgNS44NDQwNCAxNi43ODEyIDYuNDM3NzkgMTYuODU5M0gxMi4wMDAySDEyLjAwMDNIMTcuNTYyN0MxOC4xNTY0IDE2Ljc4MTIgMTguNzY1OCAxNi4xODc0IDE4Ljc1MDIgMTUuMjgxMkMxOC43NDAxIDE0LjY5NTIgMTguNTM0IDE0LjQ3NSAxOC4yMDM3IDE0LjEyMjJDMTguMDIzMiAxMy45Mjk0IDE3LjgwNTYgMTMuNjk3IDE3LjU2MjcgMTMuMzQzN0MxNy4wMTA0IDEyLjU0MDQgMTcuMDYzMSAxMS43MjcgMTcuMTEzMyAxMC45NTIxQzE3LjEyNTYgMTAuNzYyNCAxNy4xMzc3IDEwLjU3NSAxNy4xNDA4IDEwLjM5MDVDMTcuMTU2NCA5LjQ1MzA1IDE2LjkyMjEgNy43OTY3OSAxNS4zOTA4IDYuMzU5MjlDMTQuODUzOSA1Ljg1NTI5IDE0LjI1NTUgNS41MjY5NiAxMy43MDAzIDUuMzE5MzFWNC41MTI1QzEzLjcwMDMgMy41NzM2MiAxMi45MzkyIDIuODEyNSAxMi4wMDAzIDIuODEyNVpNMTEuOTkyNyAyMUMxMy4yNjU1IDIxIDE0LjI5NzQgMTkuOTY4MiAxNC4yOTc0IDE4LjY5NTNIMTEuOTkyN0g5LjY4Nzk5QzkuNjg3OTkgMTkuOTY4MiAxMC43MTk4IDIxIDExLjk5MjcgMjFaIiBmaWxsPSIjMTExMTExIi8+Cjwvc3ZnPgo="&gt;&lt;/<span class="obj">a</span>&gt;
+      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">img</span> alt="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS45OTkgMTFDMTQuMjA4MiAxMSAxNS45OTkgOS4yMDkxNCAxNS45OTkgN0MxNS45OTkgNC43OTA4NiAxNC4yMDgyIDMgMTEuOTk5IDNDOS43ODk4OCAzIDcuOTk5MDIgNC43OTA4NiA3Ljk5OTAyIDdDNy45OTkwMiA5LjIwOTE0IDkuNzg5ODggMTEgMTEuOTk5IDExWk0yMC45ODUxIDIwLjVDMjEuMDAwMiAyMC43NzU4IDIwLjc3NDkgMjEgMjAuNDk4OCAyMUgzLjQ5ODc4QzMuMjIyNjQgMjEgMi45OTczNCAyMC43NzU4IDMuMDEyNDQgMjAuNUMzLjI3MTg3IDE1Ljc2MiA3LjE5NTk5IDEyIDExLjk5ODggMTJDMTYuODAxNiAxMiAyMC43MjU3IDE1Ljc2MiAyMC45ODUxIDIwLjVaIiBmaWxsPSIjMTExMTExIi8+Cjwvc3ZnPgo="&gt;&lt;/<span class="obj">a</span>&gt;
+    &lt;/<span class="obj">div</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;</code></pre>
+                      </div>                    
+                    </div>
+                  </div>
+
+                  <div class="itemBox">
+                    <h4>GNB + Input</h4>
+                    <div class="codeBox">
+                      <div class="example align-row">
+                        <div class="GNBArea dark">
+                          <div class="logo">LOGO</div>
+                          <ul class="GNB">
+                            <li><a href="#">nav1</a></li>
+                            <li class="act"><a href="#">nav2</a></li>
+                            <li><a href="#">nav3</a></li>
+                          </ul>
+                          <div class="inputBox">
+                            <input type="text" name="" id="" placeholder="Search">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="codeTab">
+                        <a href="#" class="act">HTML</a>                      
+                      </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"GNBArea dark"</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"logo"</span>&gt;LOGO&lt;/<span class="obj">div</span>&gt;
+    &lt;<span class="obj">ul</span> class=<span class="cls">"GNB"</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav1&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav2&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav3&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav4&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+      &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav5&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+    &lt;/<span class="obj">ul</span>&gt;  
+    &lt;<span class="obj">div</span> class=<span class="cls">"inputBox"</span>&gt;
+      &lt;<span class="obj">input</span> tpye="text" name="" id="" placeholder="Search"&gt;
+    &lt;/<span class="obj">div</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;</code></pre>
+                      </div>                    
+                    </div>
+                  </div>
+                
+                </div>
+
+                <!-- CSS download-->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>CSS</h3>
+                    <p>해당 컴포넌트만 적용 가능한 CSS 파일입니다.</p>
+                    <p class="point">resest.css 가 없을 경우 깨질 수 있습니다. 컴포넌트 메인페이지에서 reset.css 파일을 다운로드 받아서 사용하세요.</p>
+                  </div>
+
+                  <div class="grayBox cssDown">
+                    <a href="#" onclick="downloadCssZip()">GNB.css</a>
+                    <button type="button" class="ic-down" onclick="downloadCssZip()">파일 다운로드</button>
+                  </div>
+                </div>
+                <!--// CSS download -->
+
+              </div>
+              <!--// Code -->
+            </div>
+
+          </div>
+        </div>
+        <!--// contents -->
+
+        <!-- footer -->
+        <div class="footer">Copyright © Contentree JoongAng</div>
+        <!--// footer -->
+      </div>
+    </div>
+    
+    <script src="../assets/js/jquery-3.7.0.min.js"></script>
+    <script src="../assets/js/include_header.js"></script>
+    <script src="../assets/js/include_lnb.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        // Load initial content
+        $("#header").html(header_html);
+        $("#lnb").html(lnb_html);
+        lnbnav(2,10);
+
+        function lnbnav(main, sub) {
+          const menuBox = $('#lnb').find('.menuBox').eq(main);
+          menuBox.addClass('act');
+          menuBox.find('ul li').eq(sub).addClass('act');
+        }
+
+        // Toggle theme
+        const setTheme = (theme) => {
+          const htmlElement = document.documentElement;
+          htmlElement.className = theme;
+          const button = $('button[title="Toggle theme"]');
+          button.text(theme === 'dark' ? '라이트 모드' : '다크 모드');
+          localStorage.setItem('theme', theme);  // Save theme to local storage
+        };
+
+        // Bind click event to toggle button
+        $('button[title="Toggle theme"]').click(function () {
+          const currentTheme = document.documentElement.className;
+          setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+
+        // Load theme from local storage if exists
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          setTheme(savedTheme);
+        }
+      });
+      function downloadCssZip() {
+          // Create a link element
+          const link = document.createElement('a');
+          link.href = '../assets/download/GNB.zip'; // Replace with the actual path to your icon.zip file
+          link.download = 'GNB.zip'; // Set the desired filename for download
+          link.click(); // Trigger the download
+        }
+    </script>
+  </body>
+</html>

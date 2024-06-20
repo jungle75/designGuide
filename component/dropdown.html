@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contentree JoongAng Design System</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <div id="header">
+      </div>
+      <!--// header -->
+
+      <div id="container">
+        <!-- leftMenu -->
+        <div id="lnb" class="leftMenu"></div>
+        <!--// leftMenu -->        
+
+        <!-- contents -->
+        <div class="contentWrap">
+          <div class="contentArea component">
+            <!-- 타이틀영역 -->
+            <div class="titleBox">
+              <h2>Dropdown</h2>
+              <p>선택 가능한 옵션 개수가 다수일 경우, 드롭다운 메뉴를 사용해 값을 노출합니다.</p>
+            </div>
+            <!--// 타이틀영역 -->
+
+            <!-- 오브젝트 박스 -->
+            <div class="objectBox sky">
+              <img src="../assets/images/guide/dropdown.png" alt="">
+            </div>
+            <!--// 오브젝트 박스 -->
+
+            <!-- 탭메뉴 -->
+            <div class="tabMenu">
+              <button class="act"><span>Design guide</span></button>
+              <button><span>Examples</span><span class="label">code</span></button>
+            </div>
+            <!--// 탭메뉴 -->
+
+            <div class="tabContainer">
+              <!-- Disign Guide -->
+              <div class="designGuide">
+                <!-- Anatomy -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Anatomy</h3>
+                  </div>
+                  
+  
+                  <div class="grayContBox dropAnatomy" style="height: 260px;">                    
+                    <div class="selectBox" style="height: 128px;">
+                      <div class="selected arrowActive">2nd menu item</div>
+                      <div class="Items">
+                        <ul class="ItemsList">
+                          <li>1st menu item</li>
+                          <li class="sameAsSelected">2nd menu item</li>
+                          <li>3rd menu item</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="guidePoint" style="left: 328px; top: 37px;"></div>
+                  </div>
+                  <div class="itemBox">                    
+                    <p><span class="title">1. Value(or Placeholder)</span>사용자가 옵션 리스트 중 하나의 옵션 선택시 표시되는 값입니다.</p>
+                    <p><span class="title">2. Dropdown Icon</span>아이콘 클릭시 드롭다운 메뉴가 나타납니다.</p>
+                    <p><span class="title">3. Dropdown menu</span>드롭다운 메뉴로 여러개의 항목으로 구성됩니다.</p>
+                  </div>
+                </div>
+                <!--// Anatomy -->
+
+                <!-- Spec -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Spec</h3>
+                    <p>Dropdown은 다음과 같이 Default, Large 사이즈를 제공합니다.</p>
+                  </div>
+
+                  <div class="grayContBox dropSpec" style="height: 244px;">
+                    <div class="selectBox">
+                      <div class="selected arrowActive">Dropdown menu</div>
+                    </div>
+                    <div class="selectBox large">
+                      <div class="selected arrowActive">Dropdown menu</div>
+                    </div>
+                    
+                    <div class="guidePoint" style="left: 412px; top: 55px; "></div>
+                    <div class="guideTextCol"><span>Default</span><span>Large</span></div>
+                  </div>
+
+                  <div class="commentTxt">
+                    <p>Dropdown은 기본적으로 Default 사이즈를 사용합니다.</p>
+                    <p>텍스트 값에 따라 width 는 변경될 수 있습니다.</p>
+                  </div>
+                </div>
+                <!--// Spec -->
+
+                <!-- States -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>States</h3>
+                    <p>Default, Active, Disabled 3가지의 상태를 갖습니다.</p>
+                  </div>
+
+                  <div class="itemBox colBox">
+                    <div class="detailArea">
+                      <h4>Dropdown</h4>
+                      <div class="grayContBox" style="height: 278px;">
+                        <div class="group" style="gap: 16px;">
+                          <div class="selectBox">
+                            <div class="selected">Dropdown menu</div>
+                          </div>
+                          <div class="selectBox">
+                            <div class="selected arrowActive">Dropdown menu</div>
+                          </div>
+                          <div class="selectBox">
+                            <div class="selected disabled">Dropdown menu</div>
+                          </div>
+                        </div>
+                        <div class="guideTextCol" style="left: 82px; gap: 34px;"><span>Default</span><span>Active</span><span>Disabled</span></div>
+                      </div>
+                    </div>
+                    
+                    <div class="detailArea">
+                      <h4>Active dropdown menu</h4>
+                      <div class="grayContBox" style="height: 278px;">
+                        <div class="selectBox" style="height: 128px;">
+                          <div class="selected srrowActive">Dropdown menu</div>
+                          <div class="Items">
+                            <ul class="ItemsList">
+                              <li>1st menu item</li>
+                              <li class="sameAsSelected">2nd menu item</li>
+                              <li>3rd menu item</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--// States -->
+
+              </div>
+              <!--// Disign Guide -->
+
+              <!-- Code -->
+              <div class="examples" style="display: none;">
+<!-- Basic -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Basic</h3>
+                    <p>Dropdown UI 기본 예시입니다. </p>
+                  </div>
+                  
+                  <div class="codeBox">
+                    <div class="example align-row">
+                      <div class="customSelect">
+                        <select>
+                          <option value="0">Dropdown</option>
+                          <option value="1">Dropdown 1</option>
+                          <option value="2">Dropdown 2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="codeTab" id="codeTab1">
+                      <a href="#" class="act" id="html1">HTML</a>
+                      <a href="#" id="script1">JavaScript</a>                
+                    </div>
+                    <div class="codeCont" id="codeHTML1">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"customSelect"</span>&gt;
+  &lt;<span class="obj">select</span>&gt;
+    &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
+    &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
+    &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
+  &lt;/<span class="obj">select</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                    </div>
+
+                    <div class="codeCont" id="codeJS1" style="display: none;">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="script"><code class="javascript">// Custom Select Initialization
+function initCustomSelect() {
+  const customSelects = document.querySelectorAll(".customSelect");
+  if (!customSelects.length) return;
+
+  customSelects.forEach(customSelect => {
+      const selectElement = customSelect.querySelector("select");
+      const selectLength = selectElement.length;
+
+      const selectSelected = document.createElement("div");
+      selectSelected.className = "selectSelected";
+      selectSelected.innerHTML = selectElement.options[selectElement.selectedIndex].innerHTML;
+      if (selectElement.disabled) selectSelected.classList.add("disabled");
+      customSelect.appendChild(selectSelected);
+
+      const selectItems = document.createElement("div");
+      selectItems.className = "selectItems selectHide";
+      const selectItemsList = document.createElement("ul");
+      selectItemsList.className = "selectItemsList";
+      selectItems.appendChild(selectItemsList);
+
+      for (let j = 1; j < selectLength; j++) {
+          const selectOption = document.createElement("li");
+          selectOption.innerHTML = selectElement.options[j].innerHTML;
+          selectOption.addEventListener("click", function () {
+              const parentSelect = this.closest(".customSelect").querySelector("select");
+              parentSelect.selectedIndex = Array.from(parentSelect.options).findIndex(option => option.innerHTML === this.innerHTML);
+              selectSelected.innerHTML = this.innerHTML;
+              selectItemsList.querySelectorAll("li").forEach(item => item.classList.remove("sameAsSelected"));
+              this.classList.add("sameAsSelected");
+              selectSelected.click();
+          });
+          selectItemsList.appendChild(selectOption);
+      }
+      customSelect.appendChild(selectItems);
+
+      selectSelected.addEventListener("click", function (e) {
+          if (this.classList.contains("disabled")) return;
+          e.stopPropagation();
+          closeAllSelect(this);
+          this.nextElementSibling.classList.toggle("selectHide");
+          this.classList.toggle("selectArrowActive");
+      });
+  });
+
+  function closeAllSelect(elmnt) {
+      document.querySelectorAll(".selectItems").forEach((selectItem, index) => {
+          if (selectItem.previousElementSibling !== elmnt) {
+              selectItem.classList.add("selectHide");
+              selectItem.previousElementSibling.classList.remove("selectArrowActive");
+          }
+      });
+  }
+
+  document.addEventListener("click", closeAllSelect);
+}
+
+document.addEventListener('DOMContentLoaded', initCustomSelect);</code></pre>
+                    </div>
+                  </div>
+                </div>
+<!-- Size -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Size</h3>
+                  </div>
+
+                  <div class="codeBox">
+                    <div class="example align-col">
+                      <div class="customSelect">
+                        <select>
+                          <option value="0">Dropdown menu</option>
+                          <option value="1">Dropdown menu1</option>
+                          <option value="2">Dropdown menu2</option>
+                        </select>
+                      </div>
+                      <div class="customSelect large">
+                        <select>
+                          <option value="0">Dropdown menu</option>
+                          <option value="1">Dropdown menu1</option>
+                          <option value="2">Dropdown menu2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="codeTab">
+                      <span class="act">HTML</span>
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"customSelect"</span>&gt;
+  &lt;<span class="obj">select</span>&gt;
+    &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
+    &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
+    &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
+  &lt;/<span class="obj">select</span>&gt;
+&lt;/<span class="obj">div</span>&gt;
+
+&lt;<span class="obj">div</span> class=<span class="cls">"customSelect large"</span>&gt;
+  &lt;<span class="obj">select</span>&gt;
+    &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
+    &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
+    &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
+  &lt;/<span class="obj">select</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                    </div>                    
+                  </div>
+                </div>
+
+<!-- Disabled status -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Disabled status</h3>
+                  </div>
+
+                  <div class="codeBox">
+                    <div class="example align-col">
+                      <div class="customSelect">
+                        <select disabled>
+                          <option value="0">Dropdown menu</option>
+                          <option value="1">Dropdown menu1</option>
+                          <option value="2">Dropdown menu2</option>
+                        </select>
+                      </div>
+                      <div class="customSelect large">
+                        <select disabled>
+                          <option value="0">Dropdown menu</option>
+                          <option value="1">Dropdown menu1</option>
+                          <option value="2">Dropdown menu2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="codeTab">
+                      <span class="act">HTML</span>
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"customSelect"</span>&gt;
+  &lt;<span class="obj">select</span> <span class="cls">disabled</span>&gt;
+    &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
+    &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
+    &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
+  &lt;/<span class="obj">select</span>&gt;
+&lt;/<span class="obj">div</span>&gt;
+
+&lt;<span class="obj">div</span> class=<span class="cls">"customSelect large"</span>&gt;
+  &lt;<span class="obj">select</span> <span class="cls">disabled</span>&gt;
+    &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
+    &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
+    &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
+  &lt;/<span class="obj">select</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
+                    </div>                    
+                  </div>
+                </div>
+
+                <!-- CSS download-->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>CSS</h3>
+                    <p>해당 컴포넌트만 적용 가능한 CSS 파일입니다.</p>
+                    <p class="point">resest.css 가 없을 경우 깨질 수 있습니다. 컴포넌트 메인페이지에서 reset.css 파일을 다운로드 받아서 사용하세요.</p>
+                  </div>
+
+                  <div class="grayBox cssDown">
+                    <a href="#" onclick="downloadCssZip()">dropdown.css</a>
+                    <button type="button" class="ic-down" onclick="downloadCssZip()">파일 다운로드</button>
+                  </div>
+                </div>
+                <!--// CSS download -->
+
+              </div>
+              <!--// Code -->
+            </div>
+
+          </div>
+        </div>
+        <!--// contents -->
+
+        <!-- footer -->
+        <div class="footer">Copyright © Contentree JoongAng</div>
+        <!--// footer -->
+      </div>
+    </div>
+    
+    <script src="../assets/js/jquery-3.7.0.min.js"></script>
+    <script src="../assets/js/include_header.js"></script>
+    <script src="../assets/js/include_lnb.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        // Load initial content
+        $("#header").html(header_html);
+        $("#lnb").html(lnb_html);
+        lnbnav(2,8);
+
+        function lnbnav(main, sub) {
+          const menuBox = $('#lnb').find('.menuBox').eq(main);
+          menuBox.addClass('act');
+          menuBox.find('ul li').eq(sub).addClass('act');
+        }
+
+        // Toggle theme
+        const setTheme = (theme) => {
+          const htmlElement = document.documentElement;
+          htmlElement.className = theme;
+          const button = $('button[title="Toggle theme"]');
+          button.text(theme === 'dark' ? '라이트 모드' : '다크 모드');
+          localStorage.setItem('theme', theme);  // Save theme to local storage
+        };
+
+        // Bind click event to toggle button
+        $('button[title="Toggle theme"]').click(function () {
+          const currentTheme = document.documentElement.className;
+          setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+
+        // Load theme from local storage if exists
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          setTheme(savedTheme);
+        }
+      });
+
+      function downloadCssZip() {
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = '../assets/download/dropdown.zip'; // Replace with the actual path to your icon.zip file
+        link.download = 'dropdown.zip'; // Set the desired filename for download
+        link.click(); // Trigger the download
+      }
+    </script>
+  </body>
+</html>
