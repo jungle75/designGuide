@@ -62,7 +62,7 @@
         const setTheme = (theme) => {
           const htmlElement = document.documentElement;
           htmlElement.className = theme;
-          const button = $('.themeBtn"]');
+          const button = $('.themeBtn');
           button.text(theme === 'dark' ? '라이트 모드' : '다크 모드');
           localStorage.setItem('theme', theme);  // Save theme to local storage
         };
