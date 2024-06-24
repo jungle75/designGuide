@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contentree JoongAng Design System</title>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/designGuide/assets/css/style.css" />
   </head>
   <body>
     <div id="wrap">
@@ -41,22 +41,24 @@
       </div>
     </div>
     
-    <script src="assets/js/jquery-3.7.0.min.js"></script>
-    <script src="assets/js/include_header.js"></script>
-    <script src="assets/js/ui.js"></script>
+    <script src="/designGuide/assets/js/jquery-3.7.0.min.js"></script>
+    <script src="/designGuide/assets/js/include_header.js"></script>
+    <script src="/designGuide/assets/js/include_lnb.js"></script>
+    <script src="/designGuide/assets/js/ui.js"></script>
     
     <script>
       $(document).ready(function(){
         // Load initial content
         $("#header").html(header_html);
         $("#lnb").html(lnb_html);
-        lnbnav(0,0);
+        lnbnav(3,);
 
-        function lnbnav(main,sub){
-        $('#lnb').find('.menuBox').eq(main).addClass('act');
-        $('#lnb').find('.menuBox ul').find('li').eq(sub).addClass('act');
-        };
-        
+        function lnbnav(main, sub) {
+          const menuBox = $('#lnb').find('.menuBox').eq(main);
+          menuBox.addClass('act');
+          menuBox.find('ul li').eq(sub).addClass('act');
+        }       
+
         // Toggle theme
         const setTheme = (theme) => {
           const htmlElement = document.documentElement;
