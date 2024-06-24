@@ -1760,6 +1760,7 @@ html, body {
   content: "";
 }
 .leftMenu .menuBox .title a {
+  width: calc(100% - 12px);
   display: flex;
   justify-content: left;
   align-items: center;
