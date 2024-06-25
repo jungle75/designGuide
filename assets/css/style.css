@@ -1945,6 +1945,7 @@ html, body {
 }
 .contentArea .detailArea .detailTitle > p {
   color: var(--text-gray);
+  line-height: 26px;
 }
 .contentArea .detailArea .inputBox {
   width: 260px;
