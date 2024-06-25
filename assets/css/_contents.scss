@@ -115,7 +115,7 @@
   .guideTextCol {position: absolute; z-index: 1; display: flex; flex-direction: column;
     span {display: block; @include mixin.font(12px,400,var(--gray-700),18px);}
   }
-  .commentTxt{
+  .commentTxt{margin-top: 8px;
     p {position: relative; @include mixin.font(16px,400,var(--logo-color),26px); padding-left: 12px;
       &::before {content: ""; display: block; width: 4px; height: 4px; background: var(--logo-color); border-radius: 50%; position: absolute; top: .7em; left: 2px;}
     }
