@@ -36,9 +36,10 @@
       h3 {margin-bottom: 4px;}
       .btn {position: absolute; right: 0; top: 24px;}
       .point {color: var(--text-strong);}
+      >p {color: var(--text-gray);}
     }    
     .inputBox {width: 260px;}    
-    .itemBox {display: flex; flex-direction: column; gap: 16px;
+    .itemBox {display: flex; flex-direction: column; gap: 8px;
       >p,  >div {color: var(--logo-color); line-height: 26px;
         .title {display: block; @include mixin.font(18px,700,var(--text-strong),28px); margin-bottom: 4px;}
         .txtScript {color: var(--gray-600);}
