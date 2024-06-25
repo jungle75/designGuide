@@ -60,7 +60,7 @@ a.btn {display: inline-flex;}
 .block {width: 100%;}
 
 // Text button
-.textBtn {@include mixin.flex(center,center,2px); cursor:pointer; outline:none; border:0; background-color:transparent; color: var(--Jblack); font-size: 14px; font-weight: 400;
+.textBtn {display: inline-flex; justify-content: center; align-items: center; gap: 2px; cursor:pointer; outline:none; border:0; background-color:transparent; color: var(--Jblack); font-size: 14px; font-weight: 400;
   &:hover, &:active {color: var(--gray-800);}
   &.blue {color: var(--blue-500);}
   &.blue:hover, &.blue:active {color: var(--blue-active);}
