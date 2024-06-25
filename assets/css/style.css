@@ -3218,3 +3218,7 @@ html, body {
 .dark .cssDown .ic-down {
   filter: invert(1) !important;
 }
+
+.gap-16 {
+  gap: 16px !important;
+}
