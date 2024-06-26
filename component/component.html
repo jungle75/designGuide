@@ -41,7 +41,7 @@
                 <p>컴포넌트를 적용하기 위해서는 개발 환경에 CSS 파일 업데이트가 필요합니다.</p>
                 <div class="commentTxt">
                   <p>reset.css를 포함한 전체 컴포넌트를 다운 받을 경우 style.min.css (경량화 버전)</p>
-                  <p>필요한 컴포넌트만 다운 받을 경우 reset.css</p>
+                  <p>필요한 컴포넌트만 다운 받을 경우 추가 적용이 필요한 reset.css</p>
                 </div>
               </div>
               <div class="btnArea">
@@ -314,7 +314,7 @@
       function downloadComponentZip() {
         // Create a link element
         const link = document.createElement('a');
-        link.href = '../assets/download/component.zip'; // Replace with the actual path to your icon.zip file
+        link.href = '../assets/download/component.min.zip'; // Replace with the actual path to your icon.zip file
         link.download = 'component.zip'; // Set the desired filename for download
         link.click(); // Trigger the download
       }
