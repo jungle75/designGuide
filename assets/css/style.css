@@ -1679,6 +1679,7 @@ html, body {
   border: 0;
   background-color: transparent;
   flex: 1;
+  font-size: 16px;
 }
 #header .rightItem .themeBtn {
   display: flex;

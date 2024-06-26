@@ -17,6 +17,26 @@ $('.tabMenu button').click(function () {
 // Initially show the correct content based on the active tab
 $('.tabMenu button.act').trigger('click');
 
+// 탭관련 스크립트
+const tabs1 = document.querySelectorAll('#tabs1 a');
+tabs1.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // 모든 탭에서 'act' 클래스 제거
+    tabs1.forEach(t => t.classList.remove('act'));
+    // 클릭된 탭에 'act' 클래스 추가
+    tab.classList.add('act');
+  });
+});
+
+const tabs2 = document.querySelectorAll('#tabs2 a');
+tabs2.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // 모든 탭에서 'act' 클래스 제거
+    tabs2.forEach(t => t.classList.remove('act'));
+    // 클릭된 탭에 'act' 클래스 추가
+    tab.classList.add('act');
+  });
+});
 
 // 탭 버튼 클릭 이벤트 처리
 $('#codeHTML').show();
@@ -77,7 +97,7 @@ $('.ic-copy').click(function() {
     }
 });
         
-// 좌측네비게이션 정의
+// 공통적으로 사용될 함수 정의
 function setupSideNav(navId) {
   var nav = document.getElementById(navId);
   var links = nav.querySelectorAll('a');
@@ -122,23 +142,61 @@ subMenuLinks.forEach(function(link) {
   });
 });
 
-// 탭관련 스크립트
-const tabs1 = document.querySelectorAll('#tabs1 a');
-tabs1.forEach(tab => {
-  tab.addEventListener('click', () => {
-    // 모든 탭에서 'act' 클래스 제거
-    tabs1.forEach(t => t.classList.remove('act'));
-    // 클릭된 탭에 'act' 클래스 추가
-    tab.classList.add('act');
-  });
-});
+// 드롭다운 관련
+function initCustomSelect() {
+  const customSelects = document.querySelectorAll(".customSelect");
+  if (!customSelects.length) return;
 
-const tabs2 = document.querySelectorAll('#tabs2 a');
-tabs2.forEach(tab => {
-  tab.addEventListener('click', () => {
-    // 모든 탭에서 'act' 클래스 제거
-    tabs2.forEach(t => t.classList.remove('act'));
-    // 클릭된 탭에 'act' 클래스 추가
-    tab.classList.add('act');
+  customSelects.forEach(customSelect => {
+      const selectElement = customSelect.querySelector("select");
+      const selectLength = selectElement.length;
+
+      const selectSelected = document.createElement("div");
+      selectSelected.className = "selectSelected";
+      selectSelected.innerHTML = selectElement.options[selectElement.selectedIndex].innerHTML;
+      if (selectElement.disabled) selectSelected.classList.add("disabled");
+      customSelect.appendChild(selectSelected);
+
+      const selectItems = document.createElement("div");
+      selectItems.className = "selectItems selectHide";
+      const selectItemsList = document.createElement("ul");
+      selectItemsList.className = "selectItemsList";
+      selectItems.appendChild(selectItemsList);
+
+      for (let j = 1; j < selectLength; j++) {
+          const selectOption = document.createElement("li");
+          selectOption.innerHTML = selectElement.options[j].innerHTML;
+          selectOption.addEventListener("click", function () {
+              const parentSelect = this.closest(".customSelect").querySelector("select");
+              parentSelect.selectedIndex = Array.from(parentSelect.options).findIndex(option => option.innerHTML === this.innerHTML);
+              selectSelected.innerHTML = this.innerHTML;
+              selectItemsList.querySelectorAll("li").forEach(item => item.classList.remove("sameAsSelected"));
+              this.classList.add("sameAsSelected");
+              selectSelected.click();
+          });
+          selectItemsList.appendChild(selectOption);
+      }
+      customSelect.appendChild(selectItems);
+
+      selectSelected.addEventListener("click", function (e) {
+          if (this.classList.contains("disabled")) return;
+          e.stopPropagation();
+          closeAllSelect(this);
+          this.nextElementSibling.classList.toggle("selectHide");
+          this.classList.toggle("selectArrowActive");
+      });
   });
-});
+
+  function closeAllSelect(elmnt) {
+      document.querySelectorAll(".selectItems").forEach((selectItem, index) => {
+          if (selectItem.previousElementSibling !== elmnt) {
+              selectItem.classList.add("selectHide");
+              selectItem.previousElementSibling.classList.remove("selectArrowActive");
+          }
+      });
+  }
+
+  document.addEventListener("click", closeAllSelect);
+}
+
+document.addEventListener('DOMContentLoaded', initCustomSelect);
