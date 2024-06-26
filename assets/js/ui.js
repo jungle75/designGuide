@@ -17,6 +17,27 @@ $('.tabMenu button').click(function () {
 // Initially show the correct content based on the active tab
 $('.tabMenu button.act').trigger('click');
 
+// 탭관련 스크립트
+const tabs1 = document.querySelectorAll('#tabs1 a');
+tabs1.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // 모든 탭에서 'act' 클래스 제거
+    tabs1.forEach(t => t.classList.remove('act'));
+    // 클릭된 탭에 'act' 클래스 추가
+    tab.classList.add('act');
+  });
+});
+
+const tabs2 = document.querySelectorAll('#tabs2 a');
+tabs2.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // 모든 탭에서 'act' 클래스 제거
+    tabs2.forEach(t => t.classList.remove('act'));
+    // 클릭된 탭에 'act' 클래스 추가
+    tab.classList.add('act');
+  });
+});
+
 // 탭 버튼 클릭 이벤트 처리
 $('#codeHTML').show();
 
@@ -179,25 +200,3 @@ function initCustomSelect() {
 }
 
 document.addEventListener('DOMContentLoaded', initCustomSelect);
-
-
-// 탭관련 스크립트
-const tabs1 = document.querySelectorAll('#tabs1 a');
-tabs1.forEach(tab => {
-  tab.addEventListener('click', () => {
-    // 모든 탭에서 'act' 클래스 제거
-    tabs1.forEach(t => t.classList.remove('act'));
-    // 클릭된 탭에 'act' 클래스 추가
-    tab.classList.add('act');
-  });
-});
-
-const tabs2 = document.querySelectorAll('#tabs2 a');
-tabs2.forEach(tab => {
-  tab.addEventListener('click', () => {
-    // 모든 탭에서 'act' 클래스 제거
-    tabs2.forEach(t => t.classList.remove('act'));
-    // 클릭된 탭에 'act' 클래스 추가
-    tab.classList.add('act');
-  });
-});
