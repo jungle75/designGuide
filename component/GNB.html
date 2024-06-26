@@ -51,7 +51,6 @@
                   <div class="detailTitle">
                     <h3>Anatomy</h3>
                   </div>
-                  
   
                   <div class="grayContBox GNBAnatomy" style="height: 238px;">
                     <div class="GNBArea dark" style="width: 916px;">
@@ -202,7 +201,7 @@
                     <div class="example align-row">
                       <div class="GNBArea dark">
                         <div class="logo">LOGO</div>
-                        <ul class="GNB">
+                        <ul class="GNB" id="GNB1">
                           <li><a href="#">nav1</a></li>
                           <li class="act">
                             <a href="#">nav2</a>
@@ -218,10 +217,12 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="codeTab">
-                      <a href="#" class="act">HTML</a>                      
+
+                    <div class="codeTab" id="codeTab1">
+                      <a href="#" class="act" id="html1">HTML</a>
+                      <a href="#" id="script1">JavaScript</a>                
                     </div>
-                    <div class="codeCont">
+                    <div class="codeCont" id="codeHTML1">
                       <button type="button" class="ic-copy">클립보드에 복사</button>
                       <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"GNBArea dark"</span>&gt;
   &lt;<span class="obj">div</span> class=<span class="cls">"logo"</span>&gt;LOGO&lt;/<span class="obj">div</span>&gt;
@@ -231,7 +232,7 @@
       &lt;<span class="obj">a</span> href="#"&gt;nav2&lt;/<span class="obj">a</span>&gt;
       &lt;<span class="obj">ul</span> class=<span class="cls">"subMenu"</span>&gt;
         &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;1st menu item&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
-        &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#" class=<span class="cls">"on"</span>&gt;2nd menu item&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
+        &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;2nd menu item&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
         &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;3rd menu item&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
       &lt;/<span class="obj">ul</span>&gt;
     &lt;/<span class="obj">li</span>&gt;
@@ -240,7 +241,53 @@
     &lt;<span class="obj">li</span>&gt;&lt;<span class="obj">a</span> href="#"&gt;nav5&lt;/<span class="obj">a</span>&gt;&lt;/<span class="obj">li</span>&gt;
   &lt;/<span class="obj">ul</span>&gt;  
 &lt;/<span class="obj">div</span>&gt;</code></pre>
-                    </div>                    
+                    </div>
+
+                    <div class="codeCont" id="codeJS1" style="display: none;">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="script"><code class="javascript">document.addEventListener('DOMContentLoaded', function() {
+  // Select all GNB lists
+  const allGNBs = document.querySelectorAll('.GNB');
+
+  allGNBs.forEach(function(GNB) {
+      const navItems = GNB.querySelectorAll('li > a');
+      
+      navItems.forEach(function(navItem) {
+          navItem.addEventListener('click', function(event) {
+              const parentLi = navItem.parentElement;
+              const isActive = parentLi.classList.contains('act');
+              
+              // Remove 'act' class from all other nav items within the same GNB
+              GNB.querySelectorAll('li').forEach(function(li) {
+                  li.classList.remove('act');
+              });
+              
+              // Toggle 'act' class on the clicked nav item
+              if (!isActive) {
+                  parentLi.classList.add('act');
+              } else {
+                  parentLi.classList.remove('act');
+              }
+
+              // Prevent default anchor behavior
+              event.preventDefault();
+              event.stopPropagation();
+          });
+      });
+
+      // Add click event listeners to submenu items to prevent closing the submenu
+      const subMenuItems = GNB.querySelectorAll('.subMenu a');
+      
+      subMenuItems.forEach(function(subMenuItem) {
+          subMenuItem.addEventListener('click', function(event) {
+              // Prevent default anchor behavior
+              event.preventDefault();
+              event.stopPropagation();
+          });
+      });
+  });
+});</code></pre>
+                    </div>
                   </div>
                 </div>
 
@@ -255,7 +302,7 @@
                     <div class="example align-col gray-100">
                       <div class="GNBArea dark">
                         <div class="logo">LOGO</div>
-                        <ul class="GNB">
+                        <ul class="GNB" id="GNB2">
                           <li><a href="#">nav1</a></li>
                           <li class="act">
                             <a href="#">nav2</a>
@@ -267,10 +314,10 @@
                       </div>
                       <div class="GNBArea">
                         <div class="logo">LOGO</div>
-                        <ul class="GNB">
+                        <ul class="GNB" id="GNB3">
                           <li><a href="#">nav1</a></li>
-                          <li>
-                            <a href="#" class="act">nav2</a>
+                          <li class="act">
+                            <a href="#">nav2</a>
                           </li>
                           <li><a href="#">nav3</a></li>
                           <li><a href="#">nav4</a></li>
@@ -320,7 +367,7 @@
                       <div class="example align-row">
                         <div class="GNBArea dark">
                           <div class="logo">LOGO</div>
-                          <ul class="GNB">
+                          <ul class="GNB" id="GNB4">
                             <li><a href="#">nav1</a></li>
                             <li class="act"><a href="#">nav2</a></li>
                             <li><a href="#">nav3</a></li>
@@ -362,7 +409,7 @@
                       <div class="example align-row">
                         <div class="GNBArea dark">
                           <div class="logo">LOGO</div>
-                          <ul class="GNB">
+                          <ul class="GNB" id="GNB5">
                             <li><a href="#">nav1</a></li>
                             <li class="act"><a href="#">nav2</a></li>
                             <li><a href="#">nav3</a></li>
@@ -464,13 +511,58 @@
           setTheme(savedTheme);
         }
       });
+
       function downloadCssZip() {
-          // Create a link element
-          const link = document.createElement('a');
-          link.href = '../assets/download/GNB.zip'; // Replace with the actual path to your icon.zip file
-          link.download = 'GNB.zip'; // Set the desired filename for download
-          link.click(); // Trigger the download
-        }
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = '../assets/download/GNB.zip'; // Replace with the actual path to your icon.zip file
+        link.download = 'GNB.zip'; // Set the desired filename for download
+        link.click(); // Trigger the download
+      }
+        
+    // GNB관련 스크립트
+    document.addEventListener('DOMContentLoaded', function() {
+      // Select all GNB lists
+      const allGNBs = document.querySelectorAll('.GNB');
+
+      allGNBs.forEach(function(GNB) {
+          const navItems = GNB.querySelectorAll('li > a');
+          
+          navItems.forEach(function(navItem) {
+              navItem.addEventListener('click', function(event) {
+                  const parentLi = navItem.parentElement;
+                  const isActive = parentLi.classList.contains('act');
+                  
+                  // Remove 'act' class from all other nav items within the same GNB
+                  GNB.querySelectorAll('li').forEach(function(li) {
+                      li.classList.remove('act');
+                  });
+                  
+                  // Toggle 'act' class on the clicked nav item
+                  if (!isActive) {
+                      parentLi.classList.add('act');
+                  } else {
+                      parentLi.classList.remove('act');
+                  }
+
+                  // Prevent default anchor behavior
+                  event.preventDefault();
+                  event.stopPropagation();
+              });
+          });
+
+          // Add click event listeners to submenu items to prevent closing the submenu
+          const subMenuItems = GNB.querySelectorAll('.subMenu a');
+          
+          subMenuItems.forEach(function(subMenuItem) {
+              subMenuItem.addEventListener('click', function(event) {
+                  // Prevent default anchor behavior
+                  event.preventDefault();
+                  event.stopPropagation();
+              });
+          });
+      });
+    });
     </script>
   </body>
 </html>

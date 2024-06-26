@@ -17,26 +17,6 @@ $('.tabMenu button').click(function () {
 // Initially show the correct content based on the active tab
 $('.tabMenu button.act').trigger('click');
 
-// 탭관련 스크립트
-const tabs1 = document.querySelectorAll('#tabs1 a');
-tabs1.forEach(tab => {
-  tab.addEventListener('click', () => {
-    // 모든 탭에서 'act' 클래스 제거
-    tabs1.forEach(t => t.classList.remove('act'));
-    // 클릭된 탭에 'act' 클래스 추가
-    tab.classList.add('act');
-  });
-});
-
-const tabs2 = document.querySelectorAll('#tabs2 a');
-tabs2.forEach(tab => {
-  tab.addEventListener('click', () => {
-    // 모든 탭에서 'act' 클래스 제거
-    tabs2.forEach(t => t.classList.remove('act'));
-    // 클릭된 탭에 'act' 클래스 추가
-    tab.classList.add('act');
-  });
-});
 
 // 탭 버튼 클릭 이벤트 처리
 $('#codeHTML').show();
@@ -97,7 +77,7 @@ $('.ic-copy').click(function() {
     }
 });
         
-// 공통적으로 사용될 함수 정의
+// 좌측네비게이션 정의
 function setupSideNav(navId) {
   var nav = document.getElementById(navId);
   var links = nav.querySelectorAll('a');
@@ -139,5 +119,26 @@ subMenuLinks.forEach(function(link) {
 
     // 클릭된 <a> 태그에 on 클래스 추가
     this.classList.add('on');
+  });
+});
+
+// 탭관련 스크립트
+const tabs1 = document.querySelectorAll('#tabs1 a');
+tabs1.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // 모든 탭에서 'act' 클래스 제거
+    tabs1.forEach(t => t.classList.remove('act'));
+    // 클릭된 탭에 'act' 클래스 추가
+    tab.classList.add('act');
+  });
+});
+
+const tabs2 = document.querySelectorAll('#tabs2 a');
+tabs2.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // 모든 탭에서 'act' 클래스 제거
+    tabs2.forEach(t => t.classList.remove('act'));
+    // 클릭된 탭에 'act' 클래스 추가
+    tab.classList.add('act');
   });
 });
