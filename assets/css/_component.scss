@@ -4,7 +4,7 @@
 /******************************
   버튼 정의
 *******************************/ 
-.btn {@include mixin.flex(center,center,4px); cursor:pointer; outline:none; border:0; background-color:transparent; border-radius: 5px; padding: 0 16px;
+.btn {display: inline-flex; justify-content: center; align-items: center; gap: 4px; outline:none; border:0; background-color:transparent; border-radius: 5px; padding: 0 16px; cursor:pointer;
 
   // size
   &.large {height: 48px; font-size: 18px; font-weight: 500;}
