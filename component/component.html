@@ -22,242 +22,245 @@
 
         <!-- contents -->
         <div class="contentWrap">
-          <div class="contentArea subMain component">
-            <!-- 타이틀영역 -->
-            <div class="titleBox">
-              <h2>Component</h2>
-              <p>컴포넌트(Component)는 사용자 인터페이스를 구성하는 요소입니다.<br />
-                목적에 따라 Action, Input, Containmnet, Status, Selection, Navigation등의 범주로 구성하며 조합하여 사용할 수 있습니다.</p>
+          <div class="contentArea">
+
+            <div class="contents subMain component">
+              <!-- 타이틀영역 -->
+              <div class="titleBox">
+                <h2>Component</h2>
+                <p>컴포넌트(Component)는 사용자 인터페이스를 구성하는 요소입니다.<br />
+                  목적에 따라 Action, Input, Containmnet, Status, Selection, Navigation등의 범주로 구성하며 조합하여 사용할 수 있습니다.</p>
+              </div>
+              <!--// 타이틀영역 -->
+
+              <!-- 다운로드 영역 -->
+              <div class="detailArea">
+                <div class="detailTitle">
+                  <h4 class="font24">다운로드</h4>
+                </div>
+                              
+                <div class="commentDown">
+                  <span>컴포넌트를 적용하기 위해서는 개발 환경에 CSS 파일 업데이트가 필요합니다.</span>
+                  <p>reset.css를 포함한 전체 컴포넌트를 다운 받을 경우 style.min.css (경량화 버전)</p>
+                  <p>필요한 컴포넌트만 다운 받을 경우 추가 적용이 필요한 reset.css</p>
+                </div>
+                <div class="btnArea">
+                  <button type="button" class="btn medium success ic ic-down" onclick="downloadComponentZip()">component.min</button>
+                  <button type="button" class="btn medium secondary ic ic-down" onclick="downloadResetZip()">reset</button>
+                </div>
+
+              </div>
+              <!--// 다운로드 영역 -->
+
+              <!-- Action -->
+              <div class="detailArea">
+                <div class="detailTitle">
+                  <h3>Action</h3>
+                </div>
+                
+                <div class="typeTileArea">
+                  <dl class="item" onclick="location.href='boxbutton.html';">
+                    <dt class="peach">
+                      <img src="../assets/images/guide/img_component_action01.png" alt="Box button를 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">Box button</p>
+                      <p>Box button은 가장 일반적인 버튼입니다.<br />
+                        화면의 컨텐츠 영역에 배치하여 화면 내 주요한 액션을<br />실행하는 버튼으로 사용합니다.</p>
+                    </dd>
+                  </dl>
+
+                  <dl class="item" onclick="location.href='textbutton.html';">
+                    <dt class="peach">
+                      <img src="../assets/images/guide/img_component_action02.png" alt="Text button를 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">Text button</p>
+                      <p>주로 메인 액션에 대한 부가적인 행동이나, 한 페이지<br />
+                        내에 다양한 기능을 담아야 할 경우 Text Button을<br />
+                        사용합니다.</p>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <!--// Action -->
+
+              <!-- Input -->
+              <div class="detailArea">
+                <div class="detailTitle">
+                  <h3>Input</h3>
+                </div>
+                
+                <div class="typeTileArea">
+                  <dl class="item" onclick="location.href='input.html';">
+                    <dt class="peach">
+                      <img src="../assets/images/guide/img_component_input01.png" alt="input을 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">Input</p>
+                      <p>Input은 문자, 숫자, 기호등을 입력하고 편집할 수 있는<br />입력 컴포넌트입니다.</p>
+                    </dd>
+                  </dl>
+
+                  <dl class="item" onclick="location.href='empty.html';">
+                    <dt class="peach">
+                      <img src="../assets/images/guide/img_component_input02.png" alt="Empty를 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">Empty</p>
+                      <p>제공된 데이터가 없을 때 표시됩니다.</p>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <!--// Input -->
+
+              <!-- Containment -->
+              <div class="detailArea">
+                <div class="detailTitle">
+                  <h3>Containment</h3>
+                </div>
+                
+                <div class="typeTileArea">
+                  <dl class="item" onclick="location.href='table.html';">
+                    <dt class="purple">
+                      <img src="../assets/images/guide/img_component_containment01.png" alt="input을 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">Table</p>
+                      <p>Table에는 데이터가 표시되며 데이터를 조회 / 입력<br />
+                        할 수 있습니다.</p>
+                    </dd>
+                  </dl>
+
+                  <dl class="item" onclick="location.href='popup.html';">
+                    <dt class="purple">
+                      <img src="../assets/images/guide/img_component_containment02.png" alt="Empty를 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">Popup</p>
+                      <p>Popup은 사용자에게 중요한 정보를 전달하거나<br />
+                        사용자의 선택을 요청하기 위해 나타나는 모달 형태의<br />컴포넌트입니다.</p>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <!--// Containment -->
+
+              <!-- Status -->
+              <div class="detailArea">
+                <div class="detailTitle">
+                  <h3>Status</h3>
+                </div>
+                
+                <div class="typeTileArea">
+                  <dl class="item" onclick="location.href='pagination.html';">
+                    <dt class="purple">
+                      <img src="../assets/images/guide/img_component_status01.png" alt="input을 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">Pagination</p>
+                      <p>Pagination을 사용하여 긴 목록을 여러 페이지로<br />
+                        나눌 수 있으며, 한 번에 한 페이지만 로드됩니다.</p>
+                    </dd>
+                  </dl>
+
+                  <dl class="item" onclick="location.href='pageIndicator.html';">
+                    <dt class="purple">
+                      <img src="../assets/images/guide/img_component_status02.png" alt="Empty를 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">Page indicator</p>
+                      <p>숫자 혹은 표식(점)을 통해 전체 정보의 양과<br />
+                        현재 사용자가 속한 지점을 안내합니다.</p>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <!--// Status -->
+
+              <!-- Selection -->
+              <div class="detailArea">
+                <div class="detailTitle">
+                  <h3>Selection</h3>
+                </div>
+                
+                <div class="typeTileArea">
+                  <dl class="item" onclick="location.href='dropdown.html';">
+                    <dt class="sky">
+                      <img src="../assets/images/guide/img_component_selection01.png" alt="input을 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">Dropdown</p>
+                      <p>선택 가능한 옵션 개수가 다수일 경우, 드롭다운 메뉴를<br />사용해 값을 노출합니다.</p>
+                    </dd>
+                  </dl>
+
+                  <dl class="item" onclick="location.href='selectionControls.html';">
+                    <dt class="sky">
+                      <img src="../assets/images/guide/img_component_selection02.png" alt="Empty를 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">Selection controls</p>
+                      <p>Checkbox, Radio, Toggle 등 옵션을 선택하는<br />기능의 UI를 정의합니다.</p>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <!--// Selection -->
+
+              <!-- Navigation -->
+              <div class="detailArea">
+                <div class="detailTitle">
+                  <h3>Navigation</h3>
+                </div>
+                
+                <div class="typeTileArea">
+                  <dl class="item" onclick="location.href='GNB.html';">
+                    <dt class="sky">
+                      <img src="../assets/images/guide/img_component_nav01.png" alt="input을 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">GNB <span>(Global Navigation Bar)</span></p>
+                      <p>GNB는 수평으로 화면 상단에 위치한 탐색메뉴입니다.</p>
+                    </dd>
+                  </dl>
+
+                  <dl class="item" onclick="location.href='SNB.html';">
+                    <dt class="sky">
+                      <img src="../assets/images/guide/img_component_nav02.png" alt="Empty를 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">SNB <span>(Side Navigation Bar)</span></p>
+                      <p>SNB는 수직으로 화면 좌측에 위치하며, 사용자가<br />세부항목에 빠르게 접근할 수 있도록 도와줍니다.</p>
+                    </dd>
+                  </dl>
+
+                  <dl class="item" onclick="location.href='FNB.html';">
+                    <dt class="sky">
+                      <img src="../assets/images/guide/img_component_nav03.png" alt="Empty를 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">FNB <span>(Foot Navigation Bar)</span></p>
+                      <p>웹사이트 내 모든 페이지 하단에 위치하는<br />
+                        컴포넌트입니다.</p>
+                    </dd>
+                  </dl>
+
+                  <dl class="item" onclick="location.href='tabs.html';">
+                    <dt class="sky">
+                      <img src="../assets/images/guide/img_component_nav04.png" alt="Empty를 상징하는 이미지">
+                    </dt>
+                    <dd>
+                      <p class="title">Tabs</p>
+                      <p>탭(Tabs)은 페이지 내 유사한 정보를 그룹핑하여<br />
+                        콘텐츠를 정리할 때 사용합니다.</p>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <!--// Navigation -->
             </div>
-            <!--// 타이틀영역 -->
-
-            <!-- 다운로드 영역 -->
-            <div class="detailArea">
-              <div class="detailTitle">
-                <h4 class="font24">다운로드</h4>
-              </div>
-                            
-              <div class="commentDown">
-                <span>컴포넌트를 적용하기 위해서는 개발 환경에 CSS 파일 업데이트가 필요합니다.</span>
-                <p>reset.css를 포함한 전체 컴포넌트를 다운 받을 경우 style.min.css (경량화 버전)</p>
-                <p>필요한 컴포넌트만 다운 받을 경우 추가 적용이 필요한 reset.css</p>
-              </div>
-              <div class="btnArea">
-                <button type="button" class="btn medium success ic ic-down" onclick="downloadComponentZip()">component.min</button>
-                <button type="button" class="btn medium secondary ic ic-down" onclick="downloadResetZip()">reset</button>
-              </div>
-
-            </div>
-            <!--// 다운로드 영역 -->
-            
-            <!-- Action -->
-            <div class="detailArea">
-              <div class="detailTitle">
-                <h3>Action</h3>
-              </div>
-              
-              <div class="typeTileArea">
-                <dl class="item" onclick="location.href='boxbutton.html';">
-                  <dt class="peach">
-                    <img src="../assets/images/guide/img_component_action01.png" alt="Box button를 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">Box button</p>
-                    <p>Box button은 가장 일반적인 버튼입니다.<br />
-                      화면의 컨텐츠 영역에 배치하여 화면 내 주요한 액션을<br />실행하는 버튼으로 사용합니다.</p>
-                  </dd>
-                </dl>
-  
-                <dl class="item" onclick="location.href='textbutton.html';">
-                  <dt class="peach">
-                    <img src="../assets/images/guide/img_component_action02.png" alt="Text button를 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">Text button</p>
-                    <p>주로 메인 액션에 대한 부가적인 행동이나, 한 페이지<br />
-                      내에 다양한 기능을 담아야 할 경우 Text Button을<br />
-                      사용합니다.</p>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <!--// Action -->
-
-            <!-- Input -->
-            <div class="detailArea">
-              <div class="detailTitle">
-                <h3>Input</h3>
-              </div>
-              
-              <div class="typeTileArea">
-                <dl class="item" onclick="location.href='input.html';">
-                  <dt class="peach">
-                    <img src="../assets/images/guide/img_component_input01.png" alt="input을 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">Input</p>
-                    <p>Input은 문자, 숫자, 기호등을 입력하고 편집할 수 있는<br />입력 컴포넌트입니다.</p>
-                  </dd>
-                </dl>
-  
-                <dl class="item" onclick="location.href='empty.html';">
-                  <dt class="peach">
-                    <img src="../assets/images/guide/img_component_input02.png" alt="Empty를 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">Empty</p>
-                    <p>제공된 데이터가 없을 때 표시됩니다.</p>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <!--// Input -->
-
-            <!-- Containment -->
-            <div class="detailArea">
-              <div class="detailTitle">
-                <h3>Containment</h3>
-              </div>
-              
-              <div class="typeTileArea">
-                <dl class="item" onclick="location.href='table.html';">
-                  <dt class="purple">
-                    <img src="../assets/images/guide/img_component_containment01.png" alt="input을 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">Table</p>
-                    <p>Table에는 데이터가 표시되며 데이터를 조회 / 입력<br />
-                      할 수 있습니다.</p>
-                  </dd>
-                </dl>
-  
-                <dl class="item" onclick="location.href='popup.html';">
-                  <dt class="purple">
-                    <img src="../assets/images/guide/img_component_containment02.png" alt="Empty를 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">Popup</p>
-                    <p>Popup은 사용자에게 중요한 정보를 전달하거나<br />
-                      사용자의 선택을 요청하기 위해 나타나는 모달 형태의<br />컴포넌트입니다.</p>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <!--// Containment -->
-
-            <!-- Status -->
-            <div class="detailArea">
-              <div class="detailTitle">
-                <h3>Status</h3>
-              </div>
-              
-              <div class="typeTileArea">
-                <dl class="item" onclick="location.href='pagination.html';">
-                  <dt class="purple">
-                    <img src="../assets/images/guide/img_component_status01.png" alt="input을 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">Pagination</p>
-                    <p>Pagination을 사용하여 긴 목록을 여러 페이지로<br />
-                      나눌 수 있으며, 한 번에 한 페이지만 로드됩니다.</p>
-                  </dd>
-                </dl>
-  
-                <dl class="item" onclick="location.href='pageIndicator.html';">
-                  <dt class="purple">
-                    <img src="../assets/images/guide/img_component_status02.png" alt="Empty를 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">Page indicator</p>
-                    <p>숫자 혹은 표식(점)을 통해 전체 정보의 양과<br />
-                      현재 사용자가 속한 지점을 안내합니다.</p>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <!--// Status -->
-
-            <!-- Selection -->
-            <div class="detailArea">
-              <div class="detailTitle">
-                <h3>Selection</h3>
-              </div>
-              
-              <div class="typeTileArea">
-                <dl class="item" onclick="location.href='dropdown.html';">
-                  <dt class="sky">
-                    <img src="../assets/images/guide/img_component_selection01.png" alt="input을 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">Dropdown</p>
-                    <p>선택 가능한 옵션 개수가 다수일 경우, 드롭다운 메뉴를<br />사용해 값을 노출합니다.</p>
-                  </dd>
-                </dl>
-  
-                <dl class="item" onclick="location.href='selectionControls.html';">
-                  <dt class="sky">
-                    <img src="../assets/images/guide/img_component_selection02.png" alt="Empty를 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">Selection controls</p>
-                    <p>Checkbox, Radio, Toggle 등 옵션을 선택하는<br />기능의 UI를 정의합니다.</p>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <!--// Selection -->
-
-            <!-- Navigation -->
-            <div class="detailArea">
-              <div class="detailTitle">
-                <h3>Navigation</h3>
-              </div>
-              
-              <div class="typeTileArea">
-                <dl class="item" onclick="location.href='GNB.html';">
-                  <dt class="sky">
-                    <img src="../assets/images/guide/img_component_nav01.png" alt="input을 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">GNB <span>(Global Navigation Bar)</span></p>
-                    <p>GNB는 수평으로 화면 상단에 위치한 탐색메뉴입니다.</p>
-                  </dd>
-                </dl>
-  
-                <dl class="item" onclick="location.href='SNB.html';">
-                  <dt class="sky">
-                    <img src="../assets/images/guide/img_component_nav02.png" alt="Empty를 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">SNB <span>(Side Navigation Bar)</span></p>
-                    <p>SNB는 수직으로 화면 좌측에 위치하며, 사용자가<br />세부항목에 빠르게 접근할 수 있도록 도와줍니다.</p>
-                  </dd>
-                </dl>
-
-                <dl class="item" onclick="location.href='FNB.html';">
-                  <dt class="sky">
-                    <img src="../assets/images/guide/img_component_nav03.png" alt="Empty를 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">FNB <span>(Foot Navigation Bar)</span></p>
-                    <p>웹사이트 내 모든 페이지 하단에 위치하는<br />
-                      컴포넌트입니다.</p>
-                  </dd>
-                </dl>
-
-                <dl class="item" onclick="location.href='tabs.html';">
-                  <dt class="sky">
-                    <img src="../assets/images/guide/img_component_nav04.png" alt="Empty를 상징하는 이미지">
-                  </dt>
-                  <dd>
-                    <p class="title">Tabs</p>
-                    <p>탭(Tabs)은 페이지 내 유사한 정보를 그룹핑하여<br />
-                      콘텐츠를 정리할 때 사용합니다.</p>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <!--// Navigation -->
 
           </div>
         </div>
