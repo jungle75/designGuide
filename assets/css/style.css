@@ -2327,7 +2327,7 @@ html, body {
   flex: 1;
 }
 .foundation .usageColor .rowGroup .col h4 {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 .foundation .usageColor .rowGroup .col .tableBox {
   height: 239px;
