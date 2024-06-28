@@ -125,8 +125,8 @@
                     <p>Label 유무에 따라 텍스 입력필드가 다르게 보여집니다.</p>
                   </div>
 
-                  <div class="itemBox colBox">
-                    <div class="detailArea">
+                  <div class="colBox">
+                    <div class="itemBox">
                       <h4>Placeholder usage</h4>
                       <div class="grayContBox" style="height: 178px;">
                         <div class="inputBox"><input type="text" placeholder="생년월일을 입력해 주세요"></div>
@@ -134,11 +134,11 @@
                       <div class="commentTxt">
                         <p>Label을 사용하지 않고 플레이스홀더로만 안내할 경우,<br />
                           입력해야 하는 내용은 입력한 내용을 지워야만 볼 수 있습니다.<br />
-                          입력 필드가 많은 경우, Label을 적용하여 더 명확하게 세부 내용을 전달해 주세요.</p>
+                          입력 필드가 많은 경우, Label을 적용하여 더 명확하게 세부 내용을<br />전달해 주세요.</p>
                       </div>
                     </div>
                     
-                    <div class="detailArea">
+                    <div class="itemBox">
                       <h4>Label usage</h4>
                       <div class="grayContBox" style="height: 178px;">
                         <div class="form"><label for="a">생년월일</label><div class="inputBox"><input type="text" placeholder="1999.01.01"></div></div>
@@ -154,7 +154,7 @@
                   <div class="itemBox">
                     <h4>Text area</h4>
                     <div class="grayContBox" style="height: 286px;">
-                      <div class="textArea" style="width: 480px; height: 140px;">
+                      <div class="textArea" style="width: 480px; height: 142px;">
                         <textarea name="" id="" placeholder="Autosizing the height to fit the content"></textarea>
                         <span>0/100</span>
                       </div>
@@ -300,7 +300,6 @@
                 <div class="detailArea">
                   <div class="detailTitle">
                     <h3>With button</h3>
-                    <p>Input UI에 아이콘을 추가로 배치할 수 있습니다. </p>
                   </div>
 
                   <div class="codeBox">
@@ -394,7 +393,7 @@
 <!-- Text area -->
                 <div class="detailArea">
                   <div class="detailTitle">
-                    <h3>Text area : 텍스트가 박스 넘어갈 때 리사이징 안되고 스크롤 생성으로</h3>
+                    <h3>Text area</h3>
                   </div>
 
                   <div class="codeBox">
@@ -517,6 +516,65 @@
         link.download = 'input.zip'; // Set the desired filename for download
         link.click(); // Trigger the download
       }
+      
+      // 드롭다운 관련
+      function initCustomSelect() {
+        const customSelects = document.querySelectorAll(".customSelect");
+        if (!customSelects.length) return;
+
+        customSelects.forEach(customSelect => {
+            const selectElement = customSelect.querySelector("select");
+            const selectLength = selectElement.length;
+
+            const selectSelected = document.createElement("div");
+            selectSelected.className = "selectSelected";
+            selectSelected.innerHTML = selectElement.options[selectElement.selectedIndex].innerHTML;
+            if (selectElement.disabled) selectSelected.classList.add("disabled");
+            customSelect.appendChild(selectSelected);
+
+            const selectItems = document.createElement("div");
+            selectItems.className = "selectItems selectHide";
+            const selectItemsList = document.createElement("ul");
+            selectItemsList.className = "selectItemsList";
+            selectItems.appendChild(selectItemsList);
+
+            for (let j = 1; j < selectLength; j++) {
+                const selectOption = document.createElement("li");
+                selectOption.innerHTML = selectElement.options[j].innerHTML;
+                selectOption.addEventListener("click", function () {
+                    const parentSelect = this.closest(".customSelect").querySelector("select");
+                    parentSelect.selectedIndex = Array.from(parentSelect.options).findIndex(option => option.innerHTML === this.innerHTML);
+                    selectSelected.innerHTML = this.innerHTML;
+                    selectItemsList.querySelectorAll("li").forEach(item => item.classList.remove("sameAsSelected"));
+                    this.classList.add("sameAsSelected");
+                    selectSelected.click();
+                });
+                selectItemsList.appendChild(selectOption);
+            }
+            customSelect.appendChild(selectItems);
+
+            selectSelected.addEventListener("click", function (e) {
+                if (this.classList.contains("disabled")) return;
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextElementSibling.classList.toggle("selectHide");
+                this.classList.toggle("selectArrowActive");
+            });
+        });
+
+        function closeAllSelect(elmnt) {
+            document.querySelectorAll(".selectItems").forEach((selectItem, index) => {
+                if (selectItem.previousElementSibling !== elmnt) {
+                    selectItem.classList.add("selectHide");
+                    selectItem.previousElementSibling.classList.remove("selectArrowActive");
+                }
+            });
+        }
+
+        document.addEventListener("click", closeAllSelect);
+      }
+
+      document.addEventListener('DOMContentLoaded', initCustomSelect);
     </script>
   </body>
 </html>

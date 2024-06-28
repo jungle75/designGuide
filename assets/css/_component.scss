@@ -161,7 +161,7 @@ a.textBtn {display: inline-flex;}
     p {@include mixin.font(14px,400,var(--gray-800),20px); text-align: center;}
     .title {@include mixin.font(16px,700,var(--Jblack),22px);}
   }
-  .btnArea {@include mixin.flex(center,center,16px);
+  .btnArea {@include mixin.flex(center,center,16px); width: 100%;
     .btn {height: 34px; @include mixin.flex(center,center,4px); font-size: 14px; font-weight: 500; cursor:pointer; outline:none; border:0; border-radius: 5px; padding: 0 16px;}
     .confirm {background-color: var(--Jorange); color: var(--white);     
       &:hover {background-color: var(--Jorange-hover);}
@@ -179,7 +179,9 @@ a.textBtn {display: inline-flex;}
     }
     .btnArea {justify-content: right;}
   }
-  &.fullPage {width: 100%; height: 100%; justify-content: center;}
+  &.fullPage {width: 100%; height: 100%; justify-content: center;
+    .btnArea {justify-content: center !important;}
+  }
 }
 .textEmpty {display: block; @include mixin.font(14px,400,var(--gray-800),20px); text-align: left;}
 

@@ -90,9 +90,7 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font-family: var(--font-system);
-  font-weight: normal;
   vertical-align: baseline;
   background: transparent;
 }
@@ -749,6 +747,7 @@ a.textBtn {
   justify-content: center;
   align-items: center;
   gap: 16px;
+  width: 100%;
 }
 .empty .btnArea .btn {
   height: 34px;
@@ -802,6 +801,9 @@ a.textBtn {
   width: 100%;
   height: 100%;
   justify-content: center;
+}
+.empty.fullPage .btnArea {
+  justify-content: center !important;
 }
 
 .textEmpty {

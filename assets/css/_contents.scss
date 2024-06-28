@@ -2,7 +2,7 @@
 @use '_mixin';
 
 //서브페이지 공통사항
-.contentArea {
+.contents {
   width: 980px;
   color: var(--text-color);
   display: flex;
@@ -17,7 +17,10 @@
     padding-bottom: 64px;
     border-bottom: 1px solid var(--border-color);
 
-    &.caseStudies {border-bottom: 1px solid var(--border-color); padding-bottom: 24px;}
+    &.caseStudies {border-bottom: 1px solid var(--border-color); padding-bottom: 24px;
+      .btnArea {margin-top: 8px;}
+    
+    }
 
     h2 {@include mixin.font(50px,700,inherit,1);}
     p {@include mixin.font(18px,500,inherit,28px);}
@@ -34,6 +37,7 @@
   .detailArea {display: flex; flex-direction: column; gap: 16px;
     .detailTitle {position: relative;
       h3 {margin-bottom: 4px;}
+      .font24 {font-size: 24px;}
       .btn {position: absolute; right: 0; top: 24px;}
       .point {color: var(--text-strong);}
       >p {color: var(--text-gray); line-height: 26px;}
@@ -56,6 +60,7 @@
        &.purple {background-color: var(--purple);}
        &.sky {background-color: var(--sky);}
       }
+      dd {padding: 0 8px;}
       
       .title {@include mixin.font(20px,700,var(--text-strong),1); margin-bottom: 14px;
         span {font-weight: 400;}
@@ -118,6 +123,11 @@
   .commentTxt{margin-top: 8px;
     p {position: relative; @include mixin.font(16px,400,var(--logo-color),26px); padding-left: 12px;
       &::before {content: ""; display: block; width: 4px; height: 4px; background: var(--logo-color); border-radius: 50%; position: absolute; top: .7em; left: 2px;}
+    }
+  }
+  .commentDown {margin-top: 8px; @include mixin.font(16px,500,var(--text-strong),26px);
+    p {position: relative; padding-left: 12px;
+      &::before {content: ""; display: block; width: 4px; height: 4px; background: var(--text-strong); border-radius: 50%; position: absolute; top: .7em; left: 2px;}
     }
   }
   .btnArea {@include mixin.flex(left,center,16px);}
@@ -217,7 +227,9 @@
 // Component
 .component {gap: 64px;
   .typeTileArea {
-    .item {dt {height: 190px;}}
+    .item {cursor: pointer;
+      dt {height: 190px;}
+  }
   }
   .objectBox {
     @include mixin.flex(center,center,40px); width: 100%; height: 320px; border-radius: 8px;
@@ -331,7 +343,7 @@
       .disabled {border-color: var(--gray-400); background-color: var(--gray-100);}
     }
     .colBox {@include mixin.flex(left,flex-start,20px); flex-direction: row !important;
-      >div {flex: 1;}
+      >div {flex: 1; margin: 0 !important;}
     }
 
     .spliterWrap {display: flex; align-items: stretch; gap: 0; padding: 0;
@@ -427,7 +439,7 @@
 .icon .guidePoint {width: 312px; height: 33px; background-image: url(../images/guide/iconAnatomy.png); background-size: 100%;}
 .space .guidePoint {width: 96px; height: 50px; background-image: url(../images/guide/iconSpace.png); background-size: 100%;}
 .button .guidePoint {width: 275px; height: 70px; background-image: url(../images/guide/boxButton.png); background-size: 100%;}
-.buttonSpec .guidePoint {width: 158px; height: 210px; background-image: url(../images/guide/buttonSpec.png); background-size: 158px; background-position: right top;}
+.buttonSpec .guidePoint {width: 154px; height: 211px; background-image: url(../images/guide/buttonSpec.png); background-size: 100%; background-position: right top;}
 .inputAnatomy .guidePoint {width: 177px; height: 68px; background-image: url(../images/guide/inputAnatomy.png); background-size: 100%;}
 .inputSpec .guidePoint {width: 297px; height: 127px; background-image: url(../images/guide/inputSpec.png); background-size: 100%;}
 .emptyAnatomy .guidePoint {width: 423px; height: 247px; background-image: url(../images/guide/emptyAnatomy.png); background-size: 100%;}
