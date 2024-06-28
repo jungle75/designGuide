@@ -49,8 +49,8 @@
         .txtScript {color: var(--gray-600);}
       }
       + .itemBox {margin-top: 40px;}
+      .commentTxt {margin-top: 8px;}
     }
-    .commentTxt {margin-top: 0;}
   }
   .typeTileArea {
     @include mixin.flex(left,flex-start,15px); flex-wrap: wrap; @include mixin.font(14px,400,var(--text-color),21px);
@@ -121,7 +121,7 @@
   .guideTextCol {position: absolute; z-index: 1; display: flex; flex-direction: column;
     span {display: block; @include mixin.font(12px,400,var(--gray-700),18px);}
   }
-  .commentTxt{margin-top: 8px;
+  .commentTxt{
     p {position: relative; @include mixin.font(16px,400,var(--logo-color),26px); padding-left: 12px;
       &::before {content: ""; display: block; width: 4px; height: 4px; background: var(--logo-color); border-radius: 50%; position: absolute; top: .7em; left: 2px;}
     }

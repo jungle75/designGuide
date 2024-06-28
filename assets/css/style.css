@@ -1994,8 +1994,8 @@ html, body {
 .contents .detailArea .itemBox + .itemBox {
   margin-top: 40px;
 }
-.contents .detailArea .commentTxt {
-  margin-top: 0;
+.contents .detailArea .itemBox .commentTxt {
+  margin-top: 8px;
 }
 .contents .typeTileArea {
   display: flex;
@@ -2219,9 +2219,6 @@ html, body {
   font-weight: 400;
   color: var(--gray-700);
   line-height: 18px;
-}
-.contents .commentTxt {
-  margin-top: 8px;
 }
 .contents .commentTxt p {
   position: relative;
