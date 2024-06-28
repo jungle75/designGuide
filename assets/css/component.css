@@ -656,6 +656,7 @@ a.textBtn {
   border: 1px solid var(--gray-300);
   border-radius: 5px;
   padding: 8px 16px;
+  font-size: 14px;
   resize: none;
 }
 .textArea textarea:hover {
