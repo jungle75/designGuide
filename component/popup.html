@@ -21,116 +21,85 @@
 
         <!-- contents -->
         <div class="contentWrap">
-          <div class="contentArea component">
-            <!-- 타이틀영역 -->
-            <div class="titleBox">
-              <h2>Popup</h2>
-              <p>Popup은 사용자에게 중요한 정보를 전달하거나<br />
-                사용자의 선택을 요청하기 위해 나타나는 모달 형태의 컴포넌트입니다.</p>
-            </div>
-            <!--// 타이틀영역 -->
+          <div class="contentArea">
 
-            <!-- 오브젝트 박스 -->
-            <div class="objectBox purple">
-              <div class="popupWrap" style="width: 366px;">
-                <button type="button" class="ic-close">닫기</button>
-                <div class="popupTitle"><h2>타이틀 정보</h2></div>
-                <div class="popupCont">
-                  <p>관리자 권한을 총괄관리자로 처리하시겠습니까?<br />테스트 내용 입니다.</p>
-                </div>
-                <div class="popupBtn">
-                  <button type="button" class="btn close">취소</button>
-                  <button type="button" class="btn confirm">확인</button>
+            <div class="contents component">
+              <!-- 타이틀영역 -->
+              <div class="titleBox">
+                <h2>Popup</h2>
+                <p>Popup은 사용자에게 중요한 정보를 전달하거나<br />
+                  사용자의 선택을 요청하기 위해 나타나는 모달 형태의 컴포넌트입니다.</p>
+              </div>
+              <!--// 타이틀영역 -->
+
+              <!-- 오브젝트 박스 -->
+              <div class="objectBox purple">
+                <div class="popupWrap" style="width: 366px;">
+                  <button type="button" class="ic-close">닫기</button>
+                  <div class="popupTitle"><h2>타이틀 정보</h2></div>
+                  <div class="popupCont">
+                    <p>관리자 권한을 총괄관리자로 처리하시겠습니까?<br />테스트 내용 입니다.</p>
+                  </div>
+                  <div class="popupBtn">
+                    <button type="button" class="btn close">취소</button>
+                    <button type="button" class="btn confirm">확인</button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!--// 오브젝트 박스 -->
+              <!--// 오브젝트 박스 -->
 
-            <!-- 탭메뉴 -->
-            <div class="tabMenu">
-              <button class="act"><span>Design guide</span></button>
-              <button><span>Examples</span><span class="label">code</span></button>
-            </div>
-            <!--// 탭메뉴 -->
+              <!-- 탭메뉴 -->
+              <div class="tabMenu">
+                <button class="act"><span>Design guide</span></button>
+                <button><span>Examples</span><span class="label">code</span></button>
+              </div>
+              <!--// 탭메뉴 -->
 
-            <div class="tabContainer">
-              <!-- Disign Guide -->
-              <div class="designGuide">
-                <!-- Anatomy -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>Anatomy</h3>
-                  </div>
-                  
-  
-                  <div class="grayContBox popupAnatomy" style="height: 326px;">
-                    <div class="popupWrap">
-                      <button type="button" class="ic-close">닫기</button>
-                      <div class="popupTitle"><h2>타이틀 정보</h2></div>
-                      <div class="popupCont">
-                        <p>관리자 권한을 총괄관리자로 처리하시겠습니까?<br />테스트 내용 입니다.</p>
+              <div class="tabContainer">
+                <!-- Disign Guide -->
+                <div class="designGuide">
+                  <!-- Anatomy -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>Anatomy</h3>
+                    </div>
+                    
+    
+                    <div class="grayContBox popupAnatomy" style="height: 326px;">
+                      <div class="popupWrap">
+                        <button type="button" class="ic-close">닫기</button>
+                        <div class="popupTitle"><h2>타이틀 정보</h2></div>
+                        <div class="popupCont">
+                          <p>관리자 권한을 총괄관리자로 처리하시겠습니까?<br />테스트 내용 입니다.</p>
+                        </div>
+                        <div class="popupBtn">
+                          <button type="button" class="btn close">취소</button>
+                          <button type="button" class="btn confirm">확인</button>
+                        </div>
                       </div>
-                      <div class="popupBtn">
-                        <button type="button" class="btn close">취소</button>
-                        <button type="button" class="btn confirm">확인</button>
+
+                      <div class="guidePoint" style="left: 239px; top: 32px;"></div>
+                    </div>
+                    <div class="itemBox gap-16">                    
+                      <div><span class="title">1. Popup surface area</span>Popup의 배경영역입니다. 내용의 양에 따라 이 영역의 높이가 달라집니다.</div>                    
+                      <div><span class="title">2. Contents area</span>텍스트(Title, Description), 테이블 등 팝업의 내용이 표기되는 영역입니다. 팝업의 타입에 따라 정렬이 달라집니다.</div>
+                      <div>
+                        <p><span class="title">3. Button area</span>버튼이 배치되는 영역입니다. 팝업을 Dismiss할 수 있는 버튼이 꼭 포함되어야 합니다.</p>
+                        <p>Dismiss와 함께 Popup의 과업이 완료되는 경우 하나의 기본 버튼을 사용합니다. (Confirm 등)</p>
+                        <p>버튼이 단순 Dismiss 기능과 별도로 사용자의 승인, 혹은 특정 액션을 포함하는 경우 기본 버튼과 다른 Action 버튼을 제공합니다.</p>
                       </div>
                     </div>
-
-                    <div class="guidePoint" style="left: 239px; top: 32px;"></div>
                   </div>
-                  <div class="itemBox gap-16">                    
-                    <div><span class="title">1. Popup surface area</span>Popup의 배경영역입니다. 내용의 양에 따라 이 영역의 높이가 달라집니다.</div>                    
-                    <div><span class="title">2. Contents area</span>텍스트(Title, Description), 테이블 등 팝업의 내용이 표기되는 영역입니다. 팝업의 타입에 따라 정렬이 달라집니다.</div>
-                    <div>
-                      <p><span class="title">3. Button area</span>버튼이 배치되는 영역입니다. 팝업을 Dismiss할 수 있는 버튼이 꼭 포함되어야 합니다.</p>
-                      <p>Dismiss와 함께 Popup의 과업이 완료되는 경우 하나의 기본 버튼을 사용합니다. (Confirm 등)</p>
-                      <p>버튼이 단순 Dismiss 기능과 별도로 사용자의 승인, 혹은 특정 액션을 포함하는 경우 기본 버튼과 다른 Action 버튼을 제공합니다.</p>
+                  <!--// Anatomy -->
+
+                  <!-- Spec -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>Spec</h3>
+                      <p>팝업은 콘텐츠의 내용에 따라 다양한 사이즈로 제작이 가능하지만, 가이드에 맞는 패딩을 적용하여 사용해야 합니다.</p>
                     </div>
-                  </div>
-                </div>
-                <!--// Anatomy -->
 
-                <!-- Spec -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>Spec</h3>
-                    <p>팝업은 콘텐츠의 내용에 따라 다양한 사이즈로 제작이 가능하지만, 가이드에 맞는 패딩을 적용하여 사용해야 합니다.</p>
-                  </div>
-
-                  <div class="grayContBox popupSpec" style="height: 357px;">
-                    <div class="popupWrap" style="width: 366px;">
-                      <button type="button" class="ic-close">닫기</button>
-                      <div class="popupTitle"><h2>타이틀 정보</h2></div>
-                      <div class="popupCont">
-                        <p>관리자 권한을 총괄관리자로 처리하시겠습니까?<br />테스트 내용 입니다.</p>
-                      </div>
-                      <div class="popupBtn">
-                        <button type="button" class="btn close">취소</button>
-                        <button type="button" class="btn confirm">확인</button>
-                      </div>
-                    </div>
-                    <div class="guidePoint" style="left: 274px; top: 78px; "></div>
-                  </div>
-
-                  <div class="commentTxt">
-                    <p>팝업 박스의 R값은 8px을 고정으로 합니다.</p>
-                    <p>‘X’ 아이콘은 24px 사이즈를 사용합니다.</p>
-                    <p>텍스트 콘텐츠는 좌측 정렬을 기본 원칙으로 합니다.</p>
-                    <p>팝업 최대 사이즈는 W : 990px, H : 760px 이며 그 이상 넘어갈 경우 스크롤을 적용하여 콘텐츠를 노출합니다.</p>
-                  </div>
-                </div>
-                <!--// Spec -->
-                
-                <!-- Usage -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>Usage</h3>
-                    <p>Popup은 Contents area 내용에 따라 다음과 같이 타입을 분류하고 있습니다.</p>
-                  </div>
-
-                  <div class="itemBox">
-                    <h4>Info popup</h4>
-                    <div class="grayContBox" style="height: 344px;">
+                    <div class="grayContBox popupSpec" style="height: 357px;">
                       <div class="popupWrap" style="width: 366px;">
                         <button type="button" class="ic-close">닫기</button>
                         <div class="popupTitle"><h2>타이틀 정보</h2></div>
@@ -138,94 +107,33 @@
                           <p>관리자 권한을 총괄관리자로 처리하시겠습니까?<br />테스트 내용 입니다.</p>
                         </div>
                         <div class="popupBtn">
-                          <button type="button" class="btn close">취소 </button>
-                          <button type="button" class="btn confirm">확인</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="commentTxt">
-                      <p>단순 정보성 팝업으로 주로 텍스트로만 내용을 구성합니다.</p>
-                    </div>
-                  </div>
-
-                  <div class="itemBox">
-                    <h4>Input popup</h4>
-                    <div class="grayContBox" style="height: 655px;">
-                      <div class="popupWrap">
-                        <button type="button" class="ic-close">닫기</button>
-                        <div class="popupTitle"><h2>타이틀 정보</h2></div>
-
-                        <div class="popupCont">
-                          <div class="tableArea" style="width: 474px;">
-                            <table class="dataTable">
-                              <colgroup>
-                                <col style="width: 130px;">
-                                <col style="width: auto;">
-                              </colgroup>
-                              <tbody>
-                                <tr>
-                                  <th>예약자명</th>
-                                  <td><div class="inputBox"><input type="text" placeholder="Placeholder"></div></td>
-                                </tr>
-                                <tr>
-                                  <th>성별</th>
-                                  <td>
-                                    <div class="row-selection">
-                                      <label class="radio" for="radio1"><input type="radio" name="radio" id="radio1" hidden><i></i><span>남</span></label>
-                                      <label class="radio" for="radio2"><input type="radio" name="radio" id="radio1" hidden checked><i></i><span>여</span></label>
-                                    </div>                                    
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th>예약일시</th>
-                                  <td>
-                                    <div class="inputBox" style="width: 142px;">
-                                      <input type="text" value="2024.07.01"><i class="date"></i>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th>결제</th>
-                                  <td>급여차감</td>
-                                </tr>
-                                <tr>
-                                  <th>사유</th>
-                                  <td><div class="textArea"><textarea name="" id="" cols="" rows="5"></textarea></div></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          
-                        </div>
-                        <div class="popupBtn">
                           <button type="button" class="btn close">취소</button>
                           <button type="button" class="btn confirm">확인</button>
                         </div>
                       </div>
+                      <div class="guidePoint" style="left: 274px; top: 78px; "></div>
                     </div>
+
                     <div class="commentTxt">
-                      <p>추가 정보 입력 및 확인을 위한 팝업으로 컨텐츠영역에 입력을 할 수 있는 UI 요소를 적용할 수 있습니다.</p>
+                      <p>팝업 박스의 R값은 8px을 고정으로 합니다.</p>
+                      <p>‘X’ 아이콘은 24px 사이즈를 사용합니다.</p>
+                      <p>텍스트 콘텐츠는 좌측 정렬을 기본 원칙으로 합니다.</p>
+                      <p>팝업 최대 사이즈는 W : 990px, H : 760px 이며 그 이상 넘어갈 경우 스크롤을 적용하여 콘텐츠를 노출합니다.</p>
                     </div>
-                  </div>                                    
-                </div>
-                <!--// Usage -->
-
-              </div>
-              <!--// Disign Guide -->
-
-              <!-- Code -->
-              <div class="examples" style="display: none;">
-<!-- Info popup -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>Basic</h3>
-                    <p>popup UI 기본 예시입니다. </p>
                   </div>
+                  <!--// Spec -->
                   
-                  <div class="codeBox">
-                    <div class="example align-row gray-100">
-                      <div style="width: 366px;">
-                        <div class="popupWrap">
+                  <!-- Usage -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>Usage</h3>
+                      <p>Popup은 Contents area 내용에 따라 다음과 같이 타입을 분류하고 있습니다.</p>
+                    </div>
+
+                    <div class="itemBox">
+                      <h4>Info popup</h4>
+                      <div class="grayContBox" style="height: 344px;">
+                        <div class="popupWrap" style="width: 366px;">
                           <button type="button" class="ic-close">닫기</button>
                           <div class="popupTitle"><h2>타이틀 정보</h2></div>
                           <div class="popupCont">
@@ -237,48 +145,144 @@
                           </div>
                         </div>
                       </div>
+                      <div class="commentTxt">
+                        <p>단순 정보성 팝업으로 주로 텍스트로만 내용을 구성합니다.</p>
+                      </div>
                     </div>
-                    <div class="codeTab">
-                      <a href="#" class="act">HTML</a>                      
+
+                    <div class="itemBox">
+                      <h4>Input popup</h4>
+                      <div class="grayContBox" style="height: 655px;">
+                        <div class="popupWrap">
+                          <button type="button" class="ic-close">닫기</button>
+                          <div class="popupTitle"><h2>타이틀 정보</h2></div>
+
+                          <div class="popupCont">
+                            <div class="tableArea" style="width: 474px;">
+                              <table class="dataTable">
+                                <colgroup>
+                                  <col style="width: 130px;">
+                                  <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                  <tr>
+                                    <th>예약자명</th>
+                                    <td><div class="inputBox"><input type="text" placeholder="Placeholder"></div></td>
+                                  </tr>
+                                  <tr>
+                                    <th>성별</th>
+                                    <td>
+                                      <div class="row-selection">
+                                        <label class="radio" for="radio1"><input type="radio" name="radio" id="radio1" hidden><i></i><span>남</span></label>
+                                        <label class="radio" for="radio2"><input type="radio" name="radio" id="radio1" hidden checked><i></i><span>여</span></label>
+                                      </div>                                    
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th>예약일시</th>
+                                    <td>
+                                      <div class="inputBox" style="width: 142px;">
+                                        <input type="text" value="2024.07.01"><i class="date"></i>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th>결제</th>
+                                    <td>급여차감</td>
+                                  </tr>
+                                  <tr>
+                                    <th>사유</th>
+                                    <td><div class="textArea"><textarea name="" id="" cols="" rows="5"></textarea></div></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            
+                          </div>
+                          <div class="popupBtn">
+                            <button type="button" class="btn close">취소</button>
+                            <button type="button" class="btn confirm">확인</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="commentTxt">
+                        <p>추가 정보 입력 및 확인을 위한 팝업으로 컨텐츠영역에 입력을 할 수 있는 UI 요소를 적용할 수 있습니다.</p>
+                      </div>
+                    </div>                                    
+                  </div>
+                  <!--// Usage -->
+
+                </div>
+                <!--// Disign Guide -->
+
+                <!-- Code -->
+                <div class="examples" style="display: none;">
+  <!-- Info popup -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>Basic</h3>
+                      <p>popup UI 기본 예시입니다. </p>
                     </div>
-                    <div class="codeCont">
-                      <button type="button" class="ic-copy">클립보드에 복사</button>
-                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"popupWrap"</span>&gt;
-  &lt;<span class="obj">button</span> type="button" class=<span class="cls">"ic-close"</span>&gt;닫기&lt;/<span class="obj">button</span>&gt;
-  &lt;<span class="obj">div</span> class=<span class="cls">"popupTitle"</span>&gt;
-    &lt;<span class="obj">h2</span>&gt;타이틀 정보&lt;/<span class="obj">h2</span>&gt;
-  &lt;/<span class="obj">div</span>&gt;
-  &lt;<span class="obj">div</span> class=<span class="cls">"popupCont"</span>&gt;      
-    &lt;<span class="obj">p</span>&gt;관리자 권한을 총괄관리자로 처리하시겠습니까? 테스트 내용 입니다.&lt;/<span class="obj">p</span>&gt;
-  &lt;/<span class="obj">div</span>&gt;
-  &lt;<span class="obj">div</span> class=<span class="cls">"popupBtn"</span>&gt;
-    &lt;<span class="obj">button</span> type="button" class=<span class="cls">"btn close"</span>&gt;취소 &lt;/<span class="obj">button</span>&gt;
-    &lt;<span class="obj">button</span> type="button" class=<span class="cls">"btn confirm"</span>&gt;확인&lt;/<span class="obj">button</span>&gt;
-  &lt;/<span class="obj">div</span>&gt;
-&lt;/<span class="obj">div</span>&gt;</code></pre>
-                    </div>                    
+                    
+                    <div class="codeBox">
+                      <div class="example align-row gray-100">
+                        <div style="width: 366px;">
+                          <div class="popupWrap">
+                            <button type="button" class="ic-close">닫기</button>
+                            <div class="popupTitle"><h2>타이틀 정보</h2></div>
+                            <div class="popupCont">
+                              <p>관리자 권한을 총괄관리자로 처리하시겠습니까?<br />테스트 내용 입니다.</p>
+                            </div>
+                            <div class="popupBtn">
+                              <button type="button" class="btn close">취소 </button>
+                              <button type="button" class="btn confirm">확인</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="codeTab">
+                        <a href="#" class="act">HTML</a>                      
+                      </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"popupWrap"</span>&gt;
+    &lt;<span class="obj">button</span> type="button" class=<span class="cls">"ic-close"</span>&gt;닫기&lt;/<span class="obj">button</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"popupTitle"</span>&gt;
+      &lt;<span class="obj">h2</span>&gt;타이틀 정보&lt;/<span class="obj">h2</span>&gt;
+    &lt;/<span class="obj">div</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"popupCont"</span>&gt;      
+      &lt;<span class="obj">p</span>&gt;관리자 권한을 총괄관리자로 처리하시겠습니까? 테스트 내용 입니다.&lt;/<span class="obj">p</span>&gt;
+    &lt;/<span class="obj">div</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"popupBtn"</span>&gt;
+      &lt;<span class="obj">button</span> type="button" class=<span class="cls">"btn close"</span>&gt;취소 &lt;/<span class="obj">button</span>&gt;
+      &lt;<span class="obj">button</span> type="button" class=<span class="cls">"btn confirm"</span>&gt;확인&lt;/<span class="obj">button</span>&gt;
+    &lt;/<span class="obj">div</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;</code></pre>
+                      </div>                    
+                    </div>
                   </div>
+
+                  <!-- CSS download-->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>CSS</h3>
+                      <p>해당 컴포넌트만 적용 가능한 CSS 파일입니다.</p>
+                      <p class="point">resest.css 가 없을 경우 깨질 수 있습니다. 컴포넌트 메인페이지에서 reset.css 파일을 다운로드 받아서 사용하세요.</p>
+                    </div>
+
+                    <div class="grayBox cssDown">
+                      <a href="#" onclick="downloadCssZip()">popup.css</a>
+                      <button type="button" class="ic-down" onclick="downloadCssZip()">파일 다운로드</button>
+                    </div>
+                  </div>
+                  <!--// CSS download -->
+
                 </div>
-
-                <!-- CSS download-->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>CSS</h3>
-                    <p>해당 컴포넌트만 적용 가능한 CSS 파일입니다.</p>
-                    <p class="point">resest.css 가 없을 경우 깨질 수 있습니다. 컴포넌트 메인페이지에서 reset.css 파일을 다운로드 받아서 사용하세요.</p>
-                  </div>
-
-                  <div class="grayBox cssDown">
-                    <a href="#" onclick="downloadCssZip()">popup.css</a>
-                    <button type="button" class="ic-down" onclick="downloadCssZip()">파일 다운로드</button>
-                  </div>
-                </div>
-                <!--// CSS download -->
-
+                <!--// Code -->
               </div>
-              <!--// Code -->
-            </div>
 
+            </div>
+            
           </div>
         </div>
         <!--// contents -->

@@ -21,442 +21,445 @@
 
         <!-- contents -->
         <div class="contentWrap">
-          <div class="contentArea component">
-            <!-- 타이틀영역 -->
-            <div class="titleBox">
-              <h2>Input</h2>
-              <p>Input은 문자, 숫자, 기호등을 입력하고 편집할 수 있는 입력 컴포넌트입니다.</p>
-            </div>
-            <!--// 타이틀영역 -->
+          <div class="contentArea">
 
-            <!-- 오브젝트 박스 -->
-            <div class="objectBox peach">
-              <img src="../assets/images/guide/img_input.png" alt="">
-            </div>
-            <!--// 오브젝트 박스 -->
+            <div class="contents component">
+              <!-- 타이틀영역 -->
+              <div class="titleBox">
+                <h2>Input</h2>
+                <p>Input은 문자, 숫자, 기호등을 입력하고 편집할 수 있는 입력 컴포넌트입니다.</p>
+              </div>
+              <!--// 타이틀영역 -->
 
-            <!-- 탭메뉴 -->
-            <div class="tabMenu">
-              <button class="act"><span>Design guide</span></button>
-              <button><span>Examples</span><span class="label">code</span></button>
-            </div>
-            <!--// 탭메뉴 -->
+              <!-- 오브젝트 박스 -->
+              <div class="objectBox peach">
+                <img src="../assets/images/guide/img_input.png" alt="">
+              </div>
+              <!--// 오브젝트 박스 -->
 
-            <div class="tabContainer">
-              <!-- Disign Guide -->
-              <div class="designGuide">
-                <!-- Anatomy -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>Anatomy</h3>
-                  </div>
-  
-                  <div class="grayContBox inputAnatomy" style="height: 238px;">
-                    <div class="form"><label for="a">Label</label><div class="inputBox"><input type="text" placeholder="Placeholder"></div></div>                  
-                    <div class="guidePoint" style="left: 246px; top: 62px;"></div>
-                  </div>
-                  <div class="itemBox gap-16">                    
-                    <p><span class="title">1. Label (Optional)</span>사용자가 입력해야하는 내용이 무엇인지 표시됩니다.</p>                    
-                    <p><span class="title">2. Text area</span>사용자가 입력한 내용이 표시됩니다.</p>
-                  </div>
-                </div>
-                <!--// Anatomy -->
+              <!-- 탭메뉴 -->
+              <div class="tabMenu">
+                <button class="act"><span>Design guide</span></button>
+                <button><span>Examples</span><span class="label">code</span></button>
+              </div>
+              <!--// 탭메뉴 -->
 
-                <!-- Spec -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>Spec</h3>
-                    <p>Input은 다음과 같이 Default, Large 사이즈를 제공합니다.</p>
-                  </div>
-
-                  <div class="grayContBox inputSpec">
-                    <div class="group">
-                      <div class="inputBox"><input type="text" placeholder="Placeholder" value="Value"></div>
-                      <div class="inputBox large"><input type="text" placeholder="Placeholder" value="Value"></div>
+              <div class="tabContainer">
+                <!-- Disign Guide -->
+                <div class="designGuide">
+                  <!-- Anatomy -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>Anatomy</h3>
                     </div>
-
-                    <div class="guidePoint" style="left: 360px; top: 60px; ">
+    
+                    <div class="grayContBox inputAnatomy" style="height: 238px;">
+                      <div class="form"><label for="a">Label</label><div class="inputBox"><input type="text" placeholder="Placeholder"></div></div>                  
+                      <div class="guidePoint" style="left: 246px; top: 62px;"></div>
                     </div>
-                    <div class="guideTextCol" style="left: 230px; top: 92px;">
-                      <span>Default</span>
-                      <span>Large</span>
+                    <div class="itemBox gap-16">                    
+                      <p><span class="title">1. Label (Optional)</span>사용자가 입력해야하는 내용이 무엇인지 표시됩니다.</p>                    
+                      <p><span class="title">2. Text area</span>사용자가 입력한 내용이 표시됩니다.</p>
                     </div>
                   </div>
+                  <!--// Anatomy -->
 
-                  <div class="commentTxt">
-                    <p>Input는 기본적으로 Default 사이즈를 사용하며, 로그인 및 주의를 요하는 상황에서 단독으로 사용할 경우 Large 사이즈를 사용합니다.</p>
-                    <p>Input의 패딩은 Default, Large 사이즈 모두 16px 입니다.</p>
-                    <p>예외적으로 가로 값은 변경 가능하나, 각 사이즈별 세로 값은 변경할 수 없습니다.</p>
-                  </div>
-                </div>
-                <!--// Spec -->
-
-                <!-- States -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>States</h3>
-                    <p>Enabled, Hover, Active, Error, Disabled 5가지의 상태를 갖고 화면의 상태와 유기적으로 작용합니다.</p>
-                  </div>
-
-                  <div class="grayContBox inputStates">
-                    <div class="group">
-                      <div class="inputBox"><input type="text" placeholder="Placeholder"></div>
-                      <div class="inputBox hover"><input type="text" placeholder="Placeholder" value="Placeholder"></div>
-                      <div class="inputBox active"><input type="text" placeholder="Placeholder" value="Value"></div>
-                      <div class="inputBox error"><input type="text" placeholder="Placeholder" value="Text Inputting Error"></div>
-                      <div class="inputBox"><input type="text" placeholder="-" disabled></div>
+                  <!-- Spec -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>Spec</h3>
+                      <p>Input은 다음과 같이 Default, Large 사이즈를 제공합니다.</p>
                     </div>
 
-                    <div class="guideTextCol" style="left: 230px; top: 82px;">
-                      <span>Enabled</span>
-                      <span>Hover</span>
-                      <span>Active</span>
-                      <span>Error</span>
-                      <span>Disabled</span>
+                    <div class="grayContBox inputSpec">
+                      <div class="group">
+                        <div class="inputBox"><input type="text" placeholder="Placeholder" value="Value"></div>
+                        <div class="inputBox large"><input type="text" placeholder="Placeholder" value="Value"></div>
+                      </div>
+
+                      <div class="guidePoint" style="left: 360px; top: 60px; ">
+                      </div>
+                      <div class="guideTextCol" style="left: 230px; top: 92px;">
+                        <span>Default</span>
+                        <span>Large</span>
+                      </div>
+                    </div>
+
+                    <div class="commentTxt">
+                      <p>Input는 기본적으로 Default 사이즈를 사용하며, 로그인 및 주의를 요하는 상황에서 단독으로 사용할 경우 Large 사이즈를 사용합니다.</p>
+                      <p>Input의 패딩은 Default, Large 사이즈 모두 16px 입니다.</p>
+                      <p>예외적으로 가로 값은 변경 가능하나, 각 사이즈별 세로 값은 변경할 수 없습니다.</p>
                     </div>
                   </div>
-                </div>
-                <!--// States -->
+                  <!--// Spec -->
 
-                <!-- Usage -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>Usage</h3>
-                    <p>Label 유무에 따라 텍스 입력필드가 다르게 보여집니다.</p>
+                  <!-- States -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>States</h3>
+                      <p>Enabled, Hover, Active, Error, Disabled 5가지의 상태를 갖고 화면의 상태와 유기적으로 작용합니다.</p>
+                    </div>
+
+                    <div class="grayContBox inputStates">
+                      <div class="group">
+                        <div class="inputBox"><input type="text" placeholder="Placeholder"></div>
+                        <div class="inputBox hover"><input type="text" placeholder="Placeholder" value="Placeholder"></div>
+                        <div class="inputBox active"><input type="text" placeholder="Placeholder" value="Value"></div>
+                        <div class="inputBox error"><input type="text" placeholder="Placeholder" value="Text Inputting Error"></div>
+                        <div class="inputBox"><input type="text" placeholder="-" disabled></div>
+                      </div>
+
+                      <div class="guideTextCol" style="left: 230px; top: 82px;">
+                        <span>Enabled</span>
+                        <span>Hover</span>
+                        <span>Active</span>
+                        <span>Error</span>
+                        <span>Disabled</span>
+                      </div>
+                    </div>
                   </div>
+                  <!--// States -->
 
-                  <div class="colBox">
+                  <!-- Usage -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>Usage</h3>
+                      <p>Label 유무에 따라 텍스 입력필드가 다르게 보여집니다.</p>
+                    </div>
+
+                    <div class="colBox">
+                      <div class="itemBox">
+                        <h4>Placeholder usage</h4>
+                        <div class="grayContBox" style="height: 178px;">
+                          <div class="inputBox"><input type="text" placeholder="생년월일을 입력해 주세요"></div>
+                        </div>
+                        <div class="commentTxt">
+                          <p>Label을 사용하지 않고 플레이스홀더로만 안내할 경우,<br />
+                            입력해야 하는 내용은 입력한 내용을 지워야만 볼 수 있습니다.<br />
+                            입력 필드가 많은 경우, Label을 적용하여 더 명확하게 세부 내용을<br />전달해 주세요.</p>
+                        </div>
+                      </div>
+                      
+                      <div class="itemBox">
+                        <h4>Label usage</h4>
+                        <div class="grayContBox" style="height: 178px;">
+                          <div class="form"><label for="a">생년월일</label><div class="inputBox"><input type="text" placeholder="1999.01.01"></div></div>
+                        </div>
+                        <div class="commentTxt">
+                          <p>Label은 입력필드의 좌측에 배치할 수 있으며<br />
+                            입력해야하는 내용의 제목과 같은 의미를 갖습니다.<br />
+                            Label 사용 시 Placeholder 와 내용이 겹치지 않도록 주의가 필요합니다.</p>
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="itemBox">
-                      <h4>Placeholder usage</h4>
-                      <div class="grayContBox" style="height: 178px;">
-                        <div class="inputBox"><input type="text" placeholder="생년월일을 입력해 주세요"></div>
+                      <h4>Text area</h4>
+                      <div class="grayContBox" style="height: 286px;">
+                        <div class="textArea" style="width: 480px; height: 142px;">
+                          <textarea name="" id="" placeholder="Autosizing the height to fit the content"></textarea>
+                          <span>0/100</span>
+                        </div>
                       </div>
                       <div class="commentTxt">
-                        <p>Label을 사용하지 않고 플레이스홀더로만 안내할 경우,<br />
-                          입력해야 하는 내용은 입력한 내용을 지워야만 볼 수 있습니다.<br />
-                          입력 필드가 많은 경우, Label을 적용하여 더 명확하게 세부 내용을<br />전달해 주세요.</p>
+                        <p>필요에 따라 Text area의 높이값을 고정하거나, 콘텐츠 높이에 자동으로 맞춰 조정할 수 있습니다.</p>
                       </div>
+                    </div>
+                  </div>
+                  <!--// Usage -->
+
+                </div>
+                <!--// Disign Guide -->
+
+                <!-- Code -->
+                <div class="examples" style="display: none;">
+  <!-- Basic -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>Basic</h3>
+                      <p>Input UI 기본 예시입니다.</p>
                     </div>
                     
-                    <div class="itemBox">
-                      <h4>Label usage</h4>
-                      <div class="grayContBox" style="height: 178px;">
-                        <div class="form"><label for="a">생년월일</label><div class="inputBox"><input type="text" placeholder="1999.01.01"></div></div>
+                    <div class="codeBox">
+                      <div class="example align-row">
+                        <div class="inputBox"><input type="text" placeholder="Placeholder"></div>
                       </div>
-                      <div class="commentTxt">
-                        <p>Label은 입력필드의 좌측에 배치할 수 있으며<br />
-                          입력해야하는 내용의 제목과 같은 의미를 갖습니다.<br />
-                          Label 사용 시 Placeholder 와 내용이 겹치지 않도록 주의가 필요합니다.</p>
+                      <div class="codeTab">
+                        <a href="#" class="act">HTML</a>
+                      </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html"><span class="line">&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> <span>placeholder="Placeholder"&gt;</span>&lt;/<span class="obj">div</span>&gt;</span></code>
+  </pre>
                       </div>
                     </div>
                   </div>
 
-                  <div class="itemBox">
-                    <h4>Text area</h4>
-                    <div class="grayContBox" style="height: 286px;">
-                      <div class="textArea" style="width: 480px; height: 142px;">
-                        <textarea name="" id="" placeholder="Autosizing the height to fit the content"></textarea>
-                        <span>0/100</span>
+  <!-- Label position -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>Label position</h3>
+                      <p>&lt;Label&gt;은 입력 그룹 밖에 작성해야 합니다.</p>
+                    </div>
+
+                    <div class="codeBox">
+                      <div class="example align-row">
+                        <label for="a">Label</label><div class="inputBox"><input type="text" id="a" placeholder="Placeholder"></div>
+                      </div>                    
+                      <div class="codeTab">
+                        <a href="#" class="act">HTML</a>
                       </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html"><span class="line">&lt;<span class="obj">label</span> for="a"&gt;Label&lt;/<span class="obj">label</span>&gt;&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> id="a" <span>placeholder="Placeholder"&gt;</span>&lt;/<span class="obj">div</span>&gt;</span></code></pre>
+                      </div>                    
                     </div>
-                    <div class="commentTxt">
-                      <p>필요에 따라 Text area의 높이값을 고정하거나, 콘텐츠 높이에 자동으로 맞춰 조정할 수 있습니다.</p>
-                    </div>
-                  </div>
-                </div>
-                <!--// Usage -->
-
-              </div>
-              <!--// Disign Guide -->
-
-              <!-- Code -->
-              <div class="examples" style="display: none;">
-<!-- Basic -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>Basic</h3>
-                    <p>Input UI 기본 예시입니다.</p>
                   </div>
                   
-                  <div class="codeBox">
-                    <div class="example align-row">
-                      <div class="inputBox"><input type="text" placeholder="Placeholder"></div>
+  <!-- Size -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>Size</h3>
+                      <p>Input에는 Default(34px), Large(40px) 의 두 가지 크기가 있습니다.</p>
                     </div>
-                    <div class="codeTab">
-                      <a href="#" class="act">HTML</a>
-                    </div>
-                    <div class="codeCont">
-                      <button type="button" class="ic-copy">클립보드에 복사</button>
-                      <pre class="markup"><code class="markup-html"><span class="line">&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> <span>placeholder="Placeholder"&gt;</span>&lt;/<span class="obj">div</span>&gt;</span></code>
-</pre>
-                    </div>
-                  </div>
-                </div>
 
-<!-- Label position -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>Label position</h3>
-                    <p>&lt;Label&gt;은 입력 그룹 밖에 작성해야 합니다.</p>
-                  </div>
-
-                  <div class="codeBox">
-                    <div class="example align-row">
-                      <label for="a">Label</label><div class="inputBox"><input type="text" id="a" placeholder="Placeholder"></div>
-                    </div>                    
-                    <div class="codeTab">
-                      <a href="#" class="act">HTML</a>
-                    </div>
-                    <div class="codeCont">
-                      <button type="button" class="ic-copy">클립보드에 복사</button>
-                      <pre class="markup"><code class="markup-html"><span class="line">&lt;<span class="obj">label</span> for="a"&gt;Label&lt;/<span class="obj">label</span>&gt;&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> id="a" <span>placeholder="Placeholder"&gt;</span>&lt;/<span class="obj">div</span>&gt;</span></code></pre>
-                    </div>                    
-                  </div>
-                </div>
-                
-<!-- Size -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>Size</h3>
-                    <p>Input에는 Default(34px), Large(40px) 의 두 가지 크기가 있습니다.</p>
-                  </div>
-
-                  <div class="codeBox">
-                    <div class="example align-col">
-                      <div class="inputBox"><input type="text" placeholder="Placeholder"></div>
-                      <div class="inputBox large"><input type="text" placeholder="Placeholder"></div>
-                    </div>
-                    <div class="codeTab">
-                      <a href="#" class="act">HTML</a>
-                    </div>
-                    <div class="codeCont">
-                      <button type="button" class="ic-copy">클립보드에 복사</button>
-                      <pre class="markup"><code class="markup-html"><span class="line">&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> <span>placeholder="Placeholder"&gt;</span>&lt;/<span class="obj">div</span>&gt;</span>
-
-<span class="line">&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox large"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> <span>placeholder="Placeholder"&gt;</span>&lt;/<span class="obj">div</span>&gt;</span></code></pre>
-                    </div>
-                  </div>
-                </div>
-                
-<!-- Error / Disabled status -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>Error / Disabled status</h3>
-                    <p>status을 사용하여 입력에 상태(Error, Disabled)을 추가합니다.</p>
-                  </div>
-
-                  <div class="codeBox">
-                    <div class="example align-col">
-                      <div class="inputBox invalid"><input type="text" value="Text Inputting Error"></div>
-                      <div class="inputBox"><input type="text" placeholder="-" disabled></div>
-                    </div>
-                    <div class="codeTab">
-                      <a href="#" class="act">HTML</a>
-                    </div>
-                    <div class="codeCont">
-                      <button type="button" class="ic-copy">클립보드에 복사</button>
-                      <pre class="markup"><code class="markup-html"><span class="line">&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox invalid"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> <span>value="Text Inputting Error"&gt;</span>&lt;/<span class="obj">div</span>&gt;</span>
-
-<span class="line">&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> <span>placeholder="-" <span class="cls">disabled</span>&gt;&lt;/<span class="obj">div</span>&gt;</span></code></pre>
-                    </div>
-                  </div>
-                </div>
-
-<!-- With icon -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>With icon</h3>
-                    <p>Input UI에 아이콘을 추가로 배치할 수 있습니다. </p>
-                  </div>
-
-                  <div class="codeBox">
-                    <div class="example align-col">
-                      <div class="inputBox" style="width: 142px;">
-                        <input type="text" value="2024.07.01">
-                        <i class="date"></i>
+                    <div class="codeBox">
+                      <div class="example align-col">
+                        <div class="inputBox"><input type="text" placeholder="Placeholder"></div>
+                        <div class="inputBox large"><input type="text" placeholder="Placeholder"></div>
                       </div>
-                      <div class="inputBox large" style="width: 148px;">
-                        <input type="text" value="2024.07.01">
-                        <i class="date"></i>
+                      <div class="codeTab">
+                        <a href="#" class="act">HTML</a>
+                      </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html"><span class="line">&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> <span>placeholder="Placeholder"&gt;</span>&lt;/<span class="obj">div</span>&gt;</span>
+
+  <span class="line">&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox large"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> <span>placeholder="Placeholder"&gt;</span>&lt;/<span class="obj">div</span>&gt;</span></code></pre>
                       </div>
                     </div>
-                    <div class="codeTab">
-                      <a href="#" class="act">HTML</a>
+                  </div>
+                  
+  <!-- Error / Disabled status -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>Error / Disabled status</h3>
+                      <p>status을 사용하여 입력에 상태(Error, Disabled)을 추가합니다.</p>
                     </div>
-                    <div class="codeCont">
-                      <button type="button" class="ic-copy">클립보드에 복사</button>
-                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"inputBox"</span>&gt;
-  &lt;<span class="obj">input</span> type="text" value="2024.07.01"&gt;&lt;<span class="obj">i</span> class=<span class="cls">"date"</span>&gt;&lt;/<span class="obj">i</span>&gt;
-&lt;/<span class="obj">div</span>&gt;
 
-&lt;<span class="obj">div</span> class=<span class="cls">"inputBox large"</span>&gt;
-  &lt;<span class="obj">input</span> type="text" value="2024.07.01"&gt;&lt;<span class="obj">i</span> class=<span class="cls">"date"</span>&gt;&lt;/<span class="obj">i</span>&gt;
-&lt;/<span class="obj">div</span>&gt;</code></pre>
-                    </div>                    
-                  </div>
-                </div>
-
-<!-- With button -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>With button</h3>
-                  </div>
-
-                  <div class="codeBox">
-                    <div class="example align-col">
-                      <div class="formCol">
-                        <div class="inputBox" style="width: 242px;"><input type="text" placeholder="Placeholder"></div>
-                        <button type="button" class="btn small primaryA ic ic-search">Button</button>
+                    <div class="codeBox">
+                      <div class="example align-col">
+                        <div class="inputBox invalid"><input type="text" value="Text Inputting Error"></div>
+                        <div class="inputBox"><input type="text" placeholder="-" disabled></div>
                       </div>
-                      <div class="formCol">
-                        <div class="inputBox large" style="width: 260px;"><input type="text" placeholder="Placeholder"></div>                        
-                        <button type="button" class="btn medium primaryA ic ic-search">Button</button>
+                      <div class="codeTab">
+                        <a href="#" class="act">HTML</a>
+                      </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html"><span class="line">&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox invalid"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> <span>value="Text Inputting Error"&gt;</span>&lt;/<span class="obj">div</span>&gt;</span>
+
+  <span class="line">&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> <span>placeholder="-" <span class="cls">disabled</span>&gt;&lt;/<span class="obj">div</span>&gt;</span></code></pre>
                       </div>
                     </div>
-                    <div class="codeTab"> 
-                      <a href="#" class="act">HTML</a>
+                  </div>
+
+  <!-- With icon -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>With icon</h3>
+                      <p>Input UI에 아이콘을 추가로 배치할 수 있습니다. </p>
                     </div>
-                    <div class="codeCont">
-                      <button type="button" class="ic-copy">클립보드에 복사</button>
-                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"formCol"</span>&gt;
-  &lt;<span class="obj">div</span> class=<span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> type="text" placeholder="Placeholder"&gt;&lt;/<span class="obj">div</span>&gt;
-  &lt;<span class="obj">button</span> type="button" class=<span class="cls">"btn small primaryA ic ic-search"</span>&gt;Button&lt;/<span class="obj">button</span>&gt;
-&lt;/<span class="obj">div</span>&gt;
 
-&lt;<span class="obj">div</span> class=<span class="cls">"formCol"</span>&gt;
-  &lt;<span class="obj">div</span> class=<span class="cls">"inputBox large"</span>&gt;&lt;<span class="obj">input</span> type="text" placeholder="Placeholder"&gt;&lt;/<span class="obj">div</span>&gt;
-  &lt;<span class="obj">button</span> type="button" class=<span class="cls">"btn medium primaryA ic ic-search"</span>&gt;Button&lt;/<span class="obj">button</span>&gt;
-&lt;/<span class="obj">div</span>&gt;</code></pre>
-                    </div>                    
-                  </div>
-                </div>
-
-<!-- With button -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>With dropdown</h3>
-                  </div>
-
-                  <div class="codeBox">
-                    <div class="example align-col">
-                      <div class="formCol">
-                        <div class="customSelect">
-                          <select>
-                            <option value="0">Dropdown</option>
-                            <option value="1">Dropdown 1</option>
-                            <option value="2">Dropdown 2</option>
-                          </select>
+                    <div class="codeBox">
+                      <div class="example align-col">
+                        <div class="inputBox" style="width: 142px;">
+                          <input type="text" value="2024.07.01">
+                          <i class="date"></i>
                         </div>
-                        <div class="inputBox" style="width: 260px;"><input type="text" placeholder="Placeholder"></div>
-                      </div>
-                      <div class="formCol">
-                        <div class="customSelect large">
-                          <select>
-                            <option value="0">Dropdown</option>
-                            <option value="1">Dropdown 1</option>
-                            <option value="2">Dropdown 2</option>
-                          </select>
+                        <div class="inputBox large" style="width: 148px;">
+                          <input type="text" value="2024.07.01">
+                          <i class="date"></i>
                         </div>
-                        <div class="inputBox large" style="width: 260px;"><input type="text" placeholder="Placeholder"></div> 
                       </div>
-                    </div>
-                    <div class="codeTab"> 
-                      <a href="#" class="act">HTML</a>
-                    </div>
-                    <div class="codeCont">
-                      <button type="button" class="ic-copy">클립보드에 복사</button>
-                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"formCol"</span>&gt;
-  &lt;<span class="obj">div</span> class=<span class="cls">"customSelect"</span>&gt;
-    &lt;<span class="obj">select</span>&gt;
-      &lt;<span class="obj">option</span> value="0">Dropdown&lt;/<span class="obj">option</span>&gt;
-      &lt;<span class="obj">option</span> value="1">Dropdown 1&lt;/<span class="obj">option</span>&gt;
-      &lt;<span class="obj">option</span> value="2">Dropdown 2&lt;/<span class="obj">option</span>&gt;
-    &lt;/<span class="obj">select</span>&gt;
+                      <div class="codeTab">
+                        <a href="#" class="act">HTML</a>
+                      </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"inputBox"</span>&gt;
+    &lt;<span class="obj">input</span> type="text" value="2024.07.01"&gt;&lt;<span class="obj">i</span> class=<span class="cls">"date"</span>&gt;&lt;/<span class="obj">i</span>&gt;
   &lt;/<span class="obj">div</span>&gt;
-  &lt;<span class="obj">div</span> class=<span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> type="text" placeholder="Placeholder"&gt;&lt;/<span class="obj">div</span>&gt;
-&lt;/<span class="obj">div</span>&gt;
 
-&lt;<span class="obj">div</span> class=<span class="cls">"formCol"</span>&gt;
-  &lt;<span class="obj">div</span> class=<span class="cls">"customSelect large"</span>&gt;
-    &lt;<span class="obj">select</span>&gt;
-      &lt;<span class="obj">option</span> value="0">Dropdown&lt;/<span class="obj">option</span>&gt;
-      &lt;<span class="obj">option</span> value="1">Dropdown 1&lt;/<span class="obj">option</span>&gt;
-      &lt;<span class="obj">option</span> value="2">Dropdown 2&lt;/<span class="obj">option</span>&gt;
-    &lt;/<span class="obj">select</span>&gt;
+  &lt;<span class="obj">div</span> class=<span class="cls">"inputBox large"</span>&gt;
+    &lt;<span class="obj">input</span> type="text" value="2024.07.01"&gt;&lt;<span class="obj">i</span> class=<span class="cls">"date"</span>&gt;&lt;/<span class="obj">i</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;</code></pre>
+                      </div>                    
+                    </div>
+                  </div>
+
+  <!-- With button -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>With button</h3>
+                    </div>
+
+                    <div class="codeBox">
+                      <div class="example align-col">
+                        <div class="formCol">
+                          <div class="inputBox" style="width: 242px;"><input type="text" placeholder="Placeholder"></div>
+                          <button type="button" class="btn small primaryA ic ic-search">Button</button>
+                        </div>
+                        <div class="formCol">
+                          <div class="inputBox large" style="width: 260px;"><input type="text" placeholder="Placeholder"></div>                        
+                          <button type="button" class="btn medium primaryA ic ic-search">Button</button>
+                        </div>
+                      </div>
+                      <div class="codeTab"> 
+                        <a href="#" class="act">HTML</a>
+                      </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"formCol"</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> type="text" placeholder="Placeholder"&gt;&lt;/<span class="obj">div</span>&gt;
+    &lt;<span class="obj">button</span> type="button" class=<span class="cls">"btn small primaryA ic ic-search"</span>&gt;Button&lt;/<span class="obj">button</span>&gt;
   &lt;/<span class="obj">div</span>&gt;
-  &lt;<span class="obj">div</span> class=<span class="cls">"inputBox large"</span>&gt;&lt;<span class="obj">input</span> type="text" placeholder="Placeholder"&gt;&lt;/<span class="obj">div</span>&gt;
-&lt;/<span class="obj">div</span>&gt;</code></pre>
-                    </div>                    
-                  </div>
-                </div>
 
-<!-- Text area -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>Text area</h3>
+  &lt;<span class="obj">div</span> class=<span class="cls">"formCol"</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"inputBox large"</span>&gt;&lt;<span class="obj">input</span> type="text" placeholder="Placeholder"&gt;&lt;/<span class="obj">div</span>&gt;
+    &lt;<span class="obj">button</span> type="button" class=<span class="cls">"btn medium primaryA ic ic-search"</span>&gt;Button&lt;/<span class="obj">button</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;</code></pre>
+                      </div>                    
+                    </div>
                   </div>
 
-                  <div class="codeBox">
-                    <div class="example align-col">
-                      <div class="textArea" style="width: 480px; height: 122px;">
-                        <textarea name="" id="" rows="6" cols="100" placeholder="Autosizing the height to fit the content"></textarea>
+  <!-- With button -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>With dropdown</h3>
+                    </div>
+
+                    <div class="codeBox">
+                      <div class="example align-col">
+                        <div class="formCol">
+                          <div class="customSelect">
+                            <select>
+                              <option value="0">Dropdown</option>
+                              <option value="1">Dropdown 1</option>
+                              <option value="2">Dropdown 2</option>
+                            </select>
+                          </div>
+                          <div class="inputBox" style="width: 260px;"><input type="text" placeholder="Placeholder"></div>
+                        </div>
+                        <div class="formCol">
+                          <div class="customSelect large">
+                            <select>
+                              <option value="0">Dropdown</option>
+                              <option value="1">Dropdown 1</option>
+                              <option value="2">Dropdown 2</option>
+                            </select>
+                          </div>
+                          <div class="inputBox large" style="width: 260px;"><input type="text" placeholder="Placeholder"></div> 
+                        </div>
                       </div>
-                    </div>
-                    <div class="codeTab"> 
-                      <a href="#" class="act">HTML</a>
-                    </div>
-                    <div class="codeCont">
-                      <button type="button" class="ic-copy">클립보드에 복사</button>
-                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"textArea"</span> style="width: 480px; height: 122px;"&gt;
-  &lt;<span class="obj">textarea</span> name="" id="" rows="6" cols="100" placeholder="Autosizing the height to fit the content"&gt;&lt;/<span class="obj">textarea</span>&gt;
-&lt;/<span class="obj">div</span>&gt;</code></pre>
-                    </div>                    
-                  </div>
-                </div>
-
-<!-- With character counting -->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>With character counting</h3>
-                  </div>
-
-                  <div class="codeBox">
-                    <div class="example align-col">
-                      <div class="textArea" style="width: 480px;">
-                        <textarea name="" id="" rows="6" cols="100" placeholder="Autosizing the height to fit the content"></textarea>
-                        <span>0/100</span>
+                      <div class="codeTab"> 
+                        <a href="#" class="act">HTML</a>
                       </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"formCol"</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"customSelect"</span>&gt;
+      &lt;<span class="obj">select</span>&gt;
+        &lt;<span class="obj">option</span> value="0">Dropdown&lt;/<span class="obj">option</span>&gt;
+        &lt;<span class="obj">option</span> value="1">Dropdown 1&lt;/<span class="obj">option</span>&gt;
+        &lt;<span class="obj">option</span> value="2">Dropdown 2&lt;/<span class="obj">option</span>&gt;
+      &lt;/<span class="obj">select</span>&gt;
+    &lt;/<span class="obj">div</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> type="text" placeholder="Placeholder"&gt;&lt;/<span class="obj">div</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
+
+  &lt;<span class="obj">div</span> class=<span class="cls">"formCol"</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"customSelect large"</span>&gt;
+      &lt;<span class="obj">select</span>&gt;
+        &lt;<span class="obj">option</span> value="0">Dropdown&lt;/<span class="obj">option</span>&gt;
+        &lt;<span class="obj">option</span> value="1">Dropdown 1&lt;/<span class="obj">option</span>&gt;
+        &lt;<span class="obj">option</span> value="2">Dropdown 2&lt;/<span class="obj">option</span>&gt;
+      &lt;/<span class="obj">select</span>&gt;
+    &lt;/<span class="obj">div</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"inputBox large"</span>&gt;&lt;<span class="obj">input</span> type="text" placeholder="Placeholder"&gt;&lt;/<span class="obj">div</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;</code></pre>
+                      </div>                    
                     </div>
-                    <div class="codeTab"> 
-                      <a href="#" class="act">HTML</a>
+                  </div>
+
+  <!-- Text area -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>Text area</h3>
                     </div>
-                    <div class="codeCont">
-                      <button type="button" class="ic-copy">클립보드에 복사</button>
-                      <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"textArea"</span> style="width: 480px; height: 122px;"&gt;
-  &lt;<span class="obj">textarea</span> name="" id="" rows="6" cols="100" placeholder="Autosizing the height to fit the content"&gt;&lt;/<span class="obj">textarea</span>&gt;
-  &lt;<span class="obj">span</span>&gt;0/100&lt;/<span class="obj">span</span>&gt;
-&lt;/<span class="obj">div</span>&gt;</code></pre>
-                    </div>                    
+
+                    <div class="codeBox">
+                      <div class="example align-col">
+                        <div class="textArea" style="width: 480px; height: 122px;">
+                          <textarea name="" id="" rows="6" cols="100" placeholder="Autosizing the height to fit the content"></textarea>
+                        </div>
+                      </div>
+                      <div class="codeTab"> 
+                        <a href="#" class="act">HTML</a>
+                      </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"textArea"</span> style="width: 480px; height: 122px;"&gt;
+    &lt;<span class="obj">textarea</span> name="" id="" rows="6" cols="100" placeholder="Autosizing the height to fit the content"&gt;&lt;/<span class="obj">textarea</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;</code></pre>
+                      </div>                    
+                    </div>
                   </div>
+
+  <!-- With character counting -->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>With character counting</h3>
+                    </div>
+
+                    <div class="codeBox">
+                      <div class="example align-col">
+                        <div class="textArea" style="width: 480px;">
+                          <textarea name="" id="" rows="6" cols="100" placeholder="Autosizing the height to fit the content"></textarea>
+                          <span>0/100</span>
+                        </div>
+                      </div>
+                      <div class="codeTab"> 
+                        <a href="#" class="act">HTML</a>
+                      </div>
+                      <div class="codeCont">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"textArea"</span> style="width: 480px; height: 122px;"&gt;
+    &lt;<span class="obj">textarea</span> name="" id="" rows="6" cols="100" placeholder="Autosizing the height to fit the content"&gt;&lt;/<span class="obj">textarea</span>&gt;
+    &lt;<span class="obj">span</span>&gt;0/100&lt;/<span class="obj">span</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;</code></pre>
+                      </div>                    
+                    </div>
+                  </div>
+
+                  <!-- CSS download-->
+                  <div class="detailArea">
+                    <div class="detailTitle">
+                      <h3>CSS</h3>
+                      <p>해당 컴포넌트만 적용 가능한 CSS 파일입니다.</p>
+                      <p class="point">resest.css 가 없을 경우 깨질 수 있습니다. 컴포넌트 메인페이지에서 reset.css 파일을 다운로드 받아서 사용하세요.</p>
+                    </div>
+
+                    <div class="grayBox cssDown">
+                      <a href="#" onclick="downloadCssZip()">input.css</a>
+                      <button type="button" class="ic-down" onclick="downloadCssZip()">파일 다운로드</button>
+                    </div>
+                  </div>
+                  <!--// CSS download -->
+
                 </div>
-
-                <!-- CSS download-->
-                <div class="detailArea">
-                  <div class="detailTitle">
-                    <h3>CSS</h3>
-                    <p>해당 컴포넌트만 적용 가능한 CSS 파일입니다.</p>
-                    <p class="point">resest.css 가 없을 경우 깨질 수 있습니다. 컴포넌트 메인페이지에서 reset.css 파일을 다운로드 받아서 사용하세요.</p>
-                  </div>
-
-                  <div class="grayBox cssDown">
-                    <a href="#" onclick="downloadCssZip()">input.css</a>
-                    <button type="button" class="ic-down" onclick="downloadCssZip()">파일 다운로드</button>
-                  </div>
-                </div>
-                <!--// CSS download -->
-
+                <!--// Code -->
               </div>
-              <!--// Code -->
             </div>
 
           </div>
