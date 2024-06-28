@@ -50,6 +50,7 @@
       }
       + .itemBox {margin-top: 40px;}
     }
+    .commentTxt {margin-top: 0;}
   }
   .typeTileArea {
     @include mixin.flex(left,flex-start,15px); flex-wrap: wrap; @include mixin.font(14px,400,var(--text-color),21px);
