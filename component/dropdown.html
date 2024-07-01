@@ -44,9 +44,11 @@
               </div>
               <!--// 탭메뉴 -->
 
+              <!-- 탭컨텐츠 -->
               <div class="tabContainer">
                 <!-- Disign Guide -->
                 <div class="designGuide">
+                  
                   <!-- Anatomy -->
                   <div class="detailArea">
                     <div class="detailTitle">
@@ -151,7 +153,7 @@
 
                 <!-- Code -->
                 <div class="examples" style="display: none;">
-              <!-- Basic -->
+                  <!-- Basic -->
                   <div class="detailArea">
                     <div class="detailTitle">
                       <h3>Basic</h3>
@@ -175,78 +177,79 @@
                       <div class="codeCont" id="codeHTML1">
                         <button type="button" class="ic-copy">클립보드에 복사</button>
                         <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"customSelect"</span>&gt;
-              &lt;<span class="obj">select</span>&gt;
-              &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
-              &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
-              &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
-              &lt;/<span class="obj">select</span>&gt;
-              &lt;/<span class="obj">div</span>&gt;</code></pre>
+  &lt;<span class="obj">select</span>&gt;
+  &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
+  &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
+  &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
+  &lt;/<span class="obj">select</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
                       </div>
 
                       <div class="codeCont" id="codeJS1" style="display: none;">
                         <button type="button" class="ic-copy">클립보드에 복사</button>
                         <pre class="script"><code class="javascript">// Custom Select Initialization
-              function initCustomSelect() {
-              const customSelects = document.querySelectorAll(".customSelect");
-              if (!customSelects.length) return;
+function initCustomSelect() {
+const customSelects = document.querySelectorAll(".customSelect");
+if (!customSelects.length) return;
 
-              customSelects.forEach(customSelect => {
-              const selectElement = customSelect.querySelector("select");
-              const selectLength = selectElement.length;
+customSelects.forEach(customSelect => {
+const selectElement = customSelect.querySelector("select");
+const selectLength = selectElement.length;
 
-              const selectSelected = document.createElement("div");
-              selectSelected.className = "selectSelected";
-              selectSelected.innerHTML = selectElement.options[selectElement.selectedIndex].innerHTML;
-              if (selectElement.disabled) selectSelected.classList.add("disabled");
-              customSelect.appendChild(selectSelected);
+const selectSelected = document.createElement("div");
+selectSelected.className = "selectSelected";
+selectSelected.innerHTML = selectElement.options[selectElement.selectedIndex].innerHTML;
+if (selectElement.disabled) selectSelected.classList.add("disabled");
+customSelect.appendChild(selectSelected);
 
-              const selectItems = document.createElement("div");
-              selectItems.className = "selectItems selectHide";
-              const selectItemsList = document.createElement("ul");
-              selectItemsList.className = "selectItemsList";
-              selectItems.appendChild(selectItemsList);
+const selectItems = document.createElement("div");
+selectItems.className = "selectItems selectHide";
+const selectItemsList = document.createElement("ul");
+selectItemsList.className = "selectItemsList";
+selectItems.appendChild(selectItemsList);
 
-              for (let j = 1; j < selectLength; j++) {
-              const selectOption = document.createElement("li");
-              selectOption.innerHTML = selectElement.options[j].innerHTML;
-              selectOption.addEventListener("click", function () {
-                const parentSelect = this.closest(".customSelect").querySelector("select");
-                parentSelect.selectedIndex = Array.from(parentSelect.options).findIndex(option => option.innerHTML === this.innerHTML);
-                selectSelected.innerHTML = this.innerHTML;
-                selectItemsList.querySelectorAll("li").forEach(item => item.classList.remove("sameAsSelected"));
-                this.classList.add("sameAsSelected");
-                selectSelected.click();
-              });
-              selectItemsList.appendChild(selectOption);
-              }
-              customSelect.appendChild(selectItems);
+for (let j = 1; j < selectLength; j++) {
+const selectOption = document.createElement("li");
+selectOption.innerHTML = selectElement.options[j].innerHTML;
+selectOption.addEventListener("click", function () {
+  const parentSelect = this.closest(".customSelect").querySelector("select");
+  parentSelect.selectedIndex = Array.from(parentSelect.options).findIndex(option => option.innerHTML === this.innerHTML);
+  selectSelected.innerHTML = this.innerHTML;
+  selectItemsList.querySelectorAll("li").forEach(item => item.classList.remove("sameAsSelected"));
+  this.classList.add("sameAsSelected");
+  selectSelected.click();
+});
+selectItemsList.appendChild(selectOption);
+}
+customSelect.appendChild(selectItems);
 
-              selectSelected.addEventListener("click", function (e) {
-              if (this.classList.contains("disabled")) return;
-              e.stopPropagation();
-              closeAllSelect(this);
-              this.nextElementSibling.classList.toggle("selectHide");
-              this.classList.toggle("selectArrowActive");
-              });
-              });
+selectSelected.addEventListener("click", function (e) {
+if (this.classList.contains("disabled")) return;
+e.stopPropagation();
+closeAllSelect(this);
+this.nextElementSibling.classList.toggle("selectHide");
+this.classList.toggle("selectArrowActive");
+});
+});
 
-              function closeAllSelect(elmnt) {
-              document.querySelectorAll(".selectItems").forEach((selectItem, index) => {
-              if (selectItem.previousElementSibling !== elmnt) {
-                selectItem.classList.add("selectHide");
-                selectItem.previousElementSibling.classList.remove("selectArrowActive");
-              }
-              });
-              }
+function closeAllSelect(elmnt) {
+document.querySelectorAll(".selectItems").forEach((selectItem, index) => {
+if (selectItem.previousElementSibling !== elmnt) {
+  selectItem.classList.add("selectHide");
+  selectItem.previousElementSibling.classList.remove("selectArrowActive");
+}
+});
+}
 
-              document.addEventListener("click", closeAllSelect);
-              }
+document.addEventListener("click", closeAllSelect);
+}
 
-              document.addEventListener('DOMContentLoaded', initCustomSelect);</code></pre>
+document.addEventListener('DOMContentLoaded', initCustomSelect);</code></pre>
                       </div>
                     </div>
                   </div>
-              <!-- Size -->
+
+                  <!-- Size -->
                   <div class="detailArea">
                     <div class="detailTitle">
                       <h3>Size</h3>
@@ -275,25 +278,25 @@
                       <div class="codeCont">
                         <button type="button" class="ic-copy">클립보드에 복사</button>
                         <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"customSelect"</span>&gt;
-              &lt;<span class="obj">select</span>&gt;
-              &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
-              &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
-              &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
-              &lt;/<span class="obj">select</span>&gt;
-              &lt;/<span class="obj">div</span>&gt;
+  &lt;<span class="obj">select</span>&gt;
+  &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
+  &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
+  &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
+  &lt;/<span class="obj">select</span>&gt;
+  &lt;/<span class="obj">div</span>&gt;
 
-              &lt;<span class="obj">div</span> class=<span class="cls">"customSelect large"</span>&gt;
-              &lt;<span class="obj">select</span>&gt;
-              &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
-              &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
-              &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
-              &lt;/<span class="obj">select</span>&gt;
-              &lt;/<span class="obj">div</span>&gt;</code></pre>
+  &lt;<span class="obj">div</span> class=<span class="cls">"customSelect large"</span>&gt;
+  &lt;<span class="obj">select</span>&gt;
+  &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
+  &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
+  &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
+  &lt;/<span class="obj">select</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
                       </div>                    
                     </div>
                   </div>
 
-              <!-- Disabled status -->
+                  <!-- Disabled status -->
                   <div class="detailArea">
                     <div class="detailTitle">
                       <h3>Disabled status</h3>
@@ -322,20 +325,20 @@
                       <div class="codeCont">
                         <button type="button" class="ic-copy">클립보드에 복사</button>
                         <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"customSelect"</span>&gt;
-              &lt;<span class="obj">select</span> <span class="cls">disabled</span>&gt;
-              &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
-              &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
-              &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
-              &lt;/<span class="obj">select</span>&gt;
-              &lt;/<span class="obj">div</span>&gt;
+  &lt;<span class="obj">select</span> <span class="cls">disabled</span>&gt;
+  &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
+  &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
+  &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
+  &lt;/<span class="obj">select</span>&gt;
+&lt;/<span class="obj">div</span>&gt;
 
-              &lt;<span class="obj">div</span> class=<span class="cls">"customSelect large"</span>&gt;
-              &lt;<span class="obj">select</span> <span class="cls">disabled</span>&gt;
-              &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
-              &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
-              &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
-              &lt;/<span class="obj">select</span>&gt;
-              &lt;/<span class="obj">div</span>&gt;</code></pre>
+&lt;<span class="obj">div</span> class=<span class="cls">"customSelect large"</span>&gt;
+  &lt;<span class="obj">select</span> <span class="cls">disabled</span>&gt;
+  &lt;<span class="obj">option</span> value="0"&gt;Dropdown&lt;/<span class="obj">option</span>&gt;
+  &lt;<span class="obj">option</span> value="1"&gt;Dropdown 1&lt;/<span class="obj">option</span>&gt;
+  &lt;<span class="obj">option</span> value="2"&gt;Dropdown 2&lt;/<span class="obj">option</span>&gt;
+  &lt;/<span class="obj">select</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
                       </div>                    
                     </div>
                   </div>
@@ -357,7 +360,9 @@
 
                 </div>
                 <!--// Code -->
+
               </div>
+              <!--// 탭컨텐츠 -->
             </div>
 
           </div>

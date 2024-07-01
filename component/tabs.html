@@ -44,9 +44,11 @@
               </div>
               <!--// 탭메뉴 -->
 
+              <!-- 탭컨텐츠 -->
               <div class="tabContainer">
                 <!-- Disign Guide -->
                 <div class="designGuide">
+
                   <!-- Anatomy -->
                   <div class="detailArea">
                     <div class="detailTitle">
@@ -203,7 +205,8 @@
 
                 <!-- Code -->
                 <div class="examples" style="display: none;">
-  <!-- Text type tabs -->
+
+                  <!-- Text type tabs -->
                   <div class="detailArea">
                     <div class="detailTitle">
                       <h3>Text type tabs</h3>
@@ -226,30 +229,30 @@
                       <div class="codeCont" id="codeHTML1">
                         <button type="button" class="ic-copy">클립보드에 복사</button>
                         <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"tabs textType"</span> id="tabs"&gt;
-    &lt;<span class="obj">a</span> href="#" class=<span class="cls">"act"</span>&gt;tab 1&lt;/<span class="obj">a</span>&gt;
-    &lt;<span class="obj">a</span> href="#"&gt;tab 2&lt;/<span class="obj">a</span>&gt;
-    &lt;<span class="obj">a</span> href="#"&gt;tab 3&lt;/<span class="obj">a</span>&gt;
-    &lt;<span class="obj">a</span> href="#"&gt;tab 4&lt;/<span class="obj">a</span>&gt;
-    &lt;<span class="obj">a</span> href="#"&gt;tab 5&lt;/<span class="obj">a</span>&gt;
-  &lt;/<span class="obj">div</span>&gt;</code></pre>
+  &lt;<span class="obj">a</span> href="#" class=<span class="cls">"act"</span>&gt;tab 1&lt;/<span class="obj">a</span>&gt;
+  &lt;<span class="obj">a</span> href="#"&gt;tab 2&lt;/<span class="obj">a</span>&gt;
+  &lt;<span class="obj">a</span> href="#"&gt;tab 3&lt;/<span class="obj">a</span>&gt;
+  &lt;<span class="obj">a</span> href="#"&gt;tab 4&lt;/<span class="obj">a</span>&gt;
+  &lt;<span class="obj">a</span> href="#"&gt;tab 5&lt;/<span class="obj">a</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
                       </div>
 
                       <div class="codeCont" id="codeJS1" style="display: none;">
                         <button type="button" class="ic-copy">클립보드에 복사</button>
                         <pre class="script"><code class="javascript">const tabs = document.querySelectorAll('.tabs a');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      // 모든 탭에서 'act' 클래스 제거
-      tabs.forEach(t => t.classList.remove('act'));
-      // 클릭된 탭에 'act' 클래스 추가
-      tab.classList.add('act');
-    });
-  });</code></pre>
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // 모든 탭에서 'act' 클래스 제거
+    tabs.forEach(t => t.classList.remove('act'));
+    // 클릭된 탭에 'act' 클래스 추가
+    tab.classList.add('act');
+  });
+});</code></pre>
                       </div>
                     </div>
                   </div>
 
-  <!-- Box type tabs -->
+                  <!-- Box type tabs -->
                   <div class="detailArea">
                     <div class="detailTitle">
                       <h3>Box type tabs</h3>
@@ -283,14 +286,14 @@
                       <div class="codeCont" id="codeJS2" style="display: none;">
                         <button type="button" class="ic-copy">클립보드에 복사</button>
                         <pre class="script"><code class="javascript">const tabs = document.querySelectorAll('.tabs a');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      // 모든 탭에서 'act' 클래스 제거
-      tabs.forEach(t => t.classList.remove('act'));
-      // 클릭된 탭에 'act' 클래스 추가
-      tab.classList.add('act');
-    });
-  });</code></pre>
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // 모든 탭에서 'act' 클래스 제거
+    tabs.forEach(t => t.classList.remove('act'));
+    // 클릭된 탭에 'act' 클래스 추가
+    tab.classList.add('act');
+  });
+});</code></pre>
                       </div>                    
                     </div>
                   </div>
@@ -312,7 +315,9 @@
 
                 </div>
                 <!--// Code -->
+
               </div>
+              <!--// 탭컨텐츠 -->
             </div>
             
           </div>

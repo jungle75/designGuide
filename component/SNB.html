@@ -45,9 +45,11 @@
               </div>
               <!--// 탭메뉴 -->
 
+              <!-- 탭컨텐츠 -->
               <div class="tabContainer">
                 <!-- Disign Guide -->
                 <div class="designGuide">
+                  
                   <!-- Anatomy -->
                   <div class="detailArea">
                     <h3>Anatomy</h3>
@@ -256,7 +258,8 @@
 
                 <!-- Code -->
                 <div class="examples" style="display: none;">
-  <!-- Basic -->
+                  
+                <!-- Basic -->
                 <div class="detailArea">
                   <div class="detailTitle">
                     <h3>Basic</h3>
@@ -286,66 +289,66 @@
                     <div class="codeCont" id="codeHTML1">
                       <button type="button" class="ic-copy">클립보드에 복사</button>
                       <pre class="markup"><code class="markup-html">&lt;<span class="obj">ul</span> class=<span class="cls">"SNB"</span>&gt;
-    &lt;<span class="obj">li</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 1&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
-    &lt;/<span class="obj">li</span>&gt;
-    &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 2&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;    
-    &lt;/<span class="obj">li</span>&gt;
-    &lt;<span class="obj">li</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 3&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
-    &lt;/<span class="obj">li</span>&gt;
-    &lt;<span class="obj">li</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 4&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
-    &lt;/<span class="obj">li</span>&gt;
-  &lt;/<span class="obj">ul</span>&gt;</code></pre>
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 1&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 2&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;    
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 3&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 4&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
+  &lt;/<span class="obj">li</span>&gt;
+&lt;/<span class="obj">ul</span>&gt;</code></pre>
                     </div>
                     
                     <div class="codeCont" id="codeJS1" style="display: none;">
                       <button type="button" class="ic-copy">클립보드에 복사</button>
                       <pre class="script"><code class="javascript">// JavaScript 코드는 여기에 작성합니다.
-    document.addEventListener("DOMContentLoaded", function() {
-      // 모든 a 태그에 클릭 이벤트 리스너 추가
-      var links = document.querySelectorAll('.SNB a');
-      links.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-          event.preventDefault(); // 기본 동작(링크 이동) 방지
+document.addEventListener("DOMContentLoaded", function() {
+  // 모든 a 태그에 클릭 이벤트 리스너 추가
+  var links = document.querySelectorAll('.SNB a');
+  links.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // 기본 동작(링크 이동) 방지
 
-          // act 클래스를 가진 li 요소들에서 act 클래스 제거
-          var activeItems = document.querySelectorAll('.SNB .act');
-          activeItems.forEach(function(item) {
-            item.classList.remove('act');
-          });
-
-          // 클릭된 a 태그의 부모인 li 요소에 act 클래스 추가
-          var parentLI = this.closest('li');
-          parentLI.classList.add('act');
-        });
+      // act 클래스를 가진 li 요소들에서 act 클래스 제거
+      var activeItems = document.querySelectorAll('.SNB .act');
+      activeItems.forEach(function(item) {
+        item.classList.remove('act');
       });
 
-      // 모든 .subMenu a 태그에 클릭 이벤트 리스너 추가
-      var subMenuLinks = document.querySelectorAll('.subMenu a');
-      subMenuLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-          event.preventDefault(); // 기본 동작(링크 이동) 방지
+      // 클릭된 a 태그의 부모인 li 요소에 act 클래스 추가
+      var parentLI = this.closest('li');
+      parentLI.classList.add('act');
+    });
+  });
 
-          // 현재 subMenu 안의 모든 a 태그에서 on 클래스 제거
-          var subMenuItems = this.closest('.subMenu').querySelectorAll('a');
-          subMenuItems.forEach(function(item) {
-            item.classList.remove('on');
-          });
+  // 모든 .subMenu a 태그에 클릭 이벤트 리스너 추가
+  var subMenuLinks = document.querySelectorAll('.subMenu a');
+  subMenuLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // 기본 동작(링크 이동) 방지
 
-          // 클릭된 a 태그에 on 클래스 추가
-          this.classList.add('on');
-        });
+      // 현재 subMenu 안의 모든 a 태그에서 on 클래스 제거
+      var subMenuItems = this.closest('.subMenu').querySelectorAll('a');
+      subMenuItems.forEach(function(item) {
+        item.classList.remove('on');
       });
-    });</code></pre>
+
+      // 클릭된 a 태그에 on 클래스 추가
+      this.classList.add('on');
+    });
+  });
+});</code></pre>
                     </div>
 
                   </div>
                 </div>
 
-  <!-- With icon -->
+                <!-- With icon -->
                 <div class="detailArea">
                   <div class="detailTitle">
                     <h3>With icon</h3>
@@ -374,98 +377,99 @@
                     <div class="codeCont">
                       <button type="button" class="ic-copy">클립보드에 복사</button>
                       <pre class="markup"><code class="markup-html">&lt;<span class="obj">ul</span> class=<span class="cls">"SNB icon"</span>&gt;
-    &lt;<span class="obj">li</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 1&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
-    &lt;/<span class="obj">li</span>&gt;
-    &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 2&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;    
-    &lt;/<span class="obj">li</span>&gt;
-    &lt;<span class="obj">li</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 3&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
-    &lt;/<span class="obj">li</span>&gt;
-    &lt;<span class="obj">li</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 4&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
-    &lt;/<span class="obj">li</span>&gt;
-  &lt;/<span class="obj">ul</span>&gt;</code></pre>
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 1&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 2&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;    
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 3&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 4&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
+  &lt;/<span class="obj">li</span>&gt;
+&lt;/<span class="obj">ul</span>&gt;</code></pre>
                     </div>                    
                   </div>
                 </div>
-  <!-- Multi-leve -->
-                  <div class="detailArea">
-                    <div class="detailTitle">
-                      <h3>Multi-leve</h3>
-                    </div>
+
+                <!-- Multi-leve -->
+                <div class="detailArea">
+                  <div class="detailTitle">
+                    <h3>Multi-leve</h3>
+                  </div>
                     
-                    <div class="codeBox">
-                      <div class="example align-row gray-100" style="align-items: flex-start;">
-                        <ul class="SNB" id="snb3">
-                          <li>
-                            <a href="#"><span>side nav 1</span></a>
-                          </li>
-                          <li class="act">
-                            <a href="#"><span>side nav 2</span></a>
-                            <div class="subMenu">
-                              <a href="#">option 1</a>
-                              <a href="#" class="on">option 2</a>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#"><span>side nav 3</span></a> 
-                          </li>
-                        </ul>
+                  <div class="codeBox">
+                    <div class="example align-row gray-100" style="align-items: flex-start;">
+                      <ul class="SNB" id="snb3">
+                        <li>
+                          <a href="#"><span>side nav 1</span></a>
+                        </li>
+                        <li class="act">
+                          <a href="#"><span>side nav 2</span></a>
+                          <div class="subMenu">
+                            <a href="#">option 1</a>
+                            <a href="#" class="on">option 2</a>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#"><span>side nav 3</span></a> 
+                        </li>
+                      </ul>
 
-                        <ul class="SNB icon" id="snb4">
-                          <li>
-                            <a href="#"><span>side nav 1</span></a>
-                          </li>
-                          <li class="act">
-                            <a href="#"><span>side nav 2</span></a>
-                            <div class="subMenu">
-                              <a href="#">option 1</a>
-                              <a href="#" class="on">option 2</a>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#"><span>side nav 3</span></a> 
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="codeTab">
-                        <a href="#" class="act">HTML</a>       
-                      </div>
-                      <div class="codeCont">
-                        <button type="button" class="ic-copy">클립보드에 복사</button>
-                        <pre class="script"><code class="javascript">&lt;<span class="obj">ul</span> class=<span class="cls">"SNB"</span>&gt;
-    &lt;<span class="obj">li</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 1&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
-    &lt;/<span class="obj">li</span>&gt;
-    &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 2&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
-      &lt;<span class="obj">div</span> class=<span class="cls">"subMenu"</span>&gt;
-        &lt;<span class="obj">a</span> href="#"&gt;option 1&lt;/<span class="obj">a</span>&gt;
-        &lt;<span class="obj">a</span> href="#" class=<span class="cls">"on"</span>&gt;option 2&lt;/<span class="obj">a</span>&gt;
-      &lt;/<span class="obj">div</span>&gt;
-    &lt;/<span class="obj">li</span>&gt;
-    &lt;<span class="obj">li</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 3&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
-    &lt;/<span class="obj">li</span>&gt;
-  &lt;/<span class="obj">ul</span>&gt;
+                      <ul class="SNB icon" id="snb4">
+                        <li>
+                          <a href="#"><span>side nav 1</span></a>
+                        </li>
+                        <li class="act">
+                          <a href="#"><span>side nav 2</span></a>
+                          <div class="subMenu">
+                            <a href="#">option 1</a>
+                            <a href="#" class="on">option 2</a>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#"><span>side nav 3</span></a> 
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="codeTab">
+                      <a href="#" class="act">HTML</a>       
+                    </div>
+                    <div class="codeCont">
+                      <button type="button" class="ic-copy">클립보드에 복사</button>
+                      <pre class="script"><code class="javascript">&lt;<span class="obj">ul</span> class=<span class="cls">"SNB"</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 1&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 2&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"subMenu"</span>&gt;
+      &lt;<span class="obj">a</span> href="#"&gt;option 1&lt;/<span class="obj">a</span>&gt;
+      &lt;<span class="obj">a</span> href="#" class=<span class="cls">"on"</span>&gt;option 2&lt;/<span class="obj">a</span>&gt;
+    &lt;/<span class="obj">div</span>&gt;
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 3&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
+  &lt;/<span class="obj">li</span>&gt;
+&lt;/<span class="obj">ul</span>&gt;
 
-  &lt;<span class="obj">ul</span> class=<span class="cls">"SNB icon"</span>&gt;
-    &lt;<span class="obj">li</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 1&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
-    &lt;/<span class="obj">li</span>&gt;
-    &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 2&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
-      &lt;<span class="obj">div</span> class=<span class="cls">"subMenu"</span>&gt;
-        &lt;<span class="obj">a</span> href="#"&gt;option 1&lt;/<span class="obj">a</span>&gt;
-        &lt;<span class="obj">a</span> href="#" class=<span class="cls">"on"</span>&gt;option 2&lt;/<span class="obj">a</span>&gt;
-      &lt;/<span class="obj">div</span>&gt;
-    &lt;/<span class="obj">li</span>&gt;
-    &lt;<span class="obj">li</span>&gt;
-      &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 3&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
-    &lt;/<span class="obj">li</span>&gt;
-  &lt;/<span class="obj">ul</span>&gt;</code></pre>
+&lt;<span class="obj">ul</span> class=<span class="cls">"SNB icon"</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 1&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span> class=<span class="cls">"act"</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 2&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt;
+    &lt;<span class="obj">div</span> class=<span class="cls">"subMenu"</span>&gt;
+      &lt;<span class="obj">a</span> href="#"&gt;option 1&lt;/<span class="obj">a</span>&gt;
+      &lt;<span class="obj">a</span> href="#" class=<span class="cls">"on"</span>&gt;option 2&lt;/<span class="obj">a</span>&gt;
+    &lt;/<span class="obj">div</span>&gt;
+  &lt;/<span class="obj">li</span>&gt;
+  &lt;<span class="obj">li</span>&gt;
+    &lt;<span class="obj">a</span> href="#"&gt;&lt;<span class="obj">span</span>&gt;side nav 3&lt;/<span class="obj">span</span>&gt;&lt;/<span class="obj">a</span>&gt; 
+  &lt;/<span class="obj">li</span>&gt;
+&lt;/<span class="obj">ul</span>&gt;</code></pre>
                       </div>
                     </div>
                   </div>
@@ -484,10 +488,11 @@
                     </div>
                   </div>
                   <!--// CSS download -->
-
                 </div>
                 <!--// Code -->
+
               </div>
+              <!--// 탭컨텐츠 -->
             </div>
 
           </div>
