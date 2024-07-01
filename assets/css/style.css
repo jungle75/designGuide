@@ -2002,6 +2002,7 @@ html, body {
   justify-content: left;
   align-items: flex-start;
   gap: 15px;
+  row-gap: 40px;
   flex-wrap: wrap;
   font-size: 14px;
   font-weight: 400;

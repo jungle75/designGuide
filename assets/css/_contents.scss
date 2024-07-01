@@ -51,7 +51,7 @@
     .btnArea {margin-top: 8px;}
   }
   .typeTileArea {
-    @include mixin.flex(left,flex-start,15px); flex-wrap: wrap; @include mixin.font(14px,400,var(--text-color),21px);
+    @include mixin.flex(left,flex-start,15px); row-gap: 40px; flex-wrap: wrap; @include mixin.font(14px,400,var(--text-color),21px);
     .item {display: flex; flex-direction: column; gap: 16px; width: calc(33.33% - 10px);
       dt {@include mixin.flex(center,center,0); border-radius: 16px;
        &.gray {background-color: var(--bg-color);}
