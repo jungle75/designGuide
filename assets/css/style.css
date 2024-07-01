@@ -2814,7 +2814,7 @@ html, body {
   margin: 0 !important;
 }
 .component .tabContainer .colBox + .itemBox {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 .component .tabContainer .spliterWrap {
   display: flex;
