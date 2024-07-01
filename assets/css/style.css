@@ -2001,7 +2001,7 @@ html, body {
   color: var(--gray-600);
 }
 .contents .detailArea .itemBox + .itemBox {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 .contents .detailArea .itemBox .commentTxt {
   margin-top: 8px;

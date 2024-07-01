@@ -45,7 +45,7 @@
         .title {display: block; @include mixin.font(18px,700,var(--text-strong),28px); margin-bottom: 4px;}
         .txtScript {color: var(--gray-600);}
       }
-      + .itemBox {margin-top: 40px;}
+      + .itemBox {margin-top: 24px;}
       .commentTxt {margin-top: 8px;}
     }
     .btnArea {margin-top: 8px;}
