@@ -2041,11 +2041,12 @@ html, body {
   font-size: 20px;
   font-weight: 700;
   color: var(--text-strong);
-  line-height: 1;
-  margin-bottom: 14px;
+  line-height: 28px;
+  margin-bottom: 8px;
 }
 .contents .typeTileArea .item .title span {
   font-weight: 400;
+  line-height: 21px;
 }
 .contents .paletteGroup {
   flex: 1;
