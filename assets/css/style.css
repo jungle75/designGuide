@@ -1893,9 +1893,6 @@ html, body {
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 24px;
 }
-.contents .titleBox.caseStudies .btnArea {
-  margin-top: 8px;
-}
 .contents .titleBox h2 {
   font-size: 50px;
   font-weight: 700;

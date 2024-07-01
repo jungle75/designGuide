@@ -17,10 +17,7 @@
     padding-bottom: 64px;
     border-bottom: 1px solid var(--border-color);
 
-    &.caseStudies {border-bottom: 1px solid var(--border-color); padding-bottom: 24px;
-      .btnArea {margin-top: 8px;}
-    
-    }
+    &.caseStudies {border-bottom: 1px solid var(--border-color); padding-bottom: 24px;}
 
     h2 {@include mixin.font(50px,700,inherit,1);}
     p {@include mixin.font(18px,500,inherit,28px);}
