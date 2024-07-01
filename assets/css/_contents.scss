@@ -342,6 +342,7 @@
     }
     .colBox {@include mixin.flex(left,flex-start,20px); flex-direction: row !important;
       >div {flex: 1; margin: 0 !important;}
+      + .itemBox {margin-top: 40px;}
     }
 
     .spliterWrap {display: flex; align-items: stretch; gap: 0; padding: 0;

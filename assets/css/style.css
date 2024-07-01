@@ -2797,6 +2797,9 @@ html, body {
   flex: 1;
   margin: 0 !important;
 }
+.component .tabContainer .colBox + .itemBox {
+  margin-top: 40px;
+}
 .component .tabContainer .spliterWrap {
   display: flex;
   align-items: stretch;
