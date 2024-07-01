@@ -453,9 +453,10 @@ a.textBtn {display: inline-flex;}
 /******************************
   Tabs 정의
 *******************************/ 
-.tabs {display: flex; align-items: center;
+.tabs {position: relative; display: flex; align-items: center; width: 100%;
   &.textType {gap: 24px;
-    a {display: block; cursor: pointer; @include mixin.font(16px,400,var(--gray-700),16px);
+    &::before {content: ""; display: block; position: absolute; bottom: 0; width: 100%; height: 1px; background-color: var(--gray-300);}
+    a {z-index: 1; display: block; cursor: pointer; @include mixin.font(16px,400,var(--gray-700),16px);
       &::after {content: ""; display: block; width: 0; height: 2px; background-color: var(--Jblack); margin-top: 8px; transition: all 0.2s;}
     }
     .act {color: var(--Jblack);

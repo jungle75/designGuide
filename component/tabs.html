@@ -22,8 +22,8 @@
         <!-- contents -->
         <div class="contentWrap">
           <div class="contentArea">
-
             <div class="contents component">
+
               <!-- 타이틀영역 -->
               <div class="titleBox">
                 <h2>Tabs</h2>
@@ -57,14 +57,14 @@
     
                     <div class="grayContBox spliterWrap tabsAnatomy" style="height: 238px;">
                       <div class="alignCenter">
-                        <div class="tabs textType">
+                        <div class="tabs textType" style="width: auto;">
                           <a href="#" class="act">tab 1</a>
                           <a href="#">tab 2</a>
                         </div>
                       </div>
 
                       <div class="alignCenter">
-                        <div class="tabs boxType">
+                        <div class="tabs boxType" style="width: auto;">
                           <a href="#" class="act">tab 1</a>
                           <a href="#">tab 2</a>
                         </div>
@@ -100,14 +100,14 @@
                       <div class="itemBox">
                         <h4>Text type</h4>
                         <div class="grayContBox tabsTextSpec" style="height: 172px;">
-                          <div class="tabs textType">
+                          <div class="tabs textType" style="width: 280px;">
                             <a href="#" class="act">tab 1</a>
                             <a href="#">tab 2</a>
                             <a href="#">tab 3</a>
                             <a href="#">tab 4</a>
                             <a href="#">tab 5</a>
                           </div>
-                          <div class="guidePoint" style="left: 87px; top: 59px;"></div>
+                          <div class="guidePoint" style="left: 86px; top: 60px;"></div>
                         </div>
                         <div class="commentTxt">
                           <p>Text type 탭은 24px 간격으로 나열합니다.</p>
@@ -117,7 +117,7 @@
                       <div class="itemBox">
                         <h4>Box type</h4>
                         <div class="grayContBox tabsBoxSpec" style="height: 172px;">
-                          <div class="tabs boxType">
+                          <div class="tabs boxType" style="width: 324px;">
                             <a href="#"class="act">tab 1</a>
                             <a href="#">tab 2</a>
                             <a href="#">tab 3</a>
@@ -143,27 +143,33 @@
 
                     <div class="itemBox">
                       <h4>Text type</h4>
-                      <div class="borderBox" style="height: 170px; background-color: white;">
-                        <div class="tabs textType" id="tabs1">
-                          <a href="#" class="act">tab 1</a>
-                          <a href="#">tab 2</a>
-                          <a href="#">tab 3</a>
-                          <a href="#">tab 4</a>
-                          <a href="#">tab 5</a>
-                        </div>
+                      <div class="borderBox" style="height: 265px; background-color: white;">
+                        <div style="width: 883px;">
+                          <div class="tabs textType" id="tabs1">
+                            <a href="#" class="act">tab 1</a>
+                            <a href="#">tab 2</a>
+                            <a href="#">tab 3</a>
+                            <a href="#">tab 4</a>
+                            <a href="#">tab 5</a>
+                          </div>
+                          <div class="tabs_cnt"></div>
+                        </div>                        
                       </div>
                     </div>
 
                     <div class="itemBox">
                       <h4>Box type</h4>
-                      <div class="borderBox" style="height: 170px; background-color: white;">
-                        <div class="tabs boxType" id="tabs2">
-                          <a href="#" class="act">tab 1</a>
-                          <a href="#">tab 2</a>
-                          <a href="#">tab 3</a>
-                          <a href="#">tab 4</a>
-                          <a href="#">tab 5</a>
-                        </div>
+                      <div class="borderBox" style="height: 265px; background-color: white;">
+                        <div style="width: 883px;">
+                          <div class="tabs boxType" id="tabs2">
+                            <a href="#" class="act">tab 1</a>
+                            <a href="#">tab 2</a>
+                            <a href="#">tab 3</a>
+                            <a href="#">tab 4</a>
+                            <a href="#">tab 5</a>
+                          </div>                        
+                          <div class="tabs_cnt"></div>
+                        </div>                        
                       </div>
                     </div>
                   </div>
@@ -275,12 +281,12 @@ tabs.forEach(tab => {
                       <div class="codeCont" id="codeHTML2">
                         <button type="button" class="ic-copy">클립보드에 복사</button>
                         <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"tabs boxType"</span> id="tabs"&gt;
-    &lt;<span class="obj">a</span> href="#" class=<span class="cls">"act"</span>&gt;tab 1&lt;/<span class="obj">a</span>&gt;
-    &lt;<span class="obj">a</span> href="#"&gt;tab 2&lt;/<span class="obj">a</span>&gt;
-    &lt;<span class="obj">a</span> href="#"&gt;tab 3&lt;/<span class="obj">a</span>&gt;
-    &lt;<span class="obj">a</span> href="#"&gt;tab 4&lt;/<span class="obj">a</span>&gt;
-    &lt;<span class="obj">a</span> href="#"&gt;tab 5&lt;/<span class="obj">a</span>&gt;
-  &lt;/<span class="obj">div</span>&gt;</code></pre>
+  &lt;<span class="obj">a</span> href="#" class=<span class="cls">"act"</span>&gt;tab 1&lt;/<span class="obj">a</span>&gt;
+  &lt;<span class="obj">a</span> href="#"&gt;tab 2&lt;/<span class="obj">a</span>&gt;
+  &lt;<span class="obj">a</span> href="#"&gt;tab 3&lt;/<span class="obj">a</span>&gt;
+  &lt;<span class="obj">a</span> href="#"&gt;tab 4&lt;/<span class="obj">a</span>&gt;
+  &lt;<span class="obj">a</span> href="#"&gt;tab 5&lt;/<span class="obj">a</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
                       </div>
 
                       <div class="codeCont" id="codeJS2" style="display: none;">
@@ -315,11 +321,10 @@ tabs.forEach(tab => {
 
                 </div>
                 <!--// Code -->
-
               </div>
               <!--// 탭컨텐츠 -->
-            </div>
-            
+
+            </div>            
           </div>
         </div>
         <!--// contents -->
