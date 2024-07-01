@@ -59,7 +59,7 @@
        &.purple {background-color: var(--purple);}
        &.sky {background-color: var(--sky);}
       }
-      dd {padding: 0 8px; @include mixin.font(14px,400,var(--text-color),21px);
+      dd {padding: 0 8px; @include mixin.font(14px,400,var(--text-color),21px);}
       .title {@include mixin.font(20px,700,var(--text-strong),28px); margin-bottom: 8px;
         span {font-weight: 400;}
       }
