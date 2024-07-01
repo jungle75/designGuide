@@ -1994,6 +1994,9 @@ html, body {
 .contents .detailArea .itemBox .commentTxt {
   margin-top: 8px;
 }
+.contents .detailArea .btnArea {
+  margin-top: 8px;
+}
 .contents .typeTileArea {
   display: flex;
   justify-content: left;
