@@ -1977,7 +1977,7 @@ html, body {
   cursor: pointer;
 }
 .mainContent .banner p {
-  font-size: 208px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--text-strong);
   line-height: 24px;
