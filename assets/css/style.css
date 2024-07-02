@@ -1919,6 +1919,12 @@ html, body {
   font-weight: 700 !important;
 }
 
+.visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contents {
   width: 980px;
   color: var(--text-color);

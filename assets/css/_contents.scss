@@ -1,6 +1,9 @@
 @charset "utf-8";
 @use '_mixin';
 
+// 메인페이지
+.visual {display: flex; align-items: center; justify-content: center;}
+
 //서브페이지 공통사항
 .contents {
   width: 980px;
