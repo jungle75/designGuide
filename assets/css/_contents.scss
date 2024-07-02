@@ -2,7 +2,13 @@
 @use '_mixin';
 
 // 메인페이지
-.visual {display: flex; align-items: center; justify-content: center; padding: 24px 24px 0 24px;}
+.visual {width: calc(100% - 48px); height: 600px; display: flex; align-items: center; justify-content: center; margin: 24px 24px 0 24px; background-image: url(../images/layout/visual.png); background-position: center center;
+  
+  .slogan {display: flex; flex-direction: column; gap: 48px;
+    p {@include mixin.font(20px,500,var(--white),24px);}
+    .title {font-size: 48px; font-weight: 700; line-height: 58px;}
+  }
+}
 
 //서브페이지 공통사항
 .contents {

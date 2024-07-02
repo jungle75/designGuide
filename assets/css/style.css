@@ -1893,10 +1893,30 @@ html, body {
 }
 
 .visual {
+  width: calc(100% - 48px);
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px 24px 0 24px;
+  margin: 24px 24px 0 24px;
+  background-image: url(../images/layout/visual.png);
+  background-position: center center;
+}
+.visual .slogan {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.visual .slogan p {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--white);
+  line-height: 24px;
+}
+.visual .slogan .title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
 }
 
 .contents {
