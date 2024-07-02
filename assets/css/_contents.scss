@@ -3,7 +3,7 @@
 
 // 메인페이지
 .visual {width: calc(100% - 48px); height: 600px; display: flex; align-items: center; justify-content: center; 
-  margin: 24px 24px 0 24px; background-image: url(../images/layout/visual.png); background-position: center center;
+  margin: 24px 24px 0 24px; background-image: url(../images/layout/visual.png); background-position: center center; background-color: #2C1324;
   border-radius: 12px; overflow: hidden;
   
   .slogan {display: flex; flex-direction: column; gap: 48px;

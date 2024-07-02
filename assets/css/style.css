@@ -1901,6 +1901,7 @@ html, body {
   margin: 24px 24px 0 24px;
   background-image: url(../images/layout/visual.png);
   background-position: center center;
+  background-color: #2C1324;
   border-radius: 12px;
   overflow: hidden;
 }
