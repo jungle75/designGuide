@@ -11,6 +11,16 @@
     .title {font-size: 48px; font-weight: 700; line-height: 58px;}
   }
 }
+.mainContent {display: flex; flex-direction: column; gap: 24px;
+  >p {@include mixin.font(18px,500,var(--text-strong),28px);}
+  .items {display: flex; flex-direction: column; gap: 80px;
+    .title {display: flex; flex-direction: column; gap: 5px;
+      span {@include mixin.font(16px,500,var(--text-colorg),20px)}
+      h2 {@include mixin.font(48px,600,var(--text-strong),48px);}
+    }
+    p {@include mixin.font(16px,500,var(--text-strong),30px);}
+  }
+}
 
 //서브페이지 공통사항
 .contents {

@@ -1923,6 +1923,46 @@ html, body {
   line-height: 58px;
 }
 
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mainContent > p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-strong);
+  line-height: 28px;
+}
+.mainContent .items {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.mainContent .items .title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.mainContent .items .title span {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-colorg);
+  line-height: 20px;
+}
+.mainContent .items .title h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--text-strong);
+  line-height: 48px;
+}
+.mainContent .items p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-strong);
+  line-height: 30px;
+}
+
 .contents {
   width: 980px;
   color: var(--text-color);
