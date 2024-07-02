@@ -14,6 +14,7 @@
   --gray-hover: #8A8A8A;
   --gray-active: #757575;
   --disabled: #e0e0e0;
+  --banner: #f2f2f2;
   --Jblack: #111111;
   --Jorange: #ff3c14;
   --blue-500: #1677ff;
@@ -1962,6 +1963,31 @@ html, body {
   font-weight: 500;
   color: var(--text-strong);
   line-height: 30px;
+}
+.mainContent .banner {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  background-color: var(--banner);
+  border-radius: 20px;
+  padding: 48px;
+}
+.mainContent .banner i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--Jblack);
+}
+.mainContent .banner i img {
+  width: 14px;
+  filter: invert(1);
 }
 
 .contents {
