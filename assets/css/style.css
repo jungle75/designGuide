@@ -1926,7 +1926,7 @@ html, body {
 .mainContent {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 80px;
 }
 .mainContent > p {
   font-size: 18px;
@@ -1937,7 +1937,7 @@ html, body {
 .mainContent .items {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 24px;
 }
 .mainContent .items .title {
   display: flex;

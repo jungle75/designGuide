@@ -11,9 +11,9 @@
     .title {font-size: 48px; font-weight: 700; line-height: 58px;}
   }
 }
-.mainContent {display: flex; flex-direction: column; gap: 24px;
+.mainContent {display: flex; flex-direction: column; gap: 80px;
   >p {@include mixin.font(18px,500,var(--text-strong),28px);}
-  .items {display: flex; flex-direction: column; gap: 80px;
+  .items {display: flex; flex-direction: column; gap: 24px;
     .title {display: flex; flex-direction: column; gap: 5px;
       span {@include mixin.font(16px,500,var(--text-colorg),20px)}
       h2 {@include mixin.font(48px,600,var(--text-strong),48px);}
