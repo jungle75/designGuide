@@ -1975,6 +1975,12 @@ html, body {
   border-radius: 20px;
   padding: 48px;
 }
+.mainContent .banner p {
+  font-size: 208px;
+  font-weight: 500;
+  color: var(--text-strong);
+  line-height: 24px;
+}
 .mainContent .banner i {
   display: flex;
   justify-content: center;
