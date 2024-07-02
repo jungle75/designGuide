@@ -1721,6 +1721,7 @@ html, body {
 }
 
 #container {
+  position: relative;
   width: 100%;
   min-width: 1400px;
   height: 100%;
@@ -1792,9 +1793,9 @@ html, body {
 
 /*leftMenu*/
 .leftMenu {
-  position: fixed;
+  position: absolute;
   left: 0;
-  top: 112px;
+  top: 24px;
   width: 256px;
   padding: 0 16px;
 }
