@@ -1974,6 +1974,7 @@ html, body {
   background-color: var(--banner);
   border-radius: 20px;
   padding: 48px;
+  cursor: pointer;
 }
 .mainContent .banner p {
   font-size: 208px;
