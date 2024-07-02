@@ -1902,7 +1902,7 @@ html, body {
   background-image: url(../images/layout/visual.png);
   background-position: center center;
   background-color: #2C1324;
-  border-radius: 12px;
+  border-radius: 32px;
   overflow: hidden;
 }
 .visual .slogan {
