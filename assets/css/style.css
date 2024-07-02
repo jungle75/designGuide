@@ -1908,6 +1908,7 @@ html, body {
 .visual .slogan {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 48px;
 }
 .visual .slogan p {

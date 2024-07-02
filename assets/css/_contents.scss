@@ -6,7 +6,7 @@
   margin: 24px 24px 0 24px; background-image: url(../images/layout/visual.png); background-position: center center; background-color: #2C1324;
   border-radius: 32px; overflow: hidden;
   
-  .slogan {display: flex; flex-direction: column; gap: 48px;
+  .slogan {display: flex; flex-direction: column; align-items: center; gap: 48px;
     p {@include mixin.font(20px,500,var(--white),24px);}
     .title {font-size: 48px; font-weight: 700; line-height: 58px;}
   }
