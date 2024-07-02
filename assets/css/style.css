@@ -1756,6 +1756,13 @@ html, body {
   text-align: center;
 }
 
+.main #container {
+  height: auto;
+}
+.main #container .contentWrap {
+  height: auto;
+}
+
 /*leftMenu*/
 .leftMenu {
   position: absolute;
