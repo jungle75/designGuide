@@ -1901,6 +1901,8 @@ html, body {
   margin: 24px 24px 0 24px;
   background-image: url(../images/layout/visual.png);
   background-position: center center;
+  border-radius: 12px;
+  overflow: hidden;
 }
 .visual .slogan {
   display: flex;
