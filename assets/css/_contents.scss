@@ -137,6 +137,17 @@
   }
 }
 
+// Overview
+.overview {gap: 62px;
+  .detailArea {
+    .detailTitle {
+      h3 {font-size: 24px;}
+    }
+    .itemBox {gap: 16px;}
+    .itemBox+.itemBox {margin-top: 14px}
+  }  
+}
+
 //Foundation
 .foundation {
   // Color

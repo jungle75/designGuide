@@ -1755,6 +1755,41 @@ html, body {
   text-align: center;
 }
 
+#main {
+  width: 100%;
+  min-width: 1400px;
+  height: 100%;
+  padding: 24px;
+}
+#main .contentWrap {
+  position: relative;
+  height: calc(100% - 34px);
+  background-color: var(--body-color);
+  border-radius: 32px 32px 0 0;
+  padding: 32px 0 0 0;
+}
+#main .contentWrap .contentArea {
+  width: calc(100% - 8px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+#main .footer {
+  width: 100%;
+  height: 34px;
+  background-color: var(--body-color);
+  border-top: 1px solid var(--border-color);
+  border-radius: 0 0 32px 32px;
+  padding: 8px 0 10px 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-footer);
+  line-height: normal;
+  text-align: center;
+}
+
 /*leftMenu*/
 .leftMenu {
   position: fixed;
@@ -2291,6 +2326,19 @@ html, body {
 }
 .subMain .detailArea h3 {
   font-size: 32px;
+}
+
+.overview {
+  gap: 62px;
+}
+.overview .detailArea .detailTitle h3 {
+  font-size: 24px;
+}
+.overview .detailArea .itemBox {
+  gap: 16px;
+}
+.overview .detailArea .itemBox + .itemBox {
+  margin-top: 14px;
 }
 
 .foundation .colorPalette .row {
