@@ -21,7 +21,7 @@
     p {@include mixin.font(16px,500,var(--text-strong),30px);}
   }
   .banner {width: 100%; height: 120px;@include mixin.flex(space-between,center,0); background-color: var(--banner); border-radius: 20px; padding: 48px; cursor: pointer;
-    p {@include mixin.font(20px,500,var(--text-strong),24px);}
+    p {@include mixin.font(20px,500,var(--Jblack),24px);}
     i {@include mixin.flex(center,center,0); width: 34px; height: 34px; border-radius: 50%; background-color: var(--Jblack);
       img {width: 14px; filter: invert(1);}
     }
