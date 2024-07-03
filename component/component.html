@@ -45,7 +45,7 @@
                   <p>필요한 컴포넌트만 다운 받을 경우 추가 적용이 필요한 reset.css</p>
                 </div>
                 <div class="btnArea">
-                  <button type="button" class="btn medium success ic ic-down" onclick="downloadComponentZip()">component.min</button>
+                  <button type="button" class="btn medium success ic ic-down" onclick="downloadComponentZip()">component</button>
                   <button type="button" class="btn medium secondary ic ic-down" onclick="downloadResetZip()">reset</button>
                 </div>
 
@@ -315,8 +315,8 @@
       function downloadComponentZip() {
         // Create a link element
         const link = document.createElement('a');
-        link.href = '../assets/download/component.min.zip'; // Replace with the actual path to your icon.zip file
-        link.download = 'component.min.zip'; // Set the desired filename for download
+        link.href = '../assets/download/component.zip'; // Replace with the actual path to your icon.zip file
+        link.download = 'component.zip'; // Set the desired filename for download
         link.click(); // Trigger the download
       }
       function downloadResetZip() {
