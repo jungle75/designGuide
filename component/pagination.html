@@ -442,19 +442,12 @@ pageLinks.forEach(link => {
         }
       });
 
-      // pagination 관련
+      const allPageLinks = document.querySelectorAll('.page-link');
 
-      setupPagination('page1');
-      setupPagination('page2');
-      setupPagination('page3');
-      setupPagination('page4');
-
-      const pageLinks = document.querySelectorAll('.pageGroup a');
-
-      pageLinks.forEach(link => {
+      allPageLinks.forEach(link => {
         link.addEventListener('click', () => {
-          // 다른 페이지 링크에서 'act' 클래스 제거
-          pageLinks.forEach(l => l.classList.remove('act'));
+          // 같은 페이지 내에서 다른 pagination 요소에서 'act' 클래스 제거
+          allPageLinks.forEach(l => l.classList.remove('act'));
           // 클릭된 페이지 링크에 'act' 클래스 추가
           link.classList.add('act');
         });
