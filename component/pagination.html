@@ -171,7 +171,7 @@
                           </table>
                         </div>
     
-                        <div class="pagination center" style="margin-top: 40px;">
+                        <div class="pagination center" id="page1" style="margin-top: 40px;">
                           <div class="arrowBtn disabled">
                             <button type="text" class="back" disabled>뒤로</button>
                             <button type="text" class="backEnd" disabled>맨 뒤로</button>
@@ -212,7 +212,7 @@
                     
                     <div class="codeBox">
                       <div class="example align-row">
-                        <div class="pagination">
+                        <div class="pagination" id="page2">
                           <div class="arrowBtn disabled">
                             <button type="text" class="back" disabled>뒤로</button>
                             <button type="text" class="backEnd" disabled>맨 뒤로</button>
@@ -282,7 +282,7 @@ pageLinks.forEach(link => {
                   
                   <div class="codeBox">
                     <div class="example align-row">
-                      <div class="pagination center" style="width: 100%;">
+                      <div class="pagination center"  id="page3">
                         <div class="arrowBtn disabled">
                           <button type="text" class="back" disabled>뒤로</button>
                           <button type="text" class="backEnd" disabled>맨 뒤로</button>
@@ -327,7 +327,7 @@ pageLinks.forEach(link => {
 
                   <div class="codeBox">
                     <div class="example align-row">
-                      <div class="pagination right" style="width: 100%;">
+                      <div class="pagination right" id="page4">
                         <div class="arrowBtn disabled">
                           <button type="text" class="back" disabled>뒤로</button>
                           <button type="text" class="backEnd" disabled>맨 뒤로</button>
@@ -443,6 +443,12 @@ pageLinks.forEach(link => {
       });
 
       // pagination 관련
+
+      setupPagination('page1');
+      setupPagination('page2');
+      setupPagination('page3');
+      setupPagination('page4');
+
       const pageLinks = document.querySelectorAll('.pageGroup a');
 
       pageLinks.forEach(link => {
@@ -454,6 +460,7 @@ pageLinks.forEach(link => {
         });
       });
 
+      // css 다운로드 관련
       function downloadCssZip() {
         // Create a link element
         const link = document.createElement('a');
