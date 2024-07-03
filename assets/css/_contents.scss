@@ -470,6 +470,9 @@
     }
   }
   .tabs_cnt {width: 100%; height: 73px; margin-top: 16px; background-color: var(--gray-100);}
+  .tabs {
+    a {white-space: nowrap;}
+  }
 }
 
 // guide line
