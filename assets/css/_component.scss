@@ -411,7 +411,7 @@ a.textBtn {display: inline-flex;}
 /******************************
   SNB 정의 
 *******************************/ 
-.SNB {background-color: var(--white); min-width: 256px;
+.SNB {background-color: var(--white); min-width: 256px; padding: 0 4px;
   li {
     a {cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 16px 32px;
       span {flex: 1; @include mixin.font(18px,400,var(--Jblack),21px);}

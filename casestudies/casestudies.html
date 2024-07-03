@@ -39,7 +39,7 @@
               <div class="typeTileArea">
                 <dl class="item">
                   <dt class="gray">
-                    <img src="../assets/images/guide/img_casestudies01.png" alt="Login case study 이미지">
+                  <a href="../casestudies/case01.html" target="_blank"><img src="../assets/images/guide/img_casestudies01.png" alt="Login case study 이미지"></a>
                   </dt>
                   <dd>
                     <p class="title">Login</p>
@@ -50,7 +50,7 @@
 
                 <dl class="item">
                   <dt class="gray">
-                    <img src="../assets/images/guide/img_casestudies02.png" alt="List case study 이미지">
+                    <a href="../casestudies/case02.html" target="_blank"><img src="../assets/images/guide/img_casestudies02.png" alt="List case study 이미지"></a>                    
                   </dt>
                   <dd>
                     <p class="title">List</p>
@@ -61,7 +61,7 @@
                 
                 <dl class="item">
                   <dt class="gray">
-                    <img src="../assets/images/guide/img_casestudies03.png" alt="Empty case study 이미지">
+                    <a href="../casestudies/case03.html" target="_blank"><img src="../assets/images/guide/img_casestudies03.png" alt="Empty case study 이미지"></a>                    
                   </dt>
                   <dd>
                     <p class="title">Empty</p>
@@ -120,7 +120,15 @@
         if (savedTheme) {
           setTheme(savedTheme);
         }
-      }); 
+      });
+
+      function downloadCaseZip() {
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = '../assets/download/casestudies.zip'; // Replace with the actual path to your icon.zip file
+        link.download = 'casestudies.zip'; // Set the desired filename for download
+        link.click(); // Trigger the download
+      }
     </script>
   </body>
 </html>

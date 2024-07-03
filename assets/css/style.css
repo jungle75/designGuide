@@ -1452,6 +1452,7 @@ a.textBtn {
 .SNB {
   background-color: var(--white);
   min-width: 256px;
+  padding: 0 4px;
 }
 .SNB li a {
   cursor: pointer;

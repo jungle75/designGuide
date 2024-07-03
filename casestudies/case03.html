@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contentree JoongAng Design System</title>
+
+    <link rel="stylesheet" href="css/casestudy.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- header -->
+       <div class="header">
+        <div class="GNBArea dark">
+          <div class="logo">LOGO</div>
+          <ul class="GNB">
+            <li><a href="#">nav1</a></li>
+            <li class="act"><a href="#">nav2</a></li>
+            <li><a href="#">nav3</a></li>
+            <li><a href="#">nav4</a></li>
+            <li><a href="#">nav5</a></li>
+          </ul>  
+          <div class="iconGNB">
+            <a href="#"><img alt="" src="img/ic_bell.svg"></a>
+            <a href="#"><img alt="" src="img/ic_user.svg"></a>
+          </div>
+        </div>
+       </div> 
+      <!--// header -->
+      
+      <!-- container -->
+      <div class="container">
+
+        <div class="lnbWrap">          
+          <ul class="SNB icon">
+            <li>
+              <a href="#"><span>side nav 1</span></a>
+              <div class="subMenu">
+                <a href="#">option 1</a>
+                <a href="#">option 2</a>
+              </div>
+            </li>
+            <li class="act">
+              <a href="#"><span>side nav 2</span></a>
+              <div class="subMenu">
+                <a href="#">option 1</a>
+                <a href="#" class="on">option 2</a>
+              </div>
+            </li>
+            <li>
+              <a href="#"><span>side nav 3</span></a> 
+            </li>
+          </ul>
+        </div>
+
+        <div class="contentArea">
+          <div class="contents">
+            <h2>Contents</h2>
+
+            <!-- Tabs -->
+            <div class="tabs textType" id="tabs">
+              <a href="#" class="act">tab 1</a>
+              <a href="#">tab 2</a>
+              <a href="#">tab 3</a>
+              <a href="#">tab 4</a>
+              <a href="#">tab 5</a>
+            </div>
+            <!--// Tabs -->
+
+            <div class="searchBox">
+              <div class="inputBox" style="width: 142px;">
+                <input type="text" value="2024.07.01"><i class="date"></i>
+              </div>
+              <div class="inputBox" style="width: 142px;">
+                <input type="text" value="2024.07.01"><i class="date"></i>
+              </div>
+              <div class="customSelect">
+                <select>
+                  <option value="0">Dropdown menu</option>
+                  <option value="1">Dropdown 1</option>
+                  <option value="2">Dropdown 2</option>
+                </select>
+              </div>
+              <div class="formCol">
+                <div class="inputBox"><input type="text" placeholder="Placeholder"></div>
+                <button type="button" class="btn small primaryA ic ic-search">Button</button>
+              </div>
+            </div>
+
+            
+            <div class="gridArea" style="height: 632px;">
+              <!-- Empty -->
+              <div class="empty fullPage">
+                <div class="messageGroup">
+                  <p class="title">Data Not Found</p>
+                  <p>No Data 텍스트는 데이터가 존재하지 않을 때<br/>"No data to display" 같은 텍스트를 보여주는 옵션입니다.</p>
+                </div>
+              </div>
+              <!--// Empty -->
+            </div>
+            
+            
+          </div>
+        </div>
+        
+      </div>
+      <!--// container -->
+ 
+      <!-- footer -->
+      <div class="FNB"><span>Copyright © Joongang Group. All rights reserved</span></div>
+      <!--// footer -->
+    </div>
+    <script>
+      // Dropdown 관련
+      function initCustomSelect() {
+      const customSelects = document.querySelectorAll(".customSelect");
+      if (!customSelects.length) return;
+
+      customSelects.forEach(customSelect => {
+      const selectElement = customSelect.querySelector("select");
+      const selectLength = selectElement.length;
+
+      const selectSelected = document.createElement("div");
+      selectSelected.className = "selectSelected";
+      selectSelected.innerHTML = selectElement.options[selectElement.selectedIndex].innerHTML;
+      if (selectElement.disabled) selectSelected.classList.add("disabled");
+      customSelect.appendChild(selectSelected);
+
+      const selectItems = document.createElement("div");
+      selectItems.className = "selectItems selectHide";
+      const selectItemsList = document.createElement("ul");
+      selectItemsList.className = "selectItemsList";
+      selectItems.appendChild(selectItemsList);
+
+      for (let j = 1; j < selectLength; j++) {
+      const selectOption = document.createElement("li");
+      selectOption.innerHTML = selectElement.options[j].innerHTML;
+      selectOption.addEventListener("click", function () {
+        const parentSelect = this.closest(".customSelect").querySelector("select");
+        parentSelect.selectedIndex = Array.from(parentSelect.options).findIndex(option => option.innerHTML === this.innerHTML);
+        selectSelected.innerHTML = this.innerHTML;
+        selectItemsList.querySelectorAll("li").forEach(item => item.classList.remove("sameAsSelected"));
+        this.classList.add("sameAsSelected");
+        selectSelected.click();
+      });
+      selectItemsList.appendChild(selectOption);
+      }
+      customSelect.appendChild(selectItems);
+
+      selectSelected.addEventListener("click", function (e) {
+      if (this.classList.contains("disabled")) return;
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextElementSibling.classList.toggle("selectHide");
+      this.classList.toggle("selectArrowActive");
+      });
+      });
+
+      function closeAllSelect(elmnt) {
+      document.querySelectorAll(".selectItems").forEach((selectItem, index) => {
+      if (selectItem.previousElementSibling !== elmnt) {
+        selectItem.classList.add("selectHide");
+        selectItem.previousElementSibling.classList.remove("selectArrowActive");
+      }
+      });
+      }
+
+      document.addEventListener("click", closeAllSelect);
+      }
+
+      document.addEventListener('DOMContentLoaded', initCustomSelect);
+
+      // tabs 관련
+      const tabs = document.querySelectorAll('.tabs a');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // 모든 탭에서 'act' 클래스 제거
+          tabs.forEach(t => t.classList.remove('act'));
+          // 클릭된 탭에 'act' 클래스 추가
+          tab.classList.add('act');
+        });
+      });
+
+      // SNB관련
+      document.addEventListener("DOMContentLoaded", function() {
+        // 모든 a 태그에 클릭 이벤트 리스너 추가
+        var links = document.querySelectorAll('.SNB a');
+        links.forEach(function(link) {
+          link.addEventListener('click', function(event) {
+            event.preventDefault(); // 기본 동작(링크 이동) 방지
+
+            // act 클래스를 가진 li 요소들에서 act 클래스 제거
+            var activeItems = document.querySelectorAll('.SNB .act');
+            activeItems.forEach(function(item) {
+              item.classList.remove('act');
+            });
+
+            // 클릭된 a 태그의 부모인 li 요소에 act 클래스 추가
+            var parentLI = this.closest('li');
+            parentLI.classList.add('act');
+          });
+        });
+
+        // 모든 .subMenu a 태그에 클릭 이벤트 리스너 추가
+        var subMenuLinks = document.querySelectorAll('.subMenu a');
+        subMenuLinks.forEach(function(link) {
+          link.addEventListener('click', function(event) {
+            event.preventDefault(); // 기본 동작(링크 이동) 방지
+
+            // 현재 subMenu 안의 모든 a 태그에서 on 클래스 제거
+            var subMenuItems = this.closest('.subMenu').querySelectorAll('a');
+            subMenuItems.forEach(function(item) {
+              item.classList.remove('on');
+            });
+
+            // 클릭된 a 태그에 on 클래스 추가
+            this.classList.add('on');
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
