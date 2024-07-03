@@ -40,9 +40,9 @@ var lnb_html =
 '<div class="menuBox">'+
 '  <div class="title"><a href="/designGuide/casestudies/casestudies.html" class="case">Case studies</a></div>'+
 '  <ul class="menuList">'+
-'    <li><a href="#">Login</a></li>'+
-'    <li><a href="#">List</a></li>'+
-'    <li><a href="#">Empty</a></li>'+
+'    <li><a href="/designGuide/casestudies/case01.html" target="_blank">Login</a></li>'+
+'    <li><a href="/designGuide/casestudies/case02.html" target="_blank">List</a></li>'+
+'    <li><a href="/designGuide/casestudies/case03.html" target="_blank">Empty</a></li>'+
 '  </ul>'+
 '</div>'+
 '<!--//menuBox end -->';
