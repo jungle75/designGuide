@@ -171,7 +171,7 @@
                           </table>
                         </div>
     
-                        <div class="pagination center" id="page1" style="margin-top: 40px;">
+                        <div class="pagination center" style="margin-top: 40px;">
                           <div class="arrowBtn disabled">
                             <button type="text" class="back" disabled>뒤로</button>
                             <button type="text" class="backEnd" disabled>맨 뒤로</button>
@@ -212,7 +212,7 @@
                     
                     <div class="codeBox">
                       <div class="example align-row">
-                        <div class="pagination" id="page2" style="width: 100%;">
+                        <div class="pagination" style="width: 100%;">
                           <div class="arrowBtn disabled">
                             <button type="text" class="back" disabled>뒤로</button>
                             <button type="text" class="backEnd" disabled>맨 뒤로</button>
@@ -259,15 +259,56 @@
                       <div class="codeCont" id="codeJS1" style="display: none;">
                         <button type="button" class="ic-copy">클립보드에 복사</button>
                         <pre class="script"><code class="javascript">// pagination 관련
-const pageLinks = document.querySelectorAll('.pageGroup a');
+document.querySelectorAll('.pagination').forEach(pagination => {
+  const backBtn = pagination.querySelector('.back');
+  const backEndBtn = pagination.querySelector('.backEnd');
+  const nextBtn = pagination.querySelector('.next');
+  const nextEndBtn = pagination.querySelector('.nextEnd');
+  const pageLinks = pagination.querySelectorAll('.pageGroup a');
 
-pageLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    // 다른 페이지 링크에서 'act' 클래스 제거
-    pageLinks.forEach(l => l.classList.remove('act'));
-    // 클릭된 페이지 링크에 'act' 클래스 추가
-    link.classList.add('act');
+  const updateButtons = (currentPage) => {
+      const totalPages = pageLinks.length;
+      backBtn.disabled = currentPage === 1;
+      backEndBtn.disabled = currentPage === 1;
+      nextBtn.disabled = currentPage === totalPages;
+      nextEndBtn.disabled = currentPage === totalPages;
+
+      pageLinks.forEach(link => link.classList.remove('act'));
+      pageLinks[currentPage - 1].classList.add('act');
+  };
+
+  pageLinks.forEach((link, index) => {
+      link.addEventListener('click', (event) => {
+          event.preventDefault();
+          const currentPage = index + 1;
+          updateButtons(currentPage);
+      });
   });
+
+  backBtn.addEventListener('click', () => {
+      const currentPage = [...pageLinks].findIndex(link => link.classList.contains('act')) + 1;
+      if (currentPage > 1) {
+          updateButtons(currentPage - 1);
+      }
+  });
+
+  backEndBtn.addEventListener('click', () => {
+      updateButtons(1);
+  });
+
+  nextBtn.addEventListener('click', () => {
+      const currentPage = [...pageLinks].findIndex(link => link.classList.contains('act')) + 1;
+      if (currentPage < pageLinks.length) {
+          updateButtons(currentPage + 1);
+      }
+  });
+
+  nextEndBtn.addEventListener('click', () => {
+      updateButtons(pageLinks.length);
+  });
+
+  // Initialize the buttons state
+  updateButtons(1);
 });</code></pre>
                       </div>
                     </div>
@@ -282,7 +323,7 @@ pageLinks.forEach(link => {
                   
                   <div class="codeBox">
                     <div class="example align-row">
-                      <div class="pagination center"  id="page3" style="width: 100%;">
+                      <div class="pagination center" style="width: 100%;">
                         <div class="arrowBtn disabled">
                           <button type="text" class="back" disabled>뒤로</button>
                           <button type="text" class="backEnd" disabled>맨 뒤로</button>
@@ -327,7 +368,7 @@ pageLinks.forEach(link => {
 
                   <div class="codeBox">
                     <div class="example align-row">
-                      <div class="pagination right" id="page4" style="width: 100%;">
+                      <div class="pagination right" style="width: 100%;">
                         <div class="arrowBtn disabled">
                           <button type="text" class="back" disabled>뒤로</button>
                           <button type="text" class="backEnd" disabled>맨 뒤로</button>
@@ -442,15 +483,57 @@ pageLinks.forEach(link => {
         }
       });
 
-      const allPageLinks = document.querySelectorAll('.pageGroup');
+      // pagination 관련
+      document.querySelectorAll('.pagination').forEach(pagination => {
+        const backBtn = pagination.querySelector('.back');
+        const backEndBtn = pagination.querySelector('.backEnd');
+        const nextBtn = pagination.querySelector('.next');
+        const nextEndBtn = pagination.querySelector('.nextEnd');
+        const pageLinks = pagination.querySelectorAll('.pageGroup a');
 
-      allPageLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          // 같은 페이지 내에서 다른 pagination 요소에서 'act' 클래스 제거
-          allPageLinks.forEach(l => l.classList.remove('act'));
-          // 클릭된 페이지 링크에 'act' 클래스 추가
-          link.classList.add('act');
+        const updateButtons = (currentPage) => {
+            const totalPages = pageLinks.length;
+            backBtn.disabled = currentPage === 1;
+            backEndBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage === totalPages;
+            nextEndBtn.disabled = currentPage === totalPages;
+
+            pageLinks.forEach(link => link.classList.remove('act'));
+            pageLinks[currentPage - 1].classList.add('act');
+        };
+
+        pageLinks.forEach((link, index) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const currentPage = index + 1;
+                updateButtons(currentPage);
+            });
         });
+
+        backBtn.addEventListener('click', () => {
+            const currentPage = [...pageLinks].findIndex(link => link.classList.contains('act')) + 1;
+            if (currentPage > 1) {
+                updateButtons(currentPage - 1);
+            }
+        });
+
+        backEndBtn.addEventListener('click', () => {
+            updateButtons(1);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const currentPage = [...pageLinks].findIndex(link => link.classList.contains('act')) + 1;
+            if (currentPage < pageLinks.length) {
+                updateButtons(currentPage + 1);
+            }
+        });
+
+        nextEndBtn.addEventListener('click', () => {
+            updateButtons(pageLinks.length);
+        });
+
+        // Initialize the buttons state
+        updateButtons(1);
       });
 
       // css 다운로드 관련
