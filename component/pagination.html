@@ -230,10 +230,12 @@
                           </div>
                         </div>
                       </div>
-                      <div class="codeTab">
-                        <a href="#" class="act">HTML</a>                      
+                      <div class="codeTab" id="codeTab1">
+                        <a href="#" class="act" id="html1">HTML</a>
+                        <a href="#" id="script1">JavaScript</a>                
                       </div>
-                      <div class="codeCont">
+
+                      <div class="codeCont" id="codeHTML1">
                         <button type="button" class="ic-copy">클립보드에 복사</button>
                         <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"pagination"</span>&gt;
   &lt;<span class="obj">div</span> class=<span class="cls">"arrowBtn disabled"</span>&gt;
@@ -252,7 +254,22 @@
     &lt;<span class="obj">button</span> type="text" class=<span class="cls">"nextEnd"</span>&gt;맨 앞으로&lt;/<span class="obj">button</span>&gt;
   &lt;/<span class="obj">div</span>&gt;
 &lt;/<span class="obj">div</span>&gt;</code></pre>
-                      </div>                    
+                      </div>
+                      
+                      <div class="codeCont" id="codeJS1" style="display: none;">
+                        <button type="button" class="ic-copy">클립보드에 복사</button>
+                        <pre class="script"><code class="javascript">// pagination 관련
+const pageLinks = document.querySelectorAll('.pageGroup a');
+
+pageLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // 다른 페이지 링크에서 'act' 클래스 제거
+    pageLinks.forEach(l => l.classList.remove('act'));
+    // 클릭된 페이지 링크에 'act' 클래스 추가
+    link.classList.add('act');
+  });
+});</code></pre>
+                      </div>
                     </div>
                   </div>
 
@@ -423,7 +440,19 @@
         if (savedTheme) {
           setTheme(savedTheme);
         }
-      });      
+      });
+
+      // pagination 관련
+      const pageLinks = document.querySelectorAll('.pageGroup a');
+
+      pageLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          // 다른 페이지 링크에서 'act' 클래스 제거
+          pageLinks.forEach(l => l.classList.remove('act'));
+          // 클릭된 페이지 링크에 'act' 클래스 추가
+          link.classList.add('act');
+        });
+      });
 
       function downloadCssZip() {
         // Create a link element

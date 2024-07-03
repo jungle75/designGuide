@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contentree JoongAng Design System</title>
+
+    <link rel="stylesheet" href="css/casestudy.css" />
+  </head>
+  <body>
+    <div id="login">
+      <!-- header -->
+       <div class="header">
+        <div class="GNBArea dark">
+          <h1 class="logo"><img src="img/logo.png" alt="Contentree JoongAng"></h1>
+        </div>        
+       </div> 
+      <!--// header -->
+      
+      <!-- container -->
+      <div class="container">
+        <div class="loginWrap">
+          <div id="visual" class="loginVisual"><img src="img/loginVisual.png" alt="로그인 비주얼이미지"></div>
+          <div class="loginBox">
+            <h2>LOGIN</h2>
+            <div class="formGroup">
+              <div class="inputBox large"><input type="text" placeholder="아이디를 입력해주세요"></div>
+              <div class="inputBox large"><input type="text" placeholder="비밀번호를 입력해주세요"></div>
+            </div>
+
+            <div class="formGroup">
+              <div class="btnArea">
+                <button type="button" class="btn large primaryA block">로그인</button>
+              </div>
+              <div class="saveId">                
+                <label class="checkbox" for="check2">
+                  <input type="checkbox" name="check2" id="check2" hidden>
+                  <i></i>
+                  <span>아이디 저장</span>
+                </label>
+                <button type="button" class="textBtn gray">비밀번호 재설정</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="indicator right">
+            <div class="number">
+              <span id="prevBtn" class="act"><img src="img/ic_arrow_left.svg" alt="이전"></span>
+              <span id="nextBtn"><img src="img/ic_arrow_right.svg" alt="다음"></span>
+            </div>                      
+          </div>
+        </div>
+        
+      </div>
+      <!--// container -->
+ 
+      <!-- footer -->
+      <div class="FNB"><span>Copyright © Joongang Group. All rights reserved</span></div>
+      <!--// footer -->
+    </div>
+    <script>
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const visual = document.getElementById('visual');
+      
+      prevBtn.addEventListener('click', () => {
+        visual.classList.remove('active');
+        prevBtn.classList.add('act');
+        nextBtn.classList.remove('act');
+      });
+
+      nextBtn.addEventListener('click', () => {
+        visual.classList.add('active');
+        nextBtn.classList.add('act');
+        prevBtn.classList.remove('act');
+      });
+    </script>
+  </body>
+</html>
