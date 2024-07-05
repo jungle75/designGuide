@@ -2434,11 +2434,11 @@ html, body {
 .overview {
   gap: 62px;
 }
+.overview h4 {
+  font-weight: 500 !important;
+}
 .overview .detailArea .detailTitle h3 {
   font-size: 24px;
-}
-.overview .detailArea .detailTitle h4 {
-  font-weight: 500;
 }
 .overview .detailArea .itemBox {
   gap: 16px;
