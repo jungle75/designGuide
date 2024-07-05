@@ -889,6 +889,10 @@ a.textBtn {
   overflow: hidden;
   text-align: left;
 }
+.tableArea .thumbnail td .thumb img {
+  width: 165px;
+  height: 86px;
+}
 .tableArea .thumbnail td .ellipsis {
   width: 100%;
   display: -webkit-box;

@@ -813,6 +813,7 @@ a.textBtn {
   height: 56px;
   padding: 17px 24px;
   background-color: var(--gray-100);
+  border-bottom: 1px solid var(--gray-300);
   border-right: 1px solid var(--gray-300);
   text-align: center;
   color: var(--Jblack);
@@ -849,15 +850,37 @@ a.textBtn {
   vertical-align: middle;
   padding: 12px 24px;
 }
-.tableArea .block {
+.tableArea .dataTable tbody tr:hover {
+  background-color: var(--white);
+}
+.tableArea .ellipsis {
   display: block;
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.tableArea .longText {
+.tableArea .longText td .ellipsis {
   width: 100%;
   display: -webkit-box;
+  white-space: wrap;
   word-wrap: break-word;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+}
+.tableArea .thumbnail td .thumb img {
+  width: 165px;
+  height: 86px;
+}
+.tableArea .thumbnail td .ellipsis {
+  width: 100%;
+  display: -webkit-box;
+  white-space: wrap;
+  word-wrap: break-word;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -1136,13 +1159,13 @@ a.textBtn {
   top: 42px;
   left: 0;
   background-color: #FFFFFF;
-  border-radius: 5px;
   z-index: 99;
 }
 .customSelect .selectItems .selectItemsList {
   max-height: 304px;
   overflow-y: auto;
   padding: 8px;
+  border-radius: 5px;
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .customSelect .selectItems .selectItemsList li {
@@ -1589,6 +1612,26 @@ a.textBtn {
   transition: all 0.2s;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: solid transparent;
+  background-clip: padding-box;
+  border-radius: 5px;
+  background-color: var(--border-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
 #login {
   width: 100%;
   height: 100%;
@@ -1601,6 +1644,9 @@ a.textBtn {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
   display: flex;
   align-items: center;
   width: 100%;
@@ -1617,8 +1663,9 @@ a.textBtn {
 
 .container {
   width: 100%;
-  height: calc(100% - 128px);
+  min-height: calc(100% - 56px);
   display: flex;
+  padding-top: 72px;
 }
 .container .loginWrap {
   position: relative;
@@ -1670,8 +1717,6 @@ a.textBtn {
 }
 .container .lnbWrap {
   width: 257px;
-  height: 100%;
-  border-right: 1px solid var(--gray-300);
 }
 .container .contentArea {
   flex: 1;
@@ -1679,6 +1724,8 @@ a.textBtn {
   justify-content: center;
   align-items: flex-start;
   gap: 0;
+  min-height: 100%;
+  border-left: 1px solid var(--gray-300);
 }
 .container .contentArea .contents {
   display: flex;

@@ -889,6 +889,10 @@ a.textBtn {
   overflow: hidden;
   text-align: left;
 }
+.tableArea .thumbnail td .thumb img {
+  width: 165px;
+  height: 86px;
+}
 .tableArea .thumbnail td .ellipsis {
   width: 100%;
   display: -webkit-box;
@@ -1969,7 +1973,7 @@ html, body {
   line-height: 20px;
 }
 .mainContent .items .title h2 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 600;
   color: var(--text-strong);
   line-height: 48px;

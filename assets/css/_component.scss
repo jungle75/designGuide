@@ -217,6 +217,7 @@ a.textBtn {display: inline-flex;}
   }
   .thumbnail {
     td {
+      .thumb img {width: 165px; height: 86px;}
       .ellipsis {width: 100%; display: -webkit-box; white-space: wrap; word-wrap: break-word; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden; text-align: left;}
     }
   }
