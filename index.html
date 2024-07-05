@@ -112,7 +112,20 @@
         if (savedTheme) {
           setTheme(savedTheme);
         }
-      }); 
+      });
+      const container = document.getElementById('container');
+
+      window.addEventListener('scroll', () => {
+        // 현재 스크롤 위치(Y값)를 가져옵니다.
+        const scrollY = window.scrollY;
+
+        // Y값이 600px 이상이면 클래스를 추가합니다.
+        if (scrollY >= 600) {
+          container.classList.add('fixed');
+        } else {
+          container.classList.remove('fixed');
+        }
+      });
     </script>
   </body>
 </html>

@@ -1757,6 +1757,10 @@ html, body {
   position: absolute;
   top: 24px;
 }
+.main #container.fixed .leftMenu {
+  position: fixed;
+  top: 112px;
+}
 
 /*leftMenu*/
 .leftMenu {
