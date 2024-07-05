@@ -2437,6 +2437,9 @@ html, body {
 .overview .detailArea .detailTitle h3 {
   font-size: 24px;
 }
+.overview .detailArea .detailTitle h4 {
+  font-weight: 500;
+}
 .overview .detailArea .itemBox {
   gap: 16px;
 }
