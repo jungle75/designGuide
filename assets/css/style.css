@@ -1758,15 +1758,19 @@ html, body {
 .main #container {
   height: auto;
 }
+.main #container .leftMenu {
+  position: absolute;
+  top: 24px;
+}
 .main #container .contentWrap {
   height: auto;
 }
 
 /*leftMenu*/
 .leftMenu {
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: 24px;
+  top: 112px;
   width: 256px;
   padding: 0 16px;
 }
