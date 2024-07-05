@@ -2662,6 +2662,9 @@ html, body {
   height: 24px;
 }
 
+.component {
+  gap: 64px;
+}
 .component .typeTileArea .item {
   cursor: pointer;
 }
