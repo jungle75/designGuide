@@ -1755,6 +1755,9 @@ html, body {
   text-align: center;
 }
 
+.main #container {
+  height: unset;
+}
 .main #container .leftMenu {
   position: absolute;
   top: 24px;
