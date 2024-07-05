@@ -1725,19 +1725,17 @@ html, body {
   position: relative;
   width: 100%;
   min-width: 1400px;
-  height: 100%;
+  min-height: 100%;
   padding: 24px 24px 24px 256px;
 }
 #container .contentWrap {
   position: relative;
-  height: calc(100% - 34px);
   background-color: var(--body-color);
   border-radius: 32px 32px 0 0;
   padding: 32px 0 0 0;
 }
 #container .contentWrap .contentArea {
   width: calc(100% - 8px);
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1766,9 +1764,9 @@ html, body {
 
 /*leftMenu*/
 .leftMenu {
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: 24px;
+  top: 112px;
   width: 256px;
   padding: 0 16px;
 }
@@ -2115,6 +2113,9 @@ html, body {
 }
 .contents .detailArea .btnArea {
   margin-top: 8px;
+}
+.contents .detailArea.download {
+  margin-top: -32px;
 }
 .contents .typeTileArea {
   display: flex;

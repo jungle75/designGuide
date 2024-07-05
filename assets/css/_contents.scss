@@ -78,6 +78,7 @@
       .commentTxt {margin-top: 8px;}
     }
     .btnArea {margin-top: 8px;}
+    &.download {margin-top: -32px;}
   }
   .typeTileArea {
     @include mixin.flex(left,flex-start,15px); row-gap: 40px; flex-wrap: wrap;
