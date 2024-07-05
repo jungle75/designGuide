@@ -1727,6 +1727,7 @@ html, body {
   min-width: 1400px;
   height: 100%;
   padding: 24px 24px 24px 256px;
+  overflow: auto;
 }
 #container .contentWrap {
   width: 100%;
