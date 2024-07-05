@@ -1726,6 +1726,8 @@ html, body {
   width: 100%;
   min-width: 1400px;
   min-height: 100%;
+}
+#container .contentWrap {
   padding: 24px 24px 24px 256px;
 }
 #container .contentWrap .contentArea {
@@ -1751,15 +1753,9 @@ html, body {
   text-align: center;
 }
 
-.main #container {
-  height: auto;
-}
 .main #container .leftMenu {
-  position: absolute;
-  top: 24px;
-}
-.main #container .contentWrap {
-  height: auto;
+  position: sticky;
+  top: 112px;
 }
 
 /*leftMenu*/

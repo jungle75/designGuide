@@ -39,9 +39,8 @@ html, body {width: 100%; height: 100%; font-size: 16px; font-weight: 400; font-f
   width: 100%;
   min-width: 1400px;
   min-height: 100%;
-  padding: 24px 24px 24px 256px;
 
-  .contentWrap {
+  .contentWrap {padding: 24px 24px 24px 256px;
     .contentArea {
       width: 100%;
       background-color: var(--body-color);
@@ -64,9 +63,8 @@ html, body {width: 100%; height: 100%; font-size: 16px; font-weight: 400; font-f
   }
 }
 .main {
-  #container {height: auto;
-    .leftMenu {position: absolute; top: 24px;}
-    .contentWrap {height: auto;}
+  #container {
+    .leftMenu {position: sticky; top: 112px;}
   }
 }
 
