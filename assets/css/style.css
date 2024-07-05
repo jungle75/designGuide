@@ -62,30 +62,6 @@
   --tab-border: #ffffff;
 }
 
-@font-face {
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../font/Pretendard-Regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../font/Pretendard-Medium.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../font/Pretendard-Bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../font/Pretendard-Black.woff2") format("woff2");
-}
 /* —— START THE GENERIC RESETS —— */
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
   margin: 0;
@@ -287,7 +263,7 @@ select::-ms-expand {
 
 /* —— END THE GENERIC RESETS —— */
 /******************************
-  버튼 정의
+  박스버튼 정의
 *******************************/
 .btn {
   display: inline-flex;
@@ -438,10 +414,6 @@ a.btn {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNi41IDEwLjVDMTYuNSAxMy44MTM3IDEzLjgxMzcgMTYuNSAxMC41IDE2LjVDNy4xODYyOSAxNi41IDQuNSAxMy44MTM3IDQuNSAxMC41QzQuNSA3LjE4NjI5IDcuMTg2MjkgNC41IDEwLjUgNC41QzEzLjgxMzcgNC41IDE2LjUgNy4xODYyOSAxNi41IDEwLjVaTTE1LjU2MTUgMTcuMzI5NEMxNC4xNDc1IDE4LjM3OTEgMTIuMzk2MyAxOSAxMC41IDE5QzUuODA1NTggMTkgMiAxNS4xOTQ0IDIgMTAuNUMyIDUuODA1NTggNS44MDU1OCAyIDEwLjUgMkMxNS4xOTQ0IDIgMTkgNS44MDU1OCAxOSAxMC41QzE5IDEyLjM5NjQgMTguMzc5IDE0LjE0NzcgMTcuMzI5MiAxNS41NjE3TDIxLjQ5MDUgMTkuNzIyOUMyMS45Nzg2IDIwLjIxMTEgMjEuOTc4NiAyMS4wMDI1IDIxLjQ5MDUgMjEuNDkwN0MyMS4wMDIzIDIxLjk3ODggMjAuMjEwOSAyMS45Nzg4IDE5LjcyMjcgMjEuNDkwN0wxNS41NjE1IDE3LjMyOTRaIiBmaWxsPSIjRkYzQzE0Ii8+Cjwvc3ZnPgo=");
 }
 
-.ic-down::before {
-  background-image: url(../images/icon/black/ic_download.svg);
-}
-
 .large::before {
   width: 20px;
   height: 20px;
@@ -461,6 +433,9 @@ a.btn {
   width: 100%;
 }
 
+/******************************
+  텍스트버튼 정의
+*******************************/
 .textBtn {
   display: inline-flex;
   justify-content: center;
@@ -2412,6 +2387,9 @@ html, body {
   justify-content: left;
   align-items: center;
   gap: 16px;
+}
+.contents .ic-down::before {
+  background-image: url(../images/icon/black/ic_download.svg);
 }
 
 .subMain {

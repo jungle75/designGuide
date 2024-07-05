@@ -158,6 +158,7 @@
     }
   }
   .btnArea {@include mixin.flex(left,center,16px);}
+  .ic-down::before {background-image: url(../images/icon/black/ic_download.svg);}
 }
 .subMain {gap: 96px;
   .titleBox {border-bottom: 0; padding-bottom: 0; margin-bottom: 0;}
