@@ -42,16 +42,14 @@ html, body {width: 100%; height: 100%; font-size: 16px; font-weight: 400; font-f
   padding: 24px 24px 24px 256px;
 
   .contentWrap {
-    position: relative;
-    background-color: var(--body-color);
-    border-radius: 32px 32px 0 0;
-    padding: 32px 0 0 0;
     .contentArea {
-      width: calc(100% - 8px);
+      width: 100%;
+      background-color: var(--body-color);
+      border-radius: 32px 32px 0 0;
+      padding: 32px 0 0 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      overflow: auto;
     }
   }
   .footer {
