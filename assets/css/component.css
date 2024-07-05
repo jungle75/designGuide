@@ -898,7 +898,7 @@ a.textBtn {
   display: -webkit-box;
   white-space: wrap;
   word-wrap: break-word;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;

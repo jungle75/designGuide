@@ -898,7 +898,7 @@ a.textBtn {
   display: -webkit-box;
   white-space: wrap;
   word-wrap: break-word;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -2034,9 +2034,8 @@ html, body {
   padding-bottom: 64px;
   border-bottom: 1px solid var(--border-color);
 }
-.contents .titleBox.caseStudies {
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 24px;
+.contents .titleBox.caseStudies .btnArea {
+  margin-top: 8px;
 }
 .contents .titleBox h2 {
   font-size: 50px;
@@ -2141,10 +2140,6 @@ html, body {
 }
 .contents .detailArea .btnArea {
   margin-top: 8px;
-}
-.contents .detailArea.download {
-  border-bottom: 1px solid var(--gray-300);
-  padding-bottom: 24px;
 }
 .contents .typeTileArea {
   display: flex;
@@ -2671,9 +2666,6 @@ html, body {
   height: 24px;
 }
 
-.component {
-  gap: 64px;
-}
 .component .typeTileArea .item {
   cursor: pointer;
 }
@@ -3240,7 +3232,6 @@ html, body {
   height: 24px;
   font-size: 0;
   background-image: url(../images/layout/ic_download.svg);
-  filter: opacity(0.5);
 }
 .component .movie {
   position: relative;

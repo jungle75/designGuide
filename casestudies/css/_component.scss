@@ -150,9 +150,6 @@ a.textBtn {display: inline-flex;}
 .formCol {@include mixin.flex(left,center,8px);}
 
 
-/******************************
-  Empty 정의
-*******************************/
 .empty {display: flex; align-items: center; flex-direction: column; gap: 24px;
   .messageGroup {display: flex; align-items: center; flex-direction: column; gap: 8px;
     &::before {content: ""; display: block; width: 40px; height: 40px; 
