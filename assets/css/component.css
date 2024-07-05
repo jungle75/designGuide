@@ -878,9 +878,6 @@ a.textBtn {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.tableArea .longText td {
-  height: 72px;
-}
 .tableArea .longText td .ellipsis {
   width: 100%;
   display: -webkit-box;
