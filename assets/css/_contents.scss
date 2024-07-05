@@ -170,7 +170,7 @@
 .overview {gap: 62px;  
   h4 {font-weight: 500 !important;}
   .detailArea {
-    .detailTitle {
+    .detailTitle {display: flex; flex-direction: column; gap: 10px;
       h3 {font-size: 24px;}
     }
     .itemBox {gap: 16px;}

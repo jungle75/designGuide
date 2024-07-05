@@ -2437,6 +2437,11 @@ html, body {
 .overview h4 {
   font-weight: 500 !important;
 }
+.overview .detailArea .detailTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .overview .detailArea .detailTitle h3 {
   font-size: 24px;
 }
