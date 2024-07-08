@@ -1634,7 +1634,7 @@ a.textBtn {
 
 .container {
   width: 100%;
-  min-height: calc(100% - 56px);
+  height: calc(100% - 56px);
   display: flex;
   padding-top: 72px;
 }

@@ -14,7 +14,7 @@
     img {width: 100%;}
   }
 }
-.container {width: 100%; min-height: calc(100% - 56px); display: flex; padding-top: 72px;
+.container {width: 100%; height: calc(100% - 56px); display: flex; padding-top: 72px;
   .loginWrap {position: relative; @include mixin.flex(center,center,0); width: 100%; height: 100%;
     .loginBox {display: flex; justify-content: center; flex-direction: column; align-items: center; gap: 24px; width: 400px; height: 520px; background-color: var(--white);
       h2 {@include mixin.font(32px,600,black,38px); margin-bottom: 8px;}
