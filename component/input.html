@@ -75,8 +75,8 @@
 
                     <div class="grayContBox inputSpec">
                       <div class="group">
-                        <div class="inputBox"><input type="text" placeholder="Placeholder" value="Value"></div>
-                        <div class="inputBox large"><input type="text" placeholder="Placeholder" value="Value"></div>
+                        <label class="inputBox"><input type="text" placeholder="Placeholder" value="Value"></label>
+                        <label class="inputBox large"><input type="text" placeholder="Placeholder" value="Value"></label>
                       </div>
 
                       <div class="guidePoint" style="left: 360px; top: 60px; ">
@@ -104,11 +104,11 @@
 
                     <div class="grayContBox inputStates">
                       <div class="group">
-                        <div class="inputBox"><input type="text" placeholder="Placeholder"></div>
-                        <div class="inputBox hover"><input type="text" placeholder="Placeholder" value="Placeholder"></div>
-                        <div class="inputBox active"><input type="text" placeholder="Placeholder" value="Value"></div>
-                        <div class="inputBox error"><input type="text" placeholder="Placeholder" value="Text Inputting Error"></div>
-                        <div class="inputBox"><input type="text" placeholder="-" disabled></div>
+                        <label class="inputBox"><input type="text" placeholder="Placeholder"></label>
+                        <label class="inputBox hover"><input type="text" placeholder="Placeholder" value="Placeholder"></label>
+                        <label class="inputBox active"><input type="text" placeholder="Placeholder" value="Value"></label>
+                        <label class="inputBox error"><input type="text" placeholder="Placeholder" value="Text Inputting Error"></label>
+                        <label class="inputBox"><input type="text" placeholder="-" disabled></label>
                       </div>
 
                       <div class="guideTextCol" style="left: 230px; top: 82px;">
@@ -133,7 +133,7 @@
                       <div class="itemBox">
                         <h4>Placeholder usage</h4>
                         <div class="grayContBox" style="height: 178px;">
-                          <div class="inputBox"><input type="text" placeholder="생년월일을 입력해 주세요"></div>
+                          <label class="inputBox"><input type="text" placeholder="생년월일을 입력해 주세요"></label>
                         </div>
                         <div class="commentTxt">
                           <p>Label을 사용하지 않고 플레이스홀더로만 안내할 경우,<br />
@@ -145,7 +145,7 @@
                       <div class="itemBox">
                         <h4>Label usage</h4>
                         <div class="grayContBox" style="height: 178px;">
-                          <div class="form"><label for="a">생년월일</label><div class="inputBox"><input type="text" placeholder="1999.01.01"></div></div>
+                          <div class="form"><label for="a">생년월일</label><div class="inputBox"><input type="text" id="a" placeholder="1999.01.01"></div></div>
                         </div>
                         <div class="commentTxt">
                           <p>Label은 입력필드의 좌측에 배치할 수 있으며<br />
@@ -185,7 +185,7 @@
                     
                     <div class="codeBox">
                       <div class="example align-row">
-                        <div class="inputBox"><input type="text" placeholder="Placeholder"></div>
+                        <label class="inputBox"><input type="text" placeholder="Placeholder"></label>
                       </div>
                       <div class="codeTab">
                         <a href="#" class="act">HTML</a>
