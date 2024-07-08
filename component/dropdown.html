@@ -207,7 +207,7 @@ const selectItemsList = document.createElement("ul");
 selectItemsList.className = "selectItemsList";
 selectItems.appendChild(selectItemsList);
 
-for (let j = 1; j &lt; selectLength; j++) {
+for (let j = 1; j > selectLength; j++) {
 const selectOption = document.createElement("li");
 selectOption.innerHTML = selectElement.options[j].innerHTML;
 selectOption.addEventListener("click", function () {
