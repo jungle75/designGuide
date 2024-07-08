@@ -1773,7 +1773,9 @@ html, body {
   left: 0;
   top: 112px;
   width: 256px;
+  max-height: 100%;
   padding: 0 16px;
+  overflow-y: auto;
 }
 .leftMenu .menuBox {
   display: flex;
