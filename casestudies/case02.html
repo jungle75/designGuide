@@ -76,13 +76,13 @@
                 <label class="inputBox" style="width: 142px;">
                   <input type="text" value="2024.07.01"><i class="date"></i>
                 </label>
-                <div class="customSelect">
+                <label class="customSelect">
                   <select>
                     <option value="0">Dropdown menu</option>
                     <option value="1">Dropdown 1</option>
                     <option value="2">Dropdown 2</option>
                   </select>
-                </div>
+                </label>
                 <div class="formCol">
                   <label class="inputBox"><input type="text" placeholder="Placeholder"></label>
                   <button type="button" class="btn small primaryA ic ic-search">Button</button>
@@ -91,7 +91,8 @@
 
               <!-- Table -->
               <div class="tableArea">
-                <table>
+                <table summary="그리드 샘플 테이블">
+                  <caption>그리드 샘플 테이블</caption>
                   <colgroup>
                     <col style="width: 75px;">
                     <col style="width: 75px;">
@@ -100,15 +101,15 @@
                   </colgroup>
                   <thead>
                     <tr>
-                      <th>
+                      <th scope="col">
                         <label class="checkbox" for="check1">
                           <input type="checkbox" name="check1" id="check1" hidden>
                           <i></i>
                         </label>
                       </th>
-                      <th>번호</th>
-                      <th>프로그램</th>
-                      <th>기간</th>
+                      <th scope="col">번호</th>
+                      <th scope="col">프로그램</th>
+                      <th scope="col">기간</th>
                     </tr>
                   </thead>
                   <tbody>
