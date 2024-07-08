@@ -1360,6 +1360,7 @@ a.textBtn {
   line-height: 40px;
   text-align: center;
   font-size: 16px;
+  font-weight: 400;
   color: var(--gray-500);
 }
 .GNBArea .GNB {
