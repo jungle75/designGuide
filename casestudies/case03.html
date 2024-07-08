@@ -172,6 +172,51 @@
 
       document.addEventListener('DOMContentLoaded', initCustomSelect);
 
+      document.addEventListener('DOMContentLoaded', function() {
+
+
+      // GNB 관련
+      const allGNBs = document.querySelectorAll('.GNB');
+
+      allGNBs.forEach(function(GNB) {
+          const navItems = GNB.querySelectorAll('li > a');
+          
+          navItems.forEach(function(navItem) {
+              navItem.addEventListener('click', function(event) {
+                  const parentLi = navItem.parentElement;
+                  const isActive = parentLi.classList.contains('act');
+                  
+                  // Remove 'act' class from all other nav items within the same GNB
+                  GNB.querySelectorAll('li').forEach(function(li) {
+                      li.classList.remove('act');
+                  });
+                  
+                  // Toggle 'act' class on the clicked nav item
+                  if (!isActive) {
+                      parentLi.classList.add('act');
+                  } else {
+                      parentLi.classList.remove('act');
+                  }
+
+                  // Prevent default anchor behavior
+                  event.preventDefault();
+                  event.stopPropagation();
+              });
+          });
+
+          // Add click event listeners to submenu items to prevent closing the submenu
+          const subMenuItems = GNB.querySelectorAll('.subMenu a');
+          
+          subMenuItems.forEach(function(subMenuItem) {
+              subMenuItem.addEventListener('click', function(event) {
+                  // Prevent default anchor behavior
+                  event.preventDefault();
+                  event.stopPropagation();
+              });
+          });
+      });
+    });
+
       // tabs 관련
       const tabs = document.querySelectorAll('.tabs a');
       tabs.forEach(tab => {
@@ -219,6 +264,59 @@
             this.classList.add('on');
           });
         });
+      });
+      
+      // pagination 관련
+      document.querySelectorAll('.pagination').forEach(pagination => {
+        const backBtn = pagination.querySelector('.back');
+        const backEndBtn = pagination.querySelector('.backEnd');
+        const nextBtn = pagination.querySelector('.next');
+        const nextEndBtn = pagination.querySelector('.nextEnd');
+        const pageLinks = pagination.querySelectorAll('.pageGroup a');
+
+        const updateButtons = (currentPage) => {
+            const totalPages = pageLinks.length;
+            backBtn.disabled = currentPage === 1;
+            backEndBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage === totalPages;
+            nextEndBtn.disabled = currentPage === totalPages;
+
+            pageLinks.forEach(link => link.classList.remove('act'));
+            pageLinks[currentPage - 1].classList.add('act');
+        };
+
+        pageLinks.forEach((link, index) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const currentPage = index + 1;
+                updateButtons(currentPage);
+            });
+        });
+
+        backBtn.addEventListener('click', () => {
+            const currentPage = [...pageLinks].findIndex(link => link.classList.contains('act')) + 1;
+            if (currentPage > 1) {
+                updateButtons(currentPage - 1);
+            }
+        });
+
+        backEndBtn.addEventListener('click', () => {
+            updateButtons(1);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const currentPage = [...pageLinks].findIndex(link => link.classList.contains('act')) + 1;
+            if (currentPage < pageLinks.length) {
+                updateButtons(currentPage + 1);
+            }
+        });
+
+        nextEndBtn.addEventListener('click', () => {
+            updateButtons(pageLinks.length);
+        });
+
+        // Initialize the buttons state
+        updateButtons(1);
       });
     </script>
   </body>

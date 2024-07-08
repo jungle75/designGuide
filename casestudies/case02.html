@@ -318,6 +318,51 @@
 
       document.addEventListener('DOMContentLoaded', initCustomSelect);
 
+      document.addEventListener('DOMContentLoaded', function() {
+
+
+      // GNB 관련
+      const allGNBs = document.querySelectorAll('.GNB');
+
+      allGNBs.forEach(function(GNB) {
+          const navItems = GNB.querySelectorAll('li > a');
+          
+          navItems.forEach(function(navItem) {
+              navItem.addEventListener('click', function(event) {
+                  const parentLi = navItem.parentElement;
+                  const isActive = parentLi.classList.contains('act');
+                  
+                  // Remove 'act' class from all other nav items within the same GNB
+                  GNB.querySelectorAll('li').forEach(function(li) {
+                      li.classList.remove('act');
+                  });
+                  
+                  // Toggle 'act' class on the clicked nav item
+                  if (!isActive) {
+                      parentLi.classList.add('act');
+                  } else {
+                      parentLi.classList.remove('act');
+                  }
+
+                  // Prevent default anchor behavior
+                  event.preventDefault();
+                  event.stopPropagation();
+              });
+          });
+
+          // Add click event listeners to submenu items to prevent closing the submenu
+          const subMenuItems = GNB.querySelectorAll('.subMenu a');
+          
+          subMenuItems.forEach(function(subMenuItem) {
+              subMenuItem.addEventListener('click', function(event) {
+                  // Prevent default anchor behavior
+                  event.preventDefault();
+                  event.stopPropagation();
+              });
+          });
+      });
+    });
+
       // tabs 관련
       const tabs = document.querySelectorAll('.tabs a');
       tabs.forEach(tab => {
