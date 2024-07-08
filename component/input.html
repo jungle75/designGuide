@@ -56,7 +56,7 @@
                     </div>
     
                     <div class="grayContBox inputAnatomy" style="height: 238px;">
-                      <div class="form"><label for="a">Label</label><div class="inputBox"><input type="text" id="a" placeholder="Placeholder"></div></div>                  
+                      <div class="formCol"><span class="label">Label</span><label class="inputBox"><input type="text" id="a" placeholder="Placeholder"></label></div>                  
                       <div class="guidePoint" style="left: 246px; top: 62px;"></div>
                     </div>
                     <div class="itemBox gap-16">                    
@@ -145,7 +145,7 @@
                       <div class="itemBox">
                         <h4>Label usage</h4>
                         <div class="grayContBox" style="height: 178px;">
-                          <div class="form"><label for="a">생년월일</label><div class="inputBox"><input type="text" id="a" placeholder="1999.01.01"></div></div>
+                          <div class="formCol"><span class="label">생년월일</span><label class="inputBox"><input type="text" id="a" placeholder="1999.01.01"></label></div>
                         </div>
                         <div class="commentTxt">
                           <p>Label은 입력필드의 좌측에 배치할 수 있으며<br />
@@ -159,7 +159,7 @@
                       <h4>Text area</h4>
                       <div class="grayContBox" style="height: 286px;">
                         <label class="textArea" style="width: 480px; height: 142px;">
-                          <textarea name="" id="" placeholder="Autosizing the height to fit the content"></textarea>
+                          <textarea name="sample" placeholder="Autosizing the height to fit the content"></textarea>
                           <span>0/100</span>
                         </label>
                       </div>
@@ -206,14 +206,17 @@
 
                     <div class="codeBox">
                       <div class="example align-row">
-                        <label for="a">Label</label><div class="inputBox"><input type="text" id="a" placeholder="Placeholder"></div>
+                        <div class="formCol"><span class="label">Label</span><label class="inputBox"><input type="text" id="a" placeholder="Placeholder"></label></div>
                       </div>                    
                       <div class="codeTab">
                         <a href="#" class="act">HTML</a>
                       </div>
                       <div class="codeCont">
                         <button type="button" class="ic-copy">클립보드에 복사</button>
-                        <pre class="markup"><code class="markup-html"><span class="line">&lt;<span class="obj">label</span> for="a"&gt;Label&lt;/<span class="obj">label</span>&gt;&lt;<span class="obj">div</span> <span>class=</span><span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> <span>type="text"</span> id="a" <span>placeholder="Placeholder"&gt;</span>&lt;/<span class="obj">div</span>&gt;</span></code></pre>
+                        <pre class="markup"><code class="markup-html">&lt;<span class="obj">div</span> class=<span class="cls">"formCol"</span>&gt;
+  &lt;<span class="obj">span</span> class=<span class="cls">"label"</span>&gt;Label&lt;/<span class="obj">span</span>&gt;
+  &lt;<span class="obj">label</span> class=<span class="cls">"inputBox"</span>&gt;&lt;<span class="obj">input</span> type="text" id="a" placeholder="Placeholder"&gt;&lt;/<span class="obj">label</span>&gt;
+&lt;/<span class="obj">div</span>&gt;</code></pre>
                       </div>                    
                     </div>
                   </div>
@@ -398,7 +401,7 @@
                     <div class="codeBox">
                       <div class="example align-col">
                         <label class="textArea" style="width: 480px; height: 122px;">
-                          <textarea name="" id="" rows="6" cols="100" placeholder="Autosizing the height to fit the content"></textarea>
+                          <textarea name="sample" id="" rows="6" cols="100" placeholder="Autosizing the height to fit the content"></textarea>
                         </label>
                       </div>
                       <div class="codeTab"> 

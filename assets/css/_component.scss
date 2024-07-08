@@ -148,7 +148,9 @@ a.textBtn {display: inline-flex;}
   &.invalid {textarea {border-color: var(--red-500);}}
 }
 
-.formCol {@include mixin.flex(left,center,8px);}
+.formCol {@include mixin.flex(left,center,8px);
+  .label {font-size: 14px; font-weight: 500; color: var(--Jblack); line-height: 24px;}
+}
 
 
 /******************************
