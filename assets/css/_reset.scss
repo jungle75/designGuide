@@ -12,6 +12,7 @@ blockquote:before, blockquote:after, q:before, q:after {content: ''; content: no
 a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none;}
 del {text-decoration: line-through;}
 abbr[title], dfn[title] {border-bottom: 1px dotted var(--black); cursor: help;}
+caption {display: none;}
 table {border-collapse: separate; border-spacing: 0; text-align: left;}
 th {font-weight: bold; vertical-align: bottom;}
 td {font-weight: normal; vertical-align: top;}

@@ -120,6 +120,10 @@ abbr[title], dfn[title] {
   cursor: help;
 }
 
+caption {
+  display: none;
+}
+
 table {
   border-collapse: separate;
   border-spacing: 0;
