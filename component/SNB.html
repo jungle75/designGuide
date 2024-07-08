@@ -545,6 +545,34 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
 
+      // 공통적으로 사용될 함수 정의
+      function setupSideNav(navId) {
+        var nav = document.getElementById(navId);
+        var links = nav.querySelectorAll('a');
+
+        links.forEach(function (link) {
+          link.addEventListener('click', function (event) {
+            event.preventDefault(); // 기본 동작(링크 이동) 방지
+
+            // 현재 메뉴 내의 .act 클래스를 가진 요소들에서 act 클래스 제거
+            var activeItems = nav.querySelectorAll('.act');
+            activeItems.forEach(function (item) {
+              item.classList.remove('act');
+            });
+
+            // 클릭된 <a> 태그의 부모인 <li> 요소에 act 클래스 추가
+            var parentLI = this.closest('li');
+            parentLI.classList.add('act');
+          });
+        });
+      }
+
+      // 각 .SNB 요소에 대해 함수 호출
+      setupSideNav('snb1');
+      setupSideNav('snb2');
+      setupSideNav('snb3');
+      setupSideNav('snb4');
+
       function downloadCssZip() {
         // Create a link element
         const link = document.createElement('a');
