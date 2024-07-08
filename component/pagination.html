@@ -145,25 +145,25 @@
                             </thead>
                             <tbody>
                               <tr>
-                                <td><label class="checkbox" for="check_e"><input type="checkbox" name="checkbox" id="check_e" hidden checked><i></i></label></td>
+                                <td><label class="checkbox" for="a"><input type="checkbox" name="checkbox" id="a" hidden checked><i></i></label></td>
                                 <td>1</td>
                                 <td><div class="block">1호가 될 순 없어</div></td>
                                 <td>2021.01.01 ~ 2021.12.31</td>
                               </tr>
                               <tr>
-                                <td><label class="checkbox" for="check_e"><input type="checkbox" name="checkbox" id="check_e" hidden checked><i></i></label></td>
+                                <td><label class="checkbox" for="b"><input type="checkbox" name="checkbox" id="b" hidden checked><i></i></label></td>
                                 <td>2</td>
                                 <td><div class="block">1호가 될 순 없어</div></td>
                                 <td>2021.01.01 ~ 2021.12.31</td>
                               </tr>
                               <tr>
-                                <td><label class="checkbox" for="check_e"><input type="checkbox" name="checkbox" id="check_e" hidden checked><i></i></label></td>
+                                <td><label class="checkbox" for="c"><input type="checkbox" name="checkbox" id="c" hidden checked><i></i></label></td>
                                 <td>3</td>
                                 <td><div class="block">1호가 될 순 없어</div></td>
                                 <td>2021.01.01 ~ 2021.12.31</td>
                               </tr>
                               <tr>
-                                <td><label class="checkbox" for="check_e"><input type="checkbox" name="checkbox" id="check_e" hidden checked><i></i></label></td>
+                                <td><label class="checkbox" for="d"><input type="checkbox" name="checkbox" id="d" hidden checked><i></i></label></td>
                                 <td>4</td>
                                 <td><div class="block">1호가 될 순 없어</div></td>
                                 <td>2021.01.01 ~ 2021.12.31</td>
@@ -299,7 +299,7 @@ document.querySelectorAll('.pagination').forEach(pagination => {
 
   nextBtn.addEventListener('click', () => {
       const currentPage = [...pageLinks].findIndex(link => link.classList.contains('act')) + 1;
-      if (currentPage < pageLinks.length) {
+      if (currentPage &lt; pageLinks.length) {
           updateButtons(currentPage + 1);
       }
   });
