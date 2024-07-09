@@ -21,7 +21,7 @@
       .formGroup {display: flex; flex-direction: column; gap: 16px; width: 300px;}
       .saveId {@include mixin.flex(space-between,center,0);}
     }
-    .loginVisual {
+    .loginVisual {height: 520px;
       img {width: 0; height: 520px; transition: all 0.2s;}
     }
     .active {

@@ -1684,6 +1684,9 @@ a.textBtn {
   align-items: center;
   gap: 0;
 }
+.container .loginWrap .loginVisual {
+  height: 520px;
+}
 .container .loginWrap .loginVisual img {
   width: 0;
   height: 520px;
